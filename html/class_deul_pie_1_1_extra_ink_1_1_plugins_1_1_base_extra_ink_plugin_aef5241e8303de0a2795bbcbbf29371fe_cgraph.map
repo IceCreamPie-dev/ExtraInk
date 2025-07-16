@@ -1,0 +1,7 @@
+<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.Disable" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.Disable">
+<area shape="rect" id="Node000001" title="플러그인 비활성화" alt="" coords="5,39,190,81"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#abd06ac1a90bc7e591a43988392c5751a" title="디버그 로그 출력" alt="" coords="239,5,438,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,45,223,40,224,45,191,50"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#abb94160551c16bb3f1ac8892506105eb" title="플러그인 비활성화 시 호출" alt="" coords="238,72,439,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,70,222,75,222,80,190,75"/>
+</map>

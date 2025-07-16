@@ -1,0 +1,16 @@
+<map id="DeulPie.ExtraInk.Core.Interfaces.IAudioManager" name="DeulPie.ExtraInk.Core.Interfaces.IAudioManager">
+<area shape="rect" id="Node000001" title="오디오 매니저 통합 인터페이스 (SOLID: Interface Segregation) 모든 오디오 관련 기능을 하나로 통합" alt="" coords="585,485,793,699"/>
+<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_audio_player.html" title="오디오 재생 기능 인터페이스 (SOLID: Interface Segregation)" alt="" coords="5,160,213,437"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,435,320,486,416,525,507,552,586,571,585,576,505,557,414,530,318,491,224,439"/>
+<area shape="rect" id="Node000003" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_volume_controller.html" title="볼륨 제어 기능 인터페이스" alt="" coords="237,160,445,437"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="458,434,459,435,522,485,587,529,584,533,519,490,455,439,454,438"/>
+<area shape="rect" id="Node000004" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_audio_resource_manager.html" title="오디오 리소스 관리 인터페이스" alt="" coords="469,224,677,373"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="610,386,650,485,645,487,605,388"/>
+<area shape="rect" id="Node000005" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_audio_effect_controller.html" title="오디오 효과 제어 인터페이스" alt="" coords="701,224,909,373"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="773,388,733,487,729,485,768,386"/>
+<area shape="rect" id="Node000006" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_stateful_manager.html" title="상태를 가지는 매니저 인터페이스" alt="" coords="984,224,1192,373"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1023,386,967,439,881,498,794,546,791,541,878,494,963,435,1019,382"/>
+<area shape="rect" id="Node000007" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_manager.html" title="모든 매니저의 기본 인터페이스 (SOLID: Interface Segregation Principle) 최소한의 공통 기능만 정의" alt="" coords="913,5,1121,112"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="987,127,974,161,964,202,961,239,961,304,960,335,956,367,944,401,923,439,896,472,864,502,829,527,794,548,791,544,826,523,861,498,893,469,919,436,939,399,950,366,955,335,956,304,955,239,959,202,969,159,982,125"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1039,125,1069,224,1064,225,1034,127"/>
+</map>

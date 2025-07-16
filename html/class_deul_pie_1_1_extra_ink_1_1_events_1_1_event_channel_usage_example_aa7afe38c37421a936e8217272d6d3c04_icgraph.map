@@ -1,0 +1,7 @@
+<map id="DeulPie.ExtraInk.Events.EventChannelUsageExample.ChangeHealth" name="DeulPie.ExtraInk.Events.EventChannelUsageExample.ChangeHealth">
+<area shape="rect" id="Node000001" title="체력 변경" alt="" coords="278,35,519,93"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example.html#ad8f3a25dfd301d69056ee1d6ef2ddc2d" title="체력 회복" alt="" coords="6,5,229,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,49,229,44,230,39,262,43"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example.html#aff7e11b4bd4e85bf250d61311fcdc287" title="데미지 입기" alt="" coords="5,72,230,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,85,230,89,230,84,262,79"/>
+</map>

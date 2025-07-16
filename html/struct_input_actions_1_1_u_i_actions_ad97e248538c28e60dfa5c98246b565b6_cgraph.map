@@ -1,0 +1,7 @@
+<map id="InputActions.UIActions.operator InputActionMap" name="InputActions.UIActions.operator InputActionMap">
+<area shape="rect" id="Node000001" title="Implicitly converts an &#160;to an &#160;instance." alt="" coords="5,5,213,48"/>
+<area shape="rect" id="Node000002" href="$struct_input_actions_1_1_u_i_actions.html#a005301cd7daf67ff3019ab89e6713be5" title="Construct a new instance of the input action map wrapper class." alt="" coords="261,13,479,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,24,245,24,245,29,213,29"/>
+<area shape="rect" id="Node000003" href="$class_input_actions.html#ac16499e246486fe8b70d6586219a82f7" title="Constructs a new instance." alt="" coords="527,13,698,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="480,24,511,24,511,29,480,29"/>
+</map>

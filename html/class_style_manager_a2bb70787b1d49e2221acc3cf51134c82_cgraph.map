@@ -1,0 +1,7 @@
+<map id="StyleManager.ChangeStyle" name="StyleManager.ChangeStyle">
+<area shape="rect" id="Node000001" title="스타일 변경" alt="" coords="5,13,186,40"/>
+<area shape="rect" id="Node000002" href="$class_style_manager.html#ac520b73019c3eb172cdb23f8ed6acf23" title="스타일을 매니저들에 적용" alt="" coords="234,5,416,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,24,218,24,218,29,186,29"/>
+<area shape="rect" id="Node000003" href="$class_dialogue_manager.html#a68b63a991c04edef3ee3454a9dbc4e46" title="스타일 적용" alt="" coords="464,13,653,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,24,448,24,448,29,416,29"/>
+</map>

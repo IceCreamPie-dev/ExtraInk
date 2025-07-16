@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnEnable" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnEnable">
+<area shape="rect" id="Node000001" title="플러그인 활성화 시 호출" alt="" coords="234,5,431,48"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a76896d22b84eb931ea1737cb4933de9b" title="플러그인 활성화" alt="" coords="5,5,186,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,29,186,29,186,24,218,24"/>
+</map>

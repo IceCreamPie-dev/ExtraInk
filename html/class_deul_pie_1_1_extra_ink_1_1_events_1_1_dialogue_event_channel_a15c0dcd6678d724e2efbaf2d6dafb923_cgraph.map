@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Events.DialogueEventChannel.AddValidSpeaker" name="DeulPie.ExtraInk.Events.DialogueEventChannel.AddValidSpeaker">
+<area shape="rect" id="Node000001" title="유효한 화자 목록에 화자 추가" alt="" coords="5,5,215,64"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel.html#a50ec848c6fd2c4355b50ed4a22e5e0f2" title="디버그 로그 출력" alt="" coords="263,13,459,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,32,247,32,247,37,215,37"/>
+</map>

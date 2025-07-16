@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Core.Settings.EncryptedFileSettingsStorage" name="DeulPie.ExtraInk.Core.Settings.EncryptedFileSettingsStorage">
+<area shape="rect" id="Node000001" title="암호화된 파일 기반 설정 저장소 민감한 설정을 안전하게 저장 (모바일 등)" alt="" coords="5,245,210,459"/>
+<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html" title="설정 저장소 인터페이스 &#45; 다양한 저장 방식을 추상화" alt="" coords="9,5,207,197"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,212,110,246,105,246,105,212"/>
+</map>

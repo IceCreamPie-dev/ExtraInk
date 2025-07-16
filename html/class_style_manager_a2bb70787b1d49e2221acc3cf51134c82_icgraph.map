@@ -1,0 +1,11 @@
+<map id="StyleManager.ChangeStyle" name="StyleManager.ChangeStyle">
+<area shape="rect" id="Node000001" title="스타일 변경" alt="" coords="499,47,679,73"/>
+<area shape="rect" id="Node000002" href="$class_style_manager.html#ad31f5a6d0795390ce9ca815d8e8a0875" title="스타일 이름으로 변경" alt="" coords="263,5,443,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="483,48,443,42,444,37,484,43"/>
+<area shape="rect" id="Node000004" href="$class_style_manager.html#a40b25d5a5b7e3ee8c679b86cbeef416d" title="기본 스타일로 복원" alt="" coords="255,72,451,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="484,77,452,82,451,77,483,72"/>
+<area shape="rect" id="Node000003" href="$class_dialogue_manager.html#a6e0bb467bab023768945c7dd620637b7" title="스타일 변경" alt="" coords="5,13,207,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,29,207,29,207,24,247,24"/>
+<area shape="rect" id="Node000005" href="$class_style_manager.html#a70d3ac902bedc2533845bc8b5fa24d53" title="스타일 제거" alt="" coords="14,80,198,107"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,96,199,96,199,91,239,91"/>
+</map>

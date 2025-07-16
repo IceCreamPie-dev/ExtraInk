@@ -1,0 +1,5 @@
+<map id="StoryStarter" name="StoryStarter">
+<area shape="rect" id="Node000001" title="스토리를 시작하는 컴포넌트 UI 버튼이나 트리거 등에 연결하여 특정 스토리를 시작할 수 있습니다" alt="" coords="5,123,233,427"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,5,170,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,90,122,123,117,123,117,90"/>
+</map>

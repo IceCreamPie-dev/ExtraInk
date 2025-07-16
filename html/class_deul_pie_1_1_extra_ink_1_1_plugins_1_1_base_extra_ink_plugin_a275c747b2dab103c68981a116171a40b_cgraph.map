@@ -1,0 +1,18 @@
+<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.Initialize" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.Initialize">
+<area shape="rect" id="Node000001" title="플러그인 초기화" alt="" coords="5,189,194,232"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a107186a2aa4b4f5853a329e351a3c649" title="의존성 플러그인 확인" alt="" coords="242,5,503,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,187,166,126,201,93,240,64,264,52,267,57,243,69,204,97,170,130,119,191"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#abd06ac1a90bc7e591a43988392c5751a" title="디버그 로그 출력" alt="" coords="551,35,750,77"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="122,187,174,146,206,125,241,108,295,94,370,81,536,62,536,68,371,86,296,99,243,113,209,130,177,150,125,191"/>
+<area shape="rect" id="Node000004" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#aa8e48bac982ed3fce89a3790423728b4" title="현재 장르가 지원되는지 확인" alt="" coords="250,123,495,165"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="189,186,267,167,268,172,190,191"/>
+<area shape="rect" id="Node000005" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#af78a4bce9f6423e6fc1783ba71327ea2" title="설정 로드" alt="" coords="269,189,476,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="194,208,254,208,254,213,194,213"/>
+<area shape="rect" id="Node000006" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#add606c618a72a3f4671a40be67d8fe20" title="플러그인별 초기화 로직" alt="" coords="270,256,475,299"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="190,230,268,249,267,254,189,235"/>
+<area shape="rect" id="Node000007" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a1310496b274ccb516167b4ee0bc4d441" title="이벤트 핸들러 등록" alt="" coords="261,323,484,381"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="128,230,179,270,243,308,255,314,252,319,240,313,176,274,125,235"/>
+<area shape="rect" id="Node000008" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a7b821b7024c8b476f23f1a9400f99b2d" title="서비스 등록 (DI 컨테이너에 등록할 서비스들)" alt="" coords="252,405,492,448"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="114,231,134,267,162,310,199,354,243,391,251,396,248,400,240,395,195,358,158,313,129,269,109,234"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,38,535,41,535,47,503,43"/>
+</map>

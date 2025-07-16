@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnConfigChanged" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnConfigChanged">
+<area shape="rect" id="Node000001" title="설정 변경 시 호출" alt="" coords="265,5,512,48"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a18bafe4fcad53526a86502bf7848a10a" title="플러그인 설정 적용" alt="" coords="5,5,217,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,29,217,29,217,24,249,24"/>
+</map>

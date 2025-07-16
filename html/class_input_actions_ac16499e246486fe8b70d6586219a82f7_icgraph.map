@@ -1,0 +1,11 @@
+<map id="InputActions.InputActions" name="InputActions.InputActions">
+<area shape="rect" id="Node000001" title="Constructs a new instance." alt="" coords="550,47,721,73"/>
+<area shape="rect" id="Node000002" href="$struct_input_actions_1_1_player_actions.html#a91b990b62a6d42058850dd491b218f6e" title="Construct a new instance of the input action map wrapper class." alt="" coords="301,8,484,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,50,485,44,485,38,535,45"/>
+<area shape="rect" id="Node000004" href="$struct_input_actions_1_1_u_i_actions.html#a005301cd7daf67ff3019ab89e6713be5" title="Construct a new instance of the input action map wrapper class." alt="" coords="284,76,502,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="535,75,503,79,502,73,534,70"/>
+<area shape="rect" id="Node000003" href="$struct_input_actions_1_1_player_actions.html#ac5e177257dfbe618c5a40bc764d57e4c" title="Implicitly converts an &#160;to an &#160;instance." alt="" coords="5,5,236,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="285,31,236,30,236,25,285,26"/>
+<area shape="rect" id="Node000005" href="$struct_input_actions_1_1_u_i_actions.html#ad97e248538c28e60dfa5c98246b565b6" title="Implicitly converts an &#160;to an &#160;instance." alt="" coords="17,72,224,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="268,94,225,94,225,89,268,88"/>
+</map>

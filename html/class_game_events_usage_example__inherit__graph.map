@@ -1,0 +1,5 @@
+<map id="GameEventsUsageExample" name="GameEventsUsageExample">
+<area shape="rect" id="Node000001" title="GameEvents 시스템 사용 예제 이벤트 기반 시스템을 사용하여 매니저들 간의 통신을 보여줍니다" alt="" coords="5,123,181,405"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="43,5,144,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,90,96,123,90,123,90,90"/>
+</map>

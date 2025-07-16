@@ -1,0 +1,21 @@
+<map id="DeulPie.ExtraInk.Events.BaseEventChannel" name="DeulPie.ExtraInk.Events.BaseEventChannel">
+<area shape="rect" id="Node000001" title="모든 이벤트 채널의 기본 클래스 ScriptableObject 기반으로 Unity Inspector와 완벽히 통합됨" alt="" coords="671,123,842,443"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_character_event_channel.html" title="캐릭터 관련 이벤트를 위한 특화된 이벤트 채널 캐릭터ID, 감정, 위치, 효과를 포함하는 복합 이벤트" alt="" coords="5,491,164,747"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="657,303,551,328,426,366,361,391,296,420,234,454,177,493,166,502,162,498,174,489,232,449,294,415,359,386,424,361,549,322,656,298"/>
+<area shape="rect" id="Node000004" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_dialogue_event_channel.html" title="대화 관련 이벤트를 위한 특화된 이벤트 채널 대화 텍스트와 화자 정보를 포함하는 이벤트" alt="" coords="188,501,347,736"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="659,323,589,353,511,392,433,439,361,493,348,504,345,501,358,489,430,434,509,387,586,348,657,318"/>
+<area shape="rect" id="Node000005" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_float_event_channel.html" title="실수 파라미터를 가진 이벤트 채널 볼륨, 속도, 진행도 등의 실수 값 전달에 사용" alt="" coords="371,501,540,736"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="663,377,553,492,541,507,537,503,549,489,659,373"/>
+<area shape="rect" id="Node000006" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_game_object_event_channel.html" title="GameObject 파라미터를 가진 이벤트 채널 오브젝트 참조, 생성/제거 이벤트 등에 사용" alt="" coords="564,504,750,733"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="707,458,693,505,688,503,702,456"/>
+<area shape="rect" id="Node000007" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_int_event_channel.html" title="정수 파라미터를 가진 이벤트 채널 인덱스, 레벨, 수량 등의 정수 값 전달에 사용" alt="" coords="774,512,942,725"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="812,456,829,511,823,513,807,458"/>
+<area shape="rect" id="Node000008" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_string_event_channel.html" title="문자열 파라미터를 가진 이벤트 채널 텍스트, ID, 메시지 전달에 사용" alt="" coords="967,533,1125,704"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="855,377,956,489,990,532,985,535,952,492,851,381"/>
+<area shape="rect" id="Node000009" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_vector3_event_channel.html" title="Vector3 파라미터를 가진 이벤트 채널 위치, 회전, 스케일 등의 3D 벡터 값 전달에 사용" alt="" coords="1149,501,1308,736"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="857,320,924,351,997,390,1071,436,1140,489,1152,500,1148,504,1136,493,1068,440,995,394,921,356,855,325"/>
+<area shape="rect" id="Node000010" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_void_event_channel.html" title="파라미터가 없는 간단한 이벤트 채널 Unity Inspector에서 쉽게 연결 가능" alt="" coords="1332,533,1491,704"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="857,299,961,324,1082,363,1144,388,1207,417,1266,450,1322,489,1345,509,1364,532,1360,535,1341,512,1319,493,1264,455,1204,422,1142,393,1080,368,959,330,856,304"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="703,5,810,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="759,89,759,123,754,123,754,89"/>
+</map>
