@@ -145,12 +145,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config_storage.html">DeulPie.ExtraInk.Plugins.IPluginConfigStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  432</span>        {</div>
-<div class="line"><span class="lineno">  433</span>            <span class="keywordtype">string</span> key = CONFIG_PREFIX + pluginId;</div>
-<div class="line"><span class="lineno">  434</span>            <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.DeleteKey(key);</div>
-<div class="line"><span class="lineno">  435</span>        }</div>
-<div class="ttc" id="anamespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_html_aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e"><div class="ttname"><a href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">DeulPie.ExtraInk.Core.Settings.SettingsStorageType.PlayerPrefs</a></div><div class="ttdeci">@ PlayerPrefs</div><div class="ttdoc">Unity PlayerPrefs (기본, WebGL 필수)</div><div class="ttdef"><b>Definition</b> SettingsStorageFactory.cs:116</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a09d1e3509007fe33e6bed697d67a4510" name="a09d1e3509007fe33e6bed697d67a4510"></a>
@@ -169,11 +164,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config_storage.html">DeulPie.ExtraInk.Plugins.IPluginConfigStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  426</span>        {</div>
-<div class="line"><span class="lineno">  427</span>            <span class="keywordtype">string</span> key = CONFIG_PREFIX + pluginId;</div>
-<div class="line"><span class="lineno">  428</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.HasKey(key);</div>
-<div class="line"><span class="lineno">  429</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0cd2000682bfd35bb3803bc235daa6f8" name="a0cd2000682bfd35bb3803bc235daa6f8"></a>
@@ -200,26 +191,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  405</span>                                                        : IPluginConfig</div>
-<div class="line"><span class="lineno">  406</span>        {</div>
-<div class="line"><span class="lineno">  407</span>            <span class="keywordtype">string</span> key = CONFIG_PREFIX + pluginId;</div>
-<div class="line"><span class="lineno">  408</span>            <span class="keywordtype">string</span> json = <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.GetString(key, <span class="keyword">null</span>);</div>
-<div class="line"><span class="lineno">  409</span>            </div>
-<div class="line"><span class="lineno">  410</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(json))</div>
-<div class="line"><span class="lineno">  411</span>            {</div>
-<div class="line"><span class="lineno">  412</span>                <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  413</span>                {</div>
-<div class="line"><span class="lineno">  414</span>                    <span class="keywordflow">return</span> JsonUtility.FromJson&lt;T&gt;(json);</div>
-<div class="line"><span class="lineno">  415</span>                }</div>
-<div class="line"><span class="lineno">  416</span>                <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  417</span>                {</div>
-<div class="line"><span class="lineno">  418</span>                    Debug.LogException(ex);</div>
-<div class="line"><span class="lineno">  419</span>                }</div>
-<div class="line"><span class="lineno">  420</span>            }</div>
-<div class="line"><span class="lineno">  421</span>            </div>
-<div class="line"><span class="lineno">  422</span>            <span class="keywordflow">return</span> <span class="keywordflow">default</span>(T);</div>
-<div class="line"><span class="lineno">  423</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a19b831c9eb130e857f954b7caaca369f" name="a19b831c9eb130e857f954b7caaca369f"></a>
@@ -242,20 +214,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config_storage.html">DeulPie.ExtraInk.Plugins.IPluginConfigStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  391</span>        {</div>
-<div class="line"><span class="lineno">  392</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  393</span>            {</div>
-<div class="line"><span class="lineno">  394</span>                <span class="keywordtype">string</span> key = CONFIG_PREFIX + pluginId;</div>
-<div class="line"><span class="lineno">  395</span>                <span class="keywordtype">string</span> json = JsonUtility.ToJson(config);</div>
-<div class="line"><span class="lineno">  396</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.SetString(key, json);</div>
-<div class="line"><span class="lineno">  397</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.Save();</div>
-<div class="line"><span class="lineno">  398</span>            }</div>
-<div class="line"><span class="lineno">  399</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  400</span>            {</div>
-<div class="line"><span class="lineno">  401</span>                Debug.LogException(ex);</div>
-<div class="line"><span class="lineno">  402</span>            }</div>
-<div class="line"><span class="lineno">  403</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

@@ -175,12 +175,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructor Injection을 사용하는 생성자 </p>
-<div class="fragment"><div class="line"><span class="lineno">  317</span>    {</div>
-<div class="line"><span class="lineno">  318</span>        _characterManager = characterManager;</div>
-<div class="line"><span class="lineno">  319</span>        _audioManager = audioManager;</div>
-<div class="line"><span class="lineno">  320</span>        _dialogueManager = dialogueManager;</div>
-<div class="line"><span class="lineno">  321</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2d1e644019b1cfa8121cc7cdf2b87d7b" name="a2d1e644019b1cfa8121cc7cdf2b87d7b"></a>
@@ -199,10 +194,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>기본 생성자 (DI 컨테이너에서 사용) </p>
-<div class="fragment"><div class="line"><span class="lineno">  327</span>    {</div>
-<div class="line"><span class="lineno">  328</span>        <span class="comment">// DI 컨테이너에서 자동으로 의존성 해결</span></div>
-<div class="line"><span class="lineno">  329</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -224,17 +216,7 @@ Properties</h2></td></tr>
 <p>서비스 정리 </p>
 
 <p>Implements <a class="el" href="interface_i_service.html#a2705bc9b4bf4571ed904c9057f341931">IService</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  354</span>    {</div>
-<div class="line"><span class="lineno">  355</span>        <span class="keywordflow">if</span> (!<a class="code hl_property" href="#a181ab19ab29296da01e34534e25c275d">IsInitialized</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  356</span>        </div>
-<div class="line"><span class="lineno">  357</span>        Debug.Log(<span class="stringliteral">&quot;[ExampleServiceWithDI] Cleaning up service...&quot;</span>);</div>
-<div class="line"><span class="lineno">  358</span>        </div>
-<div class="line"><span class="lineno">  359</span>        <span class="comment">// 정리 로직</span></div>
-<div class="line"><span class="lineno">  360</span>        </div>
-<div class="line"><span class="lineno">  361</span>        <a class="code hl_property" href="#a181ab19ab29296da01e34534e25c275d">IsInitialized</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  362</span>    }</div>
-<div class="ttc" id="aclass_example_service_with_d_i_html_a181ab19ab29296da01e34534e25c275d"><div class="ttname"><a href="#a181ab19ab29296da01e34534e25c275d">ExampleServiceWithDI.IsInitialized</a></div><div class="ttdeci">bool IsInitialized</div><div class="ttdoc">서비스가 초기화되었는지 여부</div><div class="ttdef"><b>Definition</b> DIUsageExample.cs:306</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a15e38cd40bdecc9a19b3134edc859ede" name="a15e38cd40bdecc9a19b3134edc859ede"></a>
@@ -255,27 +237,7 @@ Properties</h2></td></tr>
 <p>서비스 초기화 </p>
 
 <p>Implements <a class="el" href="interface_i_service.html#a9d82185fa4a3ebbbde95691fac48c516">IService</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  332</span>    {</div>
-<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">if</span> (<a class="code hl_property" href="#a181ab19ab29296da01e34534e25c275d">IsInitialized</a>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  334</span>        </div>
-<div class="line"><span class="lineno">  335</span>        Debug.Log(<span class="stringliteral">&quot;[ExampleServiceWithDI] Initializing service with injected dependencies...&quot;</span>);</div>
-<div class="line"><span class="lineno">  336</span>        </div>
-<div class="line"><span class="lineno">  337</span>        <span class="comment">// 의존성이 주입되었는지 확인</span></div>
-<div class="line"><span class="lineno">  338</span>        <span class="keywordflow">if</span> (_characterManager != <span class="keyword">null</span> &amp;&amp; _audioManager != <span class="keyword">null</span> &amp;&amp; _dialogueManager != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  339</span>        {</div>
-<div class="line"><span class="lineno">  340</span>            Debug.Log(<span class="stringliteral">&quot;[ExampleServiceWithDI] All dependencies injected successfully&quot;</span>);</div>
-<div class="line"><span class="lineno">  341</span>            </div>
-<div class="line"><span class="lineno">  342</span>            <span class="comment">// 서비스 로직 초기화</span></div>
-<div class="line"><span class="lineno">  343</span>            InitializeServiceLogic();</div>
-<div class="line"><span class="lineno">  344</span>        }</div>
-<div class="line"><span class="lineno">  345</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  346</span>        {</div>
-<div class="line"><span class="lineno">  347</span>            Debug.LogWarning(<span class="stringliteral">&quot;[ExampleServiceWithDI] Some dependencies are missing&quot;</span>);</div>
-<div class="line"><span class="lineno">  348</span>        }</div>
-<div class="line"><span class="lineno">  349</span>        </div>
-<div class="line"><span class="lineno">  350</span>        <a class="code hl_property" href="#a181ab19ab29296da01e34534e25c275d">IsInitialized</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  351</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
@@ -328,8 +290,7 @@ Properties</h2></td></tr>
 <p>서비스가 초기화되었는지 여부 </p>
 
 <p>Implements <a class="el" href="interface_i_service.html#a5d661807adc3981893113c275749599d">IService</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  306</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="accd81ddadbe4555bb2ddfce8ff4b7770" name="accd81ddadbe4555bb2ddfce8ff4b7770"></a>

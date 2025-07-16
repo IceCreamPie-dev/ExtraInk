@@ -127,10 +127,14 @@ Collaboration diagram for SimpleSpriteCharacterComponent:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7709a3a74c2c56be249c3ccd753f948f" id="r_a7709a3a74c2c56be249c3ccd753f948f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7709a3a74c2c56be249c3ccd753f948f">Initialize</a> (<a class="el" href="class_character_data.html">CharacterData</a> data)</td></tr>
 <tr class="memdesc:a7709a3a74c2c56be249c3ccd753f948f"><td class="mdescLeft">&#160;</td><td class="mdescRight">캐릭터 초기화 - CharacterData로부터 설정을 가져옵니다  <br /></td></tr>
-<tr class="memitem:aa36f49d291fda3e81e549a6d3af5091a" id="r_aa36f49d291fda3e81e549a6d3af5091a"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa36f49d291fda3e81e549a6d3af5091a">ChangeEmotion</a> (string emotion)</td></tr>
-<tr class="memitem:a452d413272fdf07293365334bd552e11" id="r_a452d413272fdf07293365334bd552e11"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a452d413272fdf07293365334bd552e11">Show</a> (string effectType=&quot;fade&quot;)</td></tr>
-<tr class="memitem:a0b2a946f36ee1c13796f7f9095ad5956" id="r_a0b2a946f36ee1c13796f7f9095ad5956"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b2a946f36ee1c13796f7f9095ad5956">Hide</a> (string effectType=&quot;fade&quot;)</td></tr>
-<tr class="memitem:ab9c35aa2bd52c484190526d88dae0225" id="r_ab9c35aa2bd52c484190526d88dae0225"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c35aa2bd52c484190526d88dae0225">MoveTo</a> (Vector3 targetPosition)</td></tr>
+<tr class="memitem:aa36f49d291fda3e81e549a6d3af5091a" id="r_aa36f49d291fda3e81e549a6d3af5091a"><td class="memItemLeft" align="right" valign="top"><a id="aa36f49d291fda3e81e549a6d3af5091a" name="aa36f49d291fda3e81e549a6d3af5091a"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeEmotion</b> (string emotion)</td></tr>
+<tr class="memitem:a452d413272fdf07293365334bd552e11" id="r_a452d413272fdf07293365334bd552e11"><td class="memItemLeft" align="right" valign="top"><a id="a452d413272fdf07293365334bd552e11" name="a452d413272fdf07293365334bd552e11"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> (string effectType=&quot;fade&quot;)</td></tr>
+<tr class="memitem:a0b2a946f36ee1c13796f7f9095ad5956" id="r_a0b2a946f36ee1c13796f7f9095ad5956"><td class="memItemLeft" align="right" valign="top"><a id="a0b2a946f36ee1c13796f7f9095ad5956" name="a0b2a946f36ee1c13796f7f9095ad5956"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> (string effectType=&quot;fade&quot;)</td></tr>
+<tr class="memitem:ab9c35aa2bd52c484190526d88dae0225" id="r_ab9c35aa2bd52c484190526d88dae0225"><td class="memItemLeft" align="right" valign="top"><a id="ab9c35aa2bd52c484190526d88dae0225" name="ab9c35aa2bd52c484190526d88dae0225"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>MoveTo</b> (Vector3 targetPosition)</td></tr>
 <tr class="memitem:aa1ed9ae9a9bd4a80c10e7dfde2498d78" id="r_aa1ed9ae9a9bd4a80c10e7dfde2498d78"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ed9ae9a9bd4a80c10e7dfde2498d78">GetCurrentEmotion</a> ()</td></tr>
 <tr class="memdesc:aa1ed9ae9a9bd4a80c10e7dfde2498d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">현재 감정 상태 반환  <br /></td></tr>
 <tr class="memitem:a141787830d19f69410ab84487dad2f05" id="r_a141787830d19f69410ab84487dad2f05"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141787830d19f69410ab84487dad2f05">GetCurrentSprite</a> ()</td></tr>
@@ -217,59 +221,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_base_character_component.html">BaseCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>    {</div>
-<div class="line"><span class="lineno">   22</span>        base.Awake();</div>
-<div class="line"><span class="lineno">   23</span>        </div>
-<div class="line"><span class="lineno">   24</span>        <span class="comment">// SpriteRenderer 자동 찾기</span></div>
-<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">if</span> (spriteRenderer == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   26</span>        {</div>
-<div class="line"><span class="lineno">   27</span>            spriteRenderer = GetComponent&lt;SpriteRenderer&gt;();</div>
-<div class="line"><span class="lineno">   28</span>            <span class="keywordflow">if</span> (spriteRenderer == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   29</span>            {</div>
-<div class="line"><span class="lineno">   30</span>                spriteRenderer = gameObject.AddComponent&lt;SpriteRenderer&gt;();</div>
-<div class="line"><span class="lineno">   31</span>            }</div>
-<div class="line"><span class="lineno">   32</span>        }</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa36f49d291fda3e81e549a6d3af5091a" name="aa36f49d291fda3e81e549a6d3af5091a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa36f49d291fda3e81e549a6d3af5091a">&#9670;&#160;</a></span>ChangeEmotion()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void SimpleSpriteCharacterComponent.ChangeEmotion </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>emotion</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   49</span>    {</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">if</span> (characterData == <span class="keyword">null</span> || spriteRenderer == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   51</span>        </div>
-<div class="line"><span class="lineno">   52</span>        currentEmotion = emotion;</div>
-<div class="line"><span class="lineno">   53</span>        Sprite newSprite = characterData.감정_스프라이트_가져오기(emotion);</div>
-<div class="line"><span class="lineno">   54</span>        </div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">if</span> (newSprite != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   56</span>        {</div>
-<div class="line"><span class="lineno">   57</span>            spriteRenderer.sprite = newSprite;</div>
-<div class="line"><span class="lineno">   58</span>            currentSprite = newSprite;</div>
-<div class="line"><span class="lineno">   59</span>            </div>
-<div class="line"><span class="lineno">   60</span>            <span class="comment">// 개별 감정 설정이 있다면 적용</span></div>
-<div class="line"><span class="lineno">   61</span>            var emotionSprite = characterData.감정_스프라이트들.Find(e =&gt; e.emotionName == emotion);</div>
-<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">if</span> (emotionSprite != <span class="keyword">null</span> &amp;&amp; emotionSprite.useCustomSettings)</div>
-<div class="line"><span class="lineno">   63</span>            {</div>
-<div class="line"><span class="lineno">   64</span>                ApplyEmotionSettings(emotionSprite.customScale, emotionSprite.customOffset, emotionSprite.customMirror);</div>
-<div class="line"><span class="lineno">   65</span>            }</div>
-<div class="line"><span class="lineno">   66</span>            </div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_function" href="class_base_character_component.html#a5b2eadd67a9fdcee04d2e58a32214eb0">NotifyStateChanged</a>(<span class="stringliteral">&quot;emotion&quot;</span>, emotion);</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="ttc" id="aclass_base_character_component_html_a5b2eadd67a9fdcee04d2e58a32214eb0"><div class="ttname"><a href="class_base_character_component.html#a5b2eadd67a9fdcee04d2e58a32214eb0">BaseCharacterComponent.NotifyStateChanged</a></div><div class="ttdeci">void NotifyStateChanged(string stateName, object value)</div><div class="ttdoc">캐릭터 상태 변경 알림</div><div class="ttdef"><b>Definition</b> BaseCharacterComponent.cs:177</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a5342ca1e5a938ee61631518d267cd1ab" name="a5342ca1e5a938ee61631518d267cd1ab"></a>
@@ -309,28 +261,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_base_character_component.html#a5b381bd815b9201002ea94c98f62a54f">BaseCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  327</span>    {</div>
-<div class="line"><span class="lineno">  328</span>        <span class="keywordflow">switch</span> (actionName.ToLower())</div>
-<div class="line"><span class="lineno">  329</span>        {</div>
-<div class="line"><span class="lineno">  330</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;shake&quot;</span>:</div>
-<div class="line"><span class="lineno">  331</span>                ShakeEffect(parameters.Length &gt; 0 ? (<span class="keywordtype">float</span>)parameters[0] : 0.1f);</div>
-<div class="line"><span class="lineno">  332</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  333</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;bounce&quot;</span>:</div>
-<div class="line"><span class="lineno">  334</span>                BounceEffect();</div>
-<div class="line"><span class="lineno">  335</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  336</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;glow&quot;</span>:</div>
-<div class="line"><span class="lineno">  337</span>                <span class="comment">// 글로우 효과 (SpriteRenderer에 Material 변경 등)</span></div>
-<div class="line"><span class="lineno">  338</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  339</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;rotate&quot;</span>:</div>
-<div class="line"><span class="lineno">  340</span>                <span class="keywordtype">float</span> angle = parameters.Length &gt; 0 ? (float)parameters[0] : 360f;</div>
-<div class="line"><span class="lineno">  341</span>                RotateEffect(angle);</div>
-<div class="line"><span class="lineno">  342</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  343</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  344</span>                Debug.LogWarning($<span class="stringliteral">&quot;Unknown custom action: {actionName}&quot;</span>);</div>
-<div class="line"><span class="lineno">  345</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  346</span>        }</div>
-<div class="line"><span class="lineno">  347</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa1ed9ae9a9bd4a80c10e7dfde2498d78" name="aa1ed9ae9a9bd4a80c10e7dfde2498d78"></a>
@@ -371,54 +302,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 
 </div>
 </div>
-<a id="a0b2a946f36ee1c13796f7f9095ad5956" name="a0b2a946f36ee1c13796f7f9095ad5956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2a946f36ee1c13796f7f9095ad5956">&#9670;&#160;</a></span>Hide()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void SimpleSpriteCharacterComponent.Hide </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>effectType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;fade&quot;</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">switch</span> (effectType.ToLower())</div>
-<div class="line"><span class="lineno">  110</span>        {</div>
-<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">  112</span>                HideWithFade();</div>
-<div class="line"><span class="lineno">  113</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">  115</span>                HideWithScale();</div>
-<div class="line"><span class="lineno">  116</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_left&quot;</span>:</div>
-<div class="line"><span class="lineno">  118</span>                HideWithSlide(Vector3.left * 5f);</div>
-<div class="line"><span class="lineno">  119</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  120</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_right&quot;</span>:</div>
-<div class="line"><span class="lineno">  121</span>                HideWithSlide(Vector3.right * 5f);</div>
-<div class="line"><span class="lineno">  122</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  123</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_up&quot;</span>:</div>
-<div class="line"><span class="lineno">  124</span>                HideWithSlide(Vector3.up * 5f);</div>
-<div class="line"><span class="lineno">  125</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_down&quot;</span>:</div>
-<div class="line"><span class="lineno">  127</span>                HideWithSlide(Vector3.down * 5f);</div>
-<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  129</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;instant&quot;</span>:</div>
-<div class="line"><span class="lineno">  130</span>                HideInstant();</div>
-<div class="line"><span class="lineno">  131</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  133</span>                HideWithFade();</div>
-<div class="line"><span class="lineno">  134</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  135</span>        }</div>
-<div class="line"><span class="lineno">  136</span>        </div>
-<div class="line"><span class="lineno">  137</span>        <a class="code hl_function" href="class_base_character_component.html#a5b2eadd67a9fdcee04d2e58a32214eb0">NotifyStateChanged</a>(<span class="stringliteral">&quot;visibility&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  138</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a7709a3a74c2c56be249c3ccd753f948f" name="a7709a3a74c2c56be249c3ccd753f948f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7709a3a74c2c56be249c3ccd753f948f">&#9670;&#160;</a></span>Initialize()</h2>
 
@@ -451,41 +334,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_base_character_component.html#a925488f45c65f9ecd3a633a1d9a23b3e">BaseCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>    {</div>
-<div class="line"><span class="lineno">   37</span>        base.Initialize(data);</div>
-<div class="line"><span class="lineno">   38</span>        </div>
-<div class="line"><span class="lineno">   39</span>        characterData = data;</div>
-<div class="line"><span class="lineno">   40</span>        </div>
-<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">if</span> (data != <span class="keyword">null</span> &amp;&amp; data.displayMode == CharacterData.CharacterDisplayMode.Sprite)</div>
-<div class="line"><span class="lineno">   42</span>        {</div>
-<div class="line"><span class="lineno">   43</span>            <span class="comment">// 기본 스프라이트 설정</span></div>
-<div class="line"><span class="lineno">   44</span>            ChangeEmotion(<span class="stringliteral">&quot;default&quot;</span>);</div>
-<div class="line"><span class="lineno">   45</span>        }</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab9c35aa2bd52c484190526d88dae0225" name="ab9c35aa2bd52c484190526d88dae0225"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9c35aa2bd52c484190526d88dae0225">&#9670;&#160;</a></span>MoveTo()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void SimpleSpriteCharacterComponent.MoveTo </td>
-          <td>(</td>
-          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>targetPosition</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  141</span>    {</div>
-<div class="line"><span class="lineno">  142</span>        <span class="comment">// ICPTween을 사용한 부드러운 이동</span></div>
-<div class="line"><span class="lineno">  143</span>        transform.ICPMove(targetPosition, animationDuration);</div>
-<div class="line"><span class="lineno">  144</span>        </div>
-<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="class_base_character_component.html#a5b2eadd67a9fdcee04d2e58a32214eb0">NotifyStateChanged</a>(<span class="stringliteral">&quot;position&quot;</span>, targetPosition);</div>
-<div class="line"><span class="lineno">  146</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a48cd97e4e0967104e7b8dfbe145d74b5" name="a48cd97e4e0967104e7b8dfbe145d74b5"></a>
@@ -520,14 +369,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_base_character_component.html#a9d91fbe36f05cc95c3b4b094ab8b4139">BaseCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  306</span>    {</div>
-<div class="line"><span class="lineno">  307</span>        <span class="comment">// 말하기 시 살짝 스케일업 효과 (예시)</span></div>
-<div class="line"><span class="lineno">  308</span>        Vector3 originalScale = transform.localScale;</div>
-<div class="line"><span class="lineno">  309</span>        Vector3 talkingScale = originalScale * 1.05f;</div>
-<div class="line"><span class="lineno">  310</span>        </div>
-<div class="line"><span class="lineno">  311</span>        transform.ICPScale(talkingScale, 0.1f);</div>
-<div class="line"><span class="lineno">  312</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad48f9ed5f7df2aaf02a5aee0b8d591c9" name="ad48f9ed5f7df2aaf02a5aee0b8d591c9"></a>
@@ -556,64 +398,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMirror</b> = f
 <p>대사 끝났을 때 호출 (선택적 구현) </p>
 
 <p>Reimplemented from <a class="el" href="class_base_character_component.html#aaa545000b8bb4746992f3f1edb8c6d9e">BaseCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  315</span>    {</div>
-<div class="line"><span class="lineno">  316</span>        <span class="comment">// 말하기 끝나면 원래 스케일로 복귀 (예시)</span></div>
-<div class="line"><span class="lineno">  317</span>        Vector3 originalScale = <span class="keyword">new</span> Vector3(defaultScale.x, defaultScale.y, 1f);</div>
-<div class="line"><span class="lineno">  318</span>        </div>
-<div class="line"><span class="lineno">  319</span>        transform.ICPScale(originalScale, 0.1f);</div>
-<div class="line"><span class="lineno">  320</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a452d413272fdf07293365334bd552e11" name="a452d413272fdf07293365334bd552e11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452d413272fdf07293365334bd552e11">&#9670;&#160;</a></span>Show()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void SimpleSpriteCharacterComponent.Show </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>effectType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;fade&quot;</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   72</span>    {</div>
-<div class="line"><span class="lineno">   73</span>        gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   74</span>        </div>
-<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">switch</span> (effectType.ToLower())</div>
-<div class="line"><span class="lineno">   76</span>        {</div>
-<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">   78</span>                ShowWithFade();</div>
-<div class="line"><span class="lineno">   79</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;bounce&quot;</span>:</div>
-<div class="line"><span class="lineno">   82</span>                ShowWithScale();</div>
-<div class="line"><span class="lineno">   83</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   84</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_left&quot;</span>:</div>
-<div class="line"><span class="lineno">   85</span>                ShowWithSlide(Vector3.left * 5f);</div>
-<div class="line"><span class="lineno">   86</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   87</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_right&quot;</span>:</div>
-<div class="line"><span class="lineno">   88</span>                ShowWithSlide(Vector3.right * 5f);</div>
-<div class="line"><span class="lineno">   89</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_up&quot;</span>:</div>
-<div class="line"><span class="lineno">   91</span>                ShowWithSlide(Vector3.up * 5f);</div>
-<div class="line"><span class="lineno">   92</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide_down&quot;</span>:</div>
-<div class="line"><span class="lineno">   94</span>                ShowWithSlide(Vector3.down * 5f);</div>
-<div class="line"><span class="lineno">   95</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;instant&quot;</span>:</div>
-<div class="line"><span class="lineno">   97</span>                ShowInstant();</div>
-<div class="line"><span class="lineno">   98</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  100</span>                ShowWithFade();</div>
-<div class="line"><span class="lineno">  101</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  102</span>        }</div>
-<div class="line"><span class="lineno">  103</span>        </div>
-<div class="line"><span class="lineno">  104</span>        <a class="code hl_function" href="class_base_character_component.html#a5b2eadd67a9fdcee04d2e58a32214eb0">NotifyStateChanged</a>(<span class="stringliteral">&quot;visibility&quot;</span>, <span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  105</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

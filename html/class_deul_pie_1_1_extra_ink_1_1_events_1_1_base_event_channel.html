@@ -146,7 +146,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aac2ec12c7c1ecf4f90f7341673803eeb" id="r_aac2ec12c7c1ecf4f90f7341673803eeb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac2ec12c7c1ecf4f90f7341673803eeb">OnEnable</a> ()</td></tr>
+<tr class="memitem:aac2ec12c7c1ecf4f90f7341673803eeb" id="r_aac2ec12c7c1ecf4f90f7341673803eeb"><td class="memItemLeft" align="right" valign="top"><a id="aac2ec12c7c1ecf4f90f7341673803eeb" name="aac2ec12c7c1ecf4f90f7341673803eeb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
 <tr class="memitem:a50ec848c6fd2c4355b50ed4a22e5e0f2" id="r_a50ec848c6fd2c4355b50ed4a22e5e0f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ec848c6fd2c4355b50ed4a22e5e0f2">DebugLog</a> (string message)</td></tr>
 <tr class="memdesc:a50ec848c6fd2c4355b50ed4a22e5e0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">디버그 로그 출력  <br /></td></tr>
 <tr class="memitem:ac8284a57d087113d3e87c83bfb401bc1" id="r_ac8284a57d087113d3e87c83bfb401bc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8284a57d087113d3e87c83bfb401bc1">UpdateSubscriberCount</a> (int count)</td></tr>
@@ -226,13 +227,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>디버그 로그 출력 </p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>        {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">if</span> (enableDebugLog)</div>
-<div class="line"><span class="lineno">   58</span>            {</div>
-<div class="line"><span class="lineno">   59</span>                Debug.Log($<span class="stringliteral">&quot;[EventChannel:{channelId}] {message}&quot;</span>);</div>
-<div class="line"><span class="lineno">   60</span>            }</div>
-<div class="line"><span class="lineno">   61</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_a50ec848c6fd2c4355b50ed4a22e5e0f2_icgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_a50ec848c6fd2c4355b50ed4a22e5e0f2_icgraph" loading="lazy" alt=""/></div>
@@ -339,37 +334,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aac2ec12c7c1ecf4f90f7341673803eeb" name="aac2ec12c7c1ecf4f90f7341673803eeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac2ec12c7c1ecf4f90f7341673803eeb">&#9670;&#160;</a></span>OnEnable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Events.BaseEventChannel.OnEnable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   45</span>        {</div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(channelId))</div>
-<div class="line"><span class="lineno">   47</span>            {</div>
-<div class="line"><span class="lineno">   48</span>                channelId = name;</div>
-<div class="line"><span class="lineno">   49</span>            }</div>
-<div class="line"><span class="lineno">   50</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a8b03aaa7e420db4333b0632ecbc4403c" name="a8b03aaa7e420db4333b0632ecbc4403c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b03aaa7e420db4333b0632ecbc4403c">&#9670;&#160;</a></span>ToString()</h2>
 
@@ -386,10 +350,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>채널 정보를 문자열로 반환 </p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>        {</div>
-<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">return</span> $<span class="stringliteral">&quot;EventChannel[{channelId}]: {description} (Subscribers: {subscriberCount})&quot;</span>;</div>
-<div class="line"><span class="lineno">   87</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac8284a57d087113d3e87c83bfb401bc1" name="ac8284a57d087113d3e87c83bfb401bc1"></a>
@@ -416,10 +377,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>구독자 수 업데이트 </p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>        {</div>
-<div class="line"><span class="lineno">   68</span>            subscriberCount = count;</div>
-<div class="line"><span class="lineno">   69</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_ac8284a57d087113d3e87c83bfb401bc1_icgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_ac8284a57d087113d3e87c83bfb401bc1_icgraph" loading="lazy" alt=""/></div>

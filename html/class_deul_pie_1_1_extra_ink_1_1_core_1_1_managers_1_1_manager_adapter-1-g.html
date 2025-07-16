@@ -130,7 +130,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a97c827e549ff878c2f92d1c83b8cf970" id="r_a97c827e549ff878c2f92d1c83b8cf970"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97c827e549ff878c2f92d1c83b8cf970">Awake</a> ()</td></tr>
+<tr class="memitem:a97c827e549ff878c2f92d1c83b8cf970" id="r_a97c827e549ff878c2f92d1c83b8cf970"><td class="memItemLeft" align="right" valign="top"><a id="a97c827e549ff878c2f92d1c83b8cf970" name="a97c827e549ff878c2f92d1c83b8cf970"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
 <tr class="memitem:a52694939158e5fc37cef59389c2d8883" id="r_a52694939158e5fc37cef59389c2d8883"><td class="memItemLeft" align="right" valign="top"><a id="a52694939158e5fc37cef59389c2d8883" name="a52694939158e5fc37cef59389c2d8883"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInitialize</b> ()</td></tr>
 <tr class="memitem:ab5f775cf83f1fcc3e376b3e3b8d2f335" id="r_ab5f775cf83f1fcc3e376b3e3b8d2f335"><td class="memItemLeft" align="right" valign="top"><a id="ab5f775cf83f1fcc3e376b3e3b8d2f335" name="ab5f775cf83f1fcc3e376b3e3b8d2f335"></a>
@@ -156,36 +157,6 @@ Properties</h2></td></tr>
 </dl>
 </div>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a97c827e549ff878c2f92d1c83b8cf970" name="a97c827e549ff878c2f92d1c83b8cf970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97c827e549ff878c2f92d1c83b8cf970">&#9670;&#160;</a></span>Awake()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Core.Managers.ManagerAdapter&lt; T &gt;.Awake </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  382</span>        {</div>
-<div class="line"><span class="lineno">  383</span>            _adaptedManager = GetComponent&lt;T&gt;();</div>
-<div class="line"><span class="lineno">  384</span>            <span class="keywordflow">if</span> (_adaptedManager == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  385</span>                _adaptedManager = gameObject.AddComponent&lt;T&gt;();</div>
-<div class="line"><span class="lineno">  386</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a62289903707bd13b88349b4dc06cef65" name="a62289903707bd13b88349b4dc06cef65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62289903707bd13b88349b4dc06cef65">&#9670;&#160;</a></span>Cleanup()</h2>
 
@@ -210,13 +181,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_managers_1_1_i_manager_lifecycle.html">DeulPie.ExtraInk.Core.Managers.IManagerLifecycle</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  397</span>        {</div>
-<div class="line"><span class="lineno">  398</span>            <span class="keywordflow">if</span> (!IsInitialized) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  399</span>            </div>
-<div class="line"><span class="lineno">  400</span>            OnCleanup();</div>
-<div class="line"><span class="lineno">  401</span>            IsInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  402</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae2ac4749b5b62708a44581f196873952" name="ae2ac4749b5b62708a44581f196873952"></a>
@@ -243,13 +208,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_managers_1_1_i_manager_lifecycle.html">DeulPie.ExtraInk.Core.Managers.IManagerLifecycle</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  389</span>        {</div>
-<div class="line"><span class="lineno">  390</span>            <span class="keywordflow">if</span> (IsInitialized) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  391</span>            </div>
-<div class="line"><span class="lineno">  392</span>            OnInitialize();</div>
-<div class="line"><span class="lineno">  393</span>            IsInitialized = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  394</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
@@ -274,8 +233,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_managers_1_1_i_manager_lifecycle.html">DeulPie.ExtraInk.Core.Managers.IManagerLifecycle</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  379</span>{ <span class="keyword">get</span>; <span class="keyword">protected</span> <span class="keyword">set</span>; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

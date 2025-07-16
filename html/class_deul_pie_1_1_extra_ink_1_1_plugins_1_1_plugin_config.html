@@ -121,7 +121,8 @@ Collaboration diagram for DeulPie.ExtraInk.Plugins.PluginConfig:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad9322593e1bed5e4bbdae4708893b87e" id="r_ad9322593e1bed5e4bbdae4708893b87e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9322593e1bed5e4bbdae4708893b87e">PluginConfig</a> (string pluginId)</td></tr>
+<tr class="memitem:ad9322593e1bed5e4bbdae4708893b87e" id="r_ad9322593e1bed5e4bbdae4708893b87e"><td class="memItemLeft" align="right" valign="top"><a id="ad9322593e1bed5e4bbdae4708893b87e" name="ad9322593e1bed5e4bbdae4708893b87e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PluginConfig</b> (string pluginId)</td></tr>
 <tr class="memitem:ab08a04404a98c63926bc94cc22c68b95" id="r_ab08a04404a98c63926bc94cc22c68b95"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab08a04404a98c63926bc94cc22c68b95">GetSetting&lt; T &gt;</a> (string key, T defaultValue=default)</td></tr>
 <tr class="memitem:afa6bafb2df75e441e193f97a6c4f9c54" id="r_afa6bafb2df75e441e193f97a6c4f9c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa6bafb2df75e441e193f97a6c4f9c54">SetSetting&lt; T &gt;</a> (string key, T value)</td></tr>
 <tr class="memitem:aa5c911c5ac7dcbb6471baf2206f50201" id="r_aa5c911c5ac7dcbb6471baf2206f50201"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5c911c5ac7dcbb6471baf2206f50201">HasSetting</a> (string key)</td></tr>
@@ -136,28 +137,7 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>기본 플러그인 설정 구현체 </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad9322593e1bed5e4bbdae4708893b87e" name="ad9322593e1bed5e4bbdae4708893b87e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9322593e1bed5e4bbdae4708893b87e">&#9670;&#160;</a></span>PluginConfig()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DeulPie.ExtraInk.Plugins.PluginConfig.PluginConfig </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>pluginId</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  389</span>        {</div>
-<div class="line"><span class="lineno">  390</span>            this.pluginId = pluginId;</div>
-<div class="line"><span class="lineno">  391</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab08a04404a98c63926bc94cc22c68b95" name="ab08a04404a98c63926bc94cc22c68b95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab08a04404a98c63926bc94cc22c68b95">&#9670;&#160;</a></span>GetSetting&lt; T &gt;()</h2>
 
@@ -178,21 +158,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config.html">DeulPie.ExtraInk.Plugins.IPluginConfig</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  394</span>        {</div>
-<div class="line"><span class="lineno">  395</span>            <span class="keywordflow">if</span> (settings.TryGetValue(key, out <span class="keywordtype">object</span> value))</div>
-<div class="line"><span class="lineno">  396</span>            {</div>
-<div class="line"><span class="lineno">  397</span>                <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  398</span>                {</div>
-<div class="line"><span class="lineno">  399</span>                    <span class="keywordflow">return</span> (T)Convert.ChangeType(value, typeof(T));</div>
-<div class="line"><span class="lineno">  400</span>                }</div>
-<div class="line"><span class="lineno">  401</span>                <span class="keywordflow">catch</span></div>
-<div class="line"><span class="lineno">  402</span>                {</div>
-<div class="line"><span class="lineno">  403</span>                    <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><span class="lineno">  404</span>                }</div>
-<div class="line"><span class="lineno">  405</span>            }</div>
-<div class="line"><span class="lineno">  406</span>            <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><span class="lineno">  407</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aa5c911c5ac7dcbb6471baf2206f50201" name="aa5c911c5ac7dcbb6471baf2206f50201"></a>
@@ -211,10 +177,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config.html">DeulPie.ExtraInk.Plugins.IPluginConfig</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  415</span>        {</div>
-<div class="line"><span class="lineno">  416</span>            <span class="keywordflow">return</span> settings.ContainsKey(key);</div>
-<div class="line"><span class="lineno">  417</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3c638218418d0e9363bb181218952cbe" name="a3c638218418d0e9363bb181218952cbe"></a>
@@ -233,10 +196,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config.html">DeulPie.ExtraInk.Plugins.IPluginConfig</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  420</span>        {</div>
-<div class="line"><span class="lineno">  421</span>            settings.Remove(key);</div>
-<div class="line"><span class="lineno">  422</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afa6bafb2df75e441e193f97a6c4f9c54" name="afa6bafb2df75e441e193f97a6c4f9c54"></a>
@@ -259,10 +219,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config.html">DeulPie.ExtraInk.Plugins.IPluginConfig</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  410</span>        {</div>
-<div class="line"><span class="lineno">  411</span>            settings[key] = value;</div>
-<div class="line"><span class="lineno">  412</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
@@ -311,8 +268,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_config.html">DeulPie.ExtraInk.Plugins.IPluginConfig</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  385</span>{ <span class="keyword">get</span> =&gt; isEnabled; <span class="keyword">set</span> =&gt; isEnabled = value; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2845c4dd405be14a3d238b938f955bff" name="a2845c4dd405be14a3d238b938f955bff"></a>

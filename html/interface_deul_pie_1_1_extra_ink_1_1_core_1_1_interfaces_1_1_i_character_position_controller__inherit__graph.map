@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Core.Interfaces.ICharacterPositionController" name="DeulPie.ExtraInk.Core.Interfaces.ICharacterPositionController">
-<area shape="rect" id="Node000001" title="캐릭터 위치 제어 인터페이스" alt="" coords="5,5,213,155"/>
-<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_character_manager.html" title="통합 캐릭터 매니저 인터페이스 (SOLID: Dependency Inversion)" alt="" coords="5,203,213,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,170,112,203,106,203,106,170"/>
-</map>

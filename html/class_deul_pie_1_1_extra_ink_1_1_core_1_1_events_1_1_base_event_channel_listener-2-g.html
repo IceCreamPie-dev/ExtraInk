@@ -128,8 +128,10 @@ Collaboration diagram for DeulPie.ExtraInk.Core.Events.BaseEventChannelListener&
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a28bbdbbbd7b65a3f041a1157aa112c99" id="r_a28bbdbbbd7b65a3f041a1157aa112c99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28bbdbbbd7b65a3f041a1157aa112c99">OnEnable</a> ()</td></tr>
-<tr class="memitem:ad4b0358fe4067f6d95c841b298389171" id="r_ad4b0358fe4067f6d95c841b298389171"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b0358fe4067f6d95c841b298389171">OnDisable</a> ()</td></tr>
+<tr class="memitem:a28bbdbbbd7b65a3f041a1157aa112c99" id="r_a28bbdbbbd7b65a3f041a1157aa112c99"><td class="memItemLeft" align="right" valign="top"><a id="a28bbdbbbd7b65a3f041a1157aa112c99" name="a28bbdbbbd7b65a3f041a1157aa112c99"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
+<tr class="memitem:ad4b0358fe4067f6d95c841b298389171" id="r_ad4b0358fe4067f6d95c841b298389171"><td class="memItemLeft" align="right" valign="top"><a id="ad4b0358fe4067f6d95c841b298389171" name="ad4b0358fe4067f6d95c841b298389171"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td></tr>
 <tr class="memitem:a94c0b916c48a4eaceb6627e403c5348b" id="r_a94c0b916c48a4eaceb6627e403c5348b"><td class="memItemLeft" align="right" valign="top"><a id="a94c0b916c48a4eaceb6627e403c5348b" name="a94c0b916c48a4eaceb6627e403c5348b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEventRaised</b> (TEventData value)</td></tr>
 <tr class="memitem:ac4762f1e62ecb62c98f39f0b1a2af2d2" id="r_ac4762f1e62ecb62c98f39f0b1a2af2d2"><td class="memItemLeft" align="right" valign="top"><a id="ac4762f1e62ecb62c98f39f0b1a2af2d2" name="ac4762f1e62ecb62c98f39f0b1a2af2d2"></a>
@@ -140,65 +142,6 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a4b6ac84287f134e1eeb39fab9e1580b0" id="r_a4b6ac84287f134e1eeb39fab9e1580b0"><td class="memItemLeft" align="right" valign="top"><a id="a4b6ac84287f134e1eeb39fab9e1580b0" name="a4b6ac84287f134e1eeb39fab9e1580b0"></a>
 TEventChannel&#160;</td><td class="memItemRight" valign="bottom"><b>eventChannel</b></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ad4b0358fe4067f6d95c841b298389171" name="ad4b0358fe4067f6d95c841b298389171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4b0358fe4067f6d95c841b298389171">&#9670;&#160;</a></span>OnDisable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Core.Events.BaseEventChannelListener&lt; TEventData, TEventChannel &gt;.OnDisable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   52</span>        {</div>
-<div class="line"><span class="lineno">   53</span>            <span class="keywordflow">if</span> (eventChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   54</span>                eventChannel.OnEventRaised -= OnEventRaised;</div>
-<div class="line"><span class="lineno">   55</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a28bbdbbbd7b65a3f041a1157aa112c99" name="a28bbdbbbd7b65a3f041a1157aa112c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28bbdbbbd7b65a3f041a1157aa112c99">&#9670;&#160;</a></span>OnEnable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Core.Events.BaseEventChannelListener&lt; TEventData, TEventChannel &gt;.OnEnable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   46</span>        {</div>
-<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">if</span> (eventChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   48</span>                eventChannel.OnEventRaised += OnEventRaised;</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>D:/Projects/Team_Hajen/ICPDEV_Ink/Assets/DeulPie/ExtraInk/Core/Events/EventChannelListeners/<b>DialogueEventChannelListener.cs</b></li>
 </ul>

@@ -155,13 +155,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>체력 변경 </p>
-<div class="fragment"><div class="line"><span class="lineno">  384</span>        {</div>
-<div class="line"><span class="lineno">  385</span>            <span class="keywordflow">if</span> (healthChangeChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  386</span>            {</div>
-<div class="line"><span class="lineno">  387</span>                healthChangeChannel.RaiseEvent(newHealth);</div>
-<div class="line"><span class="lineno">  388</span>            }</div>
-<div class="line"><span class="lineno">  389</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_aa7afe38c37421a936e8217272d6d3c04_icgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_aa7afe38c37421a936e8217272d6d3c04_icgraph" loading="lazy" alt=""/></div>
@@ -192,13 +186,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>플레이어 이름 변경 </p>
-<div class="fragment"><div class="line"><span class="lineno">  373</span>        {</div>
-<div class="line"><span class="lineno">  374</span>            <span class="keywordflow">if</span> (playerNameChangeChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  375</span>            {</div>
-<div class="line"><span class="lineno">  376</span>                playerNameChangeChannel.RaiseEvent(newName);</div>
-<div class="line"><span class="lineno">  377</span>            }</div>
-<div class="line"><span class="lineno">  378</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad8f3a25dfd301d69056ee1d6ef2ddc2d" name="ad8f3a25dfd301d69056ee1d6ef2ddc2d"></a>
@@ -217,10 +205,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>체력 회복 </p>
-<div class="fragment"><div class="line"><span class="lineno">  403</span>        {</div>
-<div class="line"><span class="lineno">  404</span>            ChangeHealth(currentHealth + amount);</div>
-<div class="line"><span class="lineno">  405</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_ad8f3a25dfd301d69056ee1d6ef2ddc2d_cgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_ad8f3a25dfd301d69056ee1d6ef2ddc2d_cgraph" loading="lazy" alt=""/></div>
@@ -258,13 +243,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>캐릭터 표시 </p>
-<div class="fragment"><div class="line"><span class="lineno">  411</span>        {</div>
-<div class="line"><span class="lineno">  412</span>            <span class="keywordflow">if</span> (characterEventChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  413</span>            {</div>
-<div class="line"><span class="lineno">  414</span>                characterEventChannel.ShowCharacter(characterId, emotion, position);</div>
-<div class="line"><span class="lineno">  415</span>            }</div>
-<div class="line"><span class="lineno">  416</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a64f957ba9e28371ad3dd3b1546689727" name="a64f957ba9e28371ad3dd3b1546689727"></a>
@@ -287,13 +266,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>대화 표시 </p>
-<div class="fragment"><div class="line"><span class="lineno">  422</span>        {</div>
-<div class="line"><span class="lineno">  423</span>            <span class="keywordflow">if</span> (dialogueEventChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  424</span>            {</div>
-<div class="line"><span class="lineno">  425</span>                dialogueEventChannel.RaiseEvent(text, speaker);</div>
-<div class="line"><span class="lineno">  426</span>            }</div>
-<div class="line"><span class="lineno">  427</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae5dd6fca159cd0c2946d3926fccc9071" name="ae5dd6fca159cd0c2946d3926fccc9071"></a>
@@ -312,13 +285,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>게임 시작 이벤트 발생 </p>
-<div class="fragment"><div class="line"><span class="lineno">  362</span>        {</div>
-<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">if</span> (gameStartChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  364</span>            {</div>
-<div class="line"><span class="lineno">  365</span>                gameStartChannel.RaiseEvent();</div>
-<div class="line"><span class="lineno">  366</span>            }</div>
-<div class="line"><span class="lineno">  367</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aff7e11b4bd4e85bf250d61311fcdc287" name="aff7e11b4bd4e85bf250d61311fcdc287"></a>
@@ -337,10 +304,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>데미지 입기 </p>
-<div class="fragment"><div class="line"><span class="lineno">  395</span>        {</div>
-<div class="line"><span class="lineno">  396</span>            ChangeHealth(currentHealth - damage);</div>
-<div class="line"><span class="lineno">  397</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_aff7e11b4bd4e85bf250d61311fcdc287_cgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example_aff7e11b4bd4e85bf250d61311fcdc287_cgraph" loading="lazy" alt=""/></div>

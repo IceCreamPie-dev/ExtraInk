@@ -121,7 +121,8 @@ Collaboration diagram for DeulPie.ExtraInk.Plugins.PluginMessenger:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aff3ab826195614423e51267b7b3fd59c" id="r_aff3ab826195614423e51267b7b3fd59c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff3ab826195614423e51267b7b3fd59c">PluginMessenger</a> (<a class="el" href="class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_plugin_context.html">PluginContext</a> context)</td></tr>
+<tr class="memitem:aff3ab826195614423e51267b7b3fd59c" id="r_aff3ab826195614423e51267b7b3fd59c"><td class="memItemLeft" align="right" valign="top"><a id="aff3ab826195614423e51267b7b3fd59c" name="aff3ab826195614423e51267b7b3fd59c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PluginMessenger</b> (<a class="el" href="class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_plugin_context.html">PluginContext</a> context)</td></tr>
 <tr class="memitem:a9b62a02498bc85dd5579e7901e08127c" id="r_a9b62a02498bc85dd5579e7901e08127c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b62a02498bc85dd5579e7901e08127c">RegisterMessageHandler&lt; T &gt;</a> (Action&lt; T &gt; handler)</td></tr>
 <tr class="memitem:ae50371d734edb23378b44a0b2260b30e" id="r_ae50371d734edb23378b44a0b2260b30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae50371d734edb23378b44a0b2260b30e">UnregisterMessageHandler&lt; T &gt;</a> (Action&lt; T &gt; handler)</td></tr>
 <tr class="memitem:a930f2ba59f9da5cabd8f56a6ffefddc9" id="r_a930f2ba59f9da5cabd8f56a6ffefddc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a930f2ba59f9da5cabd8f56a6ffefddc9">SendMessage&lt; T &gt;</a> (string targetPluginId, T message)</td></tr>
@@ -129,28 +130,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>플러그인 메신저 구현체 </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aff3ab826195614423e51267b7b3fd59c" name="aff3ab826195614423e51267b7b3fd59c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff3ab826195614423e51267b7b3fd59c">&#9670;&#160;</a></span>PluginMessenger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DeulPie.ExtraInk.Plugins.PluginMessenger.PluginMessenger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_plugin_context.html">PluginContext</a></td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  327</span>        {</div>
-<div class="line"><span class="lineno">  328</span>            this.context = context;</div>
-<div class="line"><span class="lineno">  329</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae0c2427771db1ce224674ed1718c8fb7" name="ae0c2427771db1ce224674ed1718c8fb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0c2427771db1ce224674ed1718c8fb7">&#9670;&#160;</a></span>BroadcastMessage&lt; T &gt;()</h2>
 
@@ -175,11 +155,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  346</span>                                                           : IPluginMessage</div>
-<div class="line"><span class="lineno">  347</span>        {</div>
-<div class="line"><span class="lineno">  348</span>            context.BroadcastMessage(message);</div>
-<div class="line"><span class="lineno">  349</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a9b62a02498bc85dd5579e7901e08127c" name="a9b62a02498bc85dd5579e7901e08127c"></a>
@@ -206,11 +182,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  331</span>                                                                         : IPluginMessage</div>
-<div class="line"><span class="lineno">  332</span>        {</div>
-<div class="line"><span class="lineno">  333</span>            <span class="comment">// TODO: 제네릭 메시지 핸들러 등록 구현</span></div>
-<div class="line"><span class="lineno">  334</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a930f2ba59f9da5cabd8f56a6ffefddc9" name="a930f2ba59f9da5cabd8f56a6ffefddc9"></a>
@@ -241,11 +213,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  341</span>                                                                             : IPluginMessage</div>
-<div class="line"><span class="lineno">  342</span>        {</div>
-<div class="line"><span class="lineno">  343</span>            context.SendMessage(targetPluginId, message);</div>
-<div class="line"><span class="lineno">  344</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae50371d734edb23378b44a0b2260b30e" name="ae50371d734edb23378b44a0b2260b30e"></a>
@@ -272,11 +240,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  336</span>                                                                           : IPluginMessage</div>
-<div class="line"><span class="lineno">  337</span>        {</div>
-<div class="line"><span class="lineno">  338</span>            <span class="comment">// TODO: 제네릭 메시지 핸들러 해제 구현</span></div>
-<div class="line"><span class="lineno">  339</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

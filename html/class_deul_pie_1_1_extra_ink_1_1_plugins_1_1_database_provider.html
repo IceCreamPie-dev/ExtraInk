@@ -126,56 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0a8a74a99ae0468bd380069f4c36c68b" id="r_a0a8a74a99ae0468bd380069f4c36c68b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a8a74a99ae0468bd380069f4c36c68b">HasDatabase&lt; T &gt;</a> ()</td></tr>
 <tr class="memitem:a76a78582c5fb7557357c865c1864face" id="r_a76a78582c5fb7557357c865c1864face"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76a78582c5fb7557357c865c1864face">LoadData&lt; T &gt;</a> (string key)</td></tr>
 <tr class="memitem:a084ddb99ad5d549afcea91d9f1c3e92d" id="r_a084ddb99ad5d549afcea91d9f1c3e92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a084ddb99ad5d549afcea91d9f1c3e92d">SaveData&lt; T &gt;</a> (string key, T data)</td></tr>
-<tr class="memitem:a72f96d717f8a88fef06d123f4dc808bf" id="r_a72f96d717f8a88fef06d123f4dc808bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72f96d717f8a88fef06d123f4dc808bf">HasData</a> (string key)</td></tr>
-<tr class="memitem:ae18a91a6dbfb26c0266be4c07938233d" id="r_ae18a91a6dbfb26c0266be4c07938233d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae18a91a6dbfb26c0266be4c07938233d">DeleteData</a> (string key)</td></tr>
-<tr class="memitem:ace1c68b41131694464fb70ebb0d98fa4" id="r_ace1c68b41131694464fb70ebb0d98fa4"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace1c68b41131694464fb70ebb0d98fa4">GetAllKeys</a> ()</td></tr>
+<tr class="memitem:a72f96d717f8a88fef06d123f4dc808bf" id="r_a72f96d717f8a88fef06d123f4dc808bf"><td class="memItemLeft" align="right" valign="top"><a id="a72f96d717f8a88fef06d123f4dc808bf" name="a72f96d717f8a88fef06d123f4dc808bf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasData</b> (string key)</td></tr>
+<tr class="memitem:ae18a91a6dbfb26c0266be4c07938233d" id="r_ae18a91a6dbfb26c0266be4c07938233d"><td class="memItemLeft" align="right" valign="top"><a id="ae18a91a6dbfb26c0266be4c07938233d" name="ae18a91a6dbfb26c0266be4c07938233d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteData</b> (string key)</td></tr>
+<tr class="memitem:ace1c68b41131694464fb70ebb0d98fa4" id="r_ace1c68b41131694464fb70ebb0d98fa4"><td class="memItemLeft" align="right" valign="top"><a id="ace1c68b41131694464fb70ebb0d98fa4" name="ace1c68b41131694464fb70ebb0d98fa4"></a>
+string[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllKeys</b> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>데이터베이스 제공자 구현체 </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ae18a91a6dbfb26c0266be4c07938233d" name="ae18a91a6dbfb26c0266be4c07938233d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae18a91a6dbfb26c0266be4c07938233d">&#9670;&#160;</a></span>DeleteData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeulPie.ExtraInk.Plugins.DatabaseProvider.DeleteData </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  307</span>        {</div>
-<div class="line"><span class="lineno">  308</span>            <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.DeleteKey(key);</div>
-<div class="line"><span class="lineno">  309</span>        }</div>
-<div class="ttc" id="anamespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_html_aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e"><div class="ttname"><a href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">DeulPie.ExtraInk.Core.Settings.SettingsStorageType.PlayerPrefs</a></div><div class="ttdeci">@ PlayerPrefs</div><div class="ttdoc">Unity PlayerPrefs (기본, WebGL 필수)</div><div class="ttdef"><b>Definition</b> SettingsStorageFactory.cs:116</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ace1c68b41131694464fb70ebb0d98fa4" name="ace1c68b41131694464fb70ebb0d98fa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace1c68b41131694464fb70ebb0d98fa4">&#9670;&#160;</a></span>GetAllKeys()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string[] DeulPie.ExtraInk.Plugins.DatabaseProvider.GetAllKeys </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  312</span>        {</div>
-<div class="line"><span class="lineno">  313</span>            <span class="comment">// PlayerPrefs는 모든 키를 가져오는 기능이 없으므로</span></div>
-<div class="line"><span class="lineno">  314</span>            <span class="comment">// 별도의 키 목록을 관리하거나 파일 시스템 사용 필요</span></div>
-<div class="line"><span class="lineno">  315</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">string</span>[0];</div>
-<div class="line"><span class="lineno">  316</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="af436fbe188613b49d828f2907363af4e" name="af436fbe188613b49d828f2907363af4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af436fbe188613b49d828f2907363af4e">&#9670;&#160;</a></span>GetDatabase&lt; T &gt;()</h2>
 
@@ -200,32 +160,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  253</span>                                          : ScriptableObject</div>
-<div class="line"><span class="lineno">  254</span>        {</div>
-<div class="line"><span class="lineno">  255</span>            <span class="comment">// TODO: 실제 데이터베이스 반환 로직 구현</span></div>
-<div class="line"><span class="lineno">  256</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">  257</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a72f96d717f8a88fef06d123f4dc808bf" name="a72f96d717f8a88fef06d123f4dc808bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72f96d717f8a88fef06d123f4dc808bf">&#9670;&#160;</a></span>HasData()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DeulPie.ExtraInk.Plugins.DatabaseProvider.HasData </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  302</span>        {</div>
-<div class="line"><span class="lineno">  303</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.HasKey(key);</div>
-<div class="line"><span class="lineno">  304</span>        }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a0a8a74a99ae0468bd380069f4c36c68b" name="a0a8a74a99ae0468bd380069f4c36c68b"></a>
@@ -252,11 +187,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  264</span>                                             : ScriptableObject</div>
-<div class="line"><span class="lineno">  265</span>        {</div>
-<div class="line"><span class="lineno">  266</span>            <span class="keywordflow">return</span> GetDatabase&lt;T&gt;() != <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">  267</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a76a78582c5fb7557357c865c1864face" name="a76a78582c5fb7557357c865c1864face"></a>
@@ -281,24 +212,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  269</span>                                                 : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  270</span>        {</div>
-<div class="line"><span class="lineno">  271</span>            <span class="comment">// PlayerPrefs, 파일 시스템, 또는 다른 저장소에서 데이터 로드</span></div>
-<div class="line"><span class="lineno">  272</span>            <span class="keywordtype">string</span> json = <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.GetString(key, <span class="keyword">null</span>);</div>
-<div class="line"><span class="lineno">  273</span>            <span class="keywordflow">if</span> (!<span class="keywordtype">string</span>.IsNullOrEmpty(json))</div>
-<div class="line"><span class="lineno">  274</span>            {</div>
-<div class="line"><span class="lineno">  275</span>                <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  276</span>                {</div>
-<div class="line"><span class="lineno">  277</span>                    <span class="keywordflow">return</span> JsonUtility.FromJson&lt;T&gt;(json);</div>
-<div class="line"><span class="lineno">  278</span>                }</div>
-<div class="line"><span class="lineno">  279</span>                <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  280</span>                {</div>
-<div class="line"><span class="lineno">  281</span>                    Debug.LogException(ex);</div>
-<div class="line"><span class="lineno">  282</span>                }</div>
-<div class="line"><span class="lineno">  283</span>            }</div>
-<div class="line"><span class="lineno">  284</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">  285</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a914b0377d31652c6f784ffed8ea6ee8d" name="a914b0377d31652c6f784ffed8ea6ee8d"></a>
@@ -325,11 +239,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  259</span>                                                            : ScriptableObject</div>
-<div class="line"><span class="lineno">  260</span>        {</div>
-<div class="line"><span class="lineno">  261</span>            <span class="comment">// TODO: 데이터베이스 등록 로직 구현</span></div>
-<div class="line"><span class="lineno">  262</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a084ddb99ad5d549afcea91d9f1c3e92d" name="a084ddb99ad5d549afcea91d9f1c3e92d"></a>
@@ -358,20 +268,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  287</span>                                                            : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  288</span>        {</div>
-<div class="line"><span class="lineno">  289</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  290</span>            {</div>
-<div class="line"><span class="lineno">  291</span>                <span class="keywordtype">string</span> json = JsonUtility.ToJson(data);</div>
-<div class="line"><span class="lineno">  292</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.SetString(key, json);</div>
-<div class="line"><span class="lineno">  293</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.Save();</div>
-<div class="line"><span class="lineno">  294</span>            }</div>
-<div class="line"><span class="lineno">  295</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  296</span>            {</div>
-<div class="line"><span class="lineno">  297</span>                Debug.LogException(ex);</div>
-<div class="line"><span class="lineno">  298</span>            }</div>
-<div class="line"><span class="lineno">  299</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

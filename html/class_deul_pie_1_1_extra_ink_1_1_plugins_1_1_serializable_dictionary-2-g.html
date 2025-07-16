@@ -125,84 +125,16 @@ Collaboration diagram for DeulPie.ExtraInk.Plugins.SerializableDictionary&lt; TK
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeabef68cc8ee83eadeed4c4cf472eaf7" id="r_aeabef68cc8ee83eadeed4c4cf472eaf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeabef68cc8ee83eadeed4c4cf472eaf7">OnBeforeSerialize</a> ()</td></tr>
-<tr class="memitem:a94dc09aaa8f6f62c0e70348a58e1e2ac" id="r_a94dc09aaa8f6f62c0e70348a58e1e2ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94dc09aaa8f6f62c0e70348a58e1e2ac">OnAfterDeserialize</a> ()</td></tr>
-<tr class="memitem:acb8891669c8ddb4a8a3bbb2a311285aa" id="r_acb8891669c8ddb4a8a3bbb2a311285aa"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; TKey, TValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8891669c8ddb4a8a3bbb2a311285aa">ToDictionary</a> ()</td></tr>
+<tr class="memitem:aeabef68cc8ee83eadeed4c4cf472eaf7" id="r_aeabef68cc8ee83eadeed4c4cf472eaf7"><td class="memItemLeft" align="right" valign="top"><a id="aeabef68cc8ee83eadeed4c4cf472eaf7" name="aeabef68cc8ee83eadeed4c4cf472eaf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBeforeSerialize</b> ()</td></tr>
+<tr class="memitem:a94dc09aaa8f6f62c0e70348a58e1e2ac" id="r_a94dc09aaa8f6f62c0e70348a58e1e2ac"><td class="memItemLeft" align="right" valign="top"><a id="a94dc09aaa8f6f62c0e70348a58e1e2ac" name="a94dc09aaa8f6f62c0e70348a58e1e2ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAfterDeserialize</b> ()</td></tr>
+<tr class="memitem:acb8891669c8ddb4a8a3bbb2a311285aa" id="r_acb8891669c8ddb4a8a3bbb2a311285aa"><td class="memItemLeft" align="right" valign="top"><a id="acb8891669c8ddb4a8a3bbb2a311285aa" name="acb8891669c8ddb4a8a3bbb2a311285aa"></a>
+Dictionary&lt; TKey, TValue &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToDictionary</b> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Unity Inspector에서 Dictionary를 시리얼라이즈하기 위한 헬퍼 클래스 </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a94dc09aaa8f6f62c0e70348a58e1e2ac" name="a94dc09aaa8f6f62c0e70348a58e1e2ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94dc09aaa8f6f62c0e70348a58e1e2ac">&#9670;&#160;</a></span>OnAfterDeserialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeulPie.ExtraInk.Plugins.SerializableDictionary&lt; TKey, TValue &gt;.OnAfterDeserialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  446</span>        {</div>
-<div class="line"><span class="lineno">  447</span>            Clear();</div>
-<div class="line"><span class="lineno">  448</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; keys.Count; i++)</div>
-<div class="line"><span class="lineno">  449</span>            {</div>
-<div class="line"><span class="lineno">  450</span>                <span class="keyword">this</span>[keys[i]] = values[i];</div>
-<div class="line"><span class="lineno">  451</span>            }</div>
-<div class="line"><span class="lineno">  452</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeabef68cc8ee83eadeed4c4cf472eaf7" name="aeabef68cc8ee83eadeed4c4cf472eaf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabef68cc8ee83eadeed4c4cf472eaf7">&#9670;&#160;</a></span>OnBeforeSerialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeulPie.ExtraInk.Plugins.SerializableDictionary&lt; TKey, TValue &gt;.OnBeforeSerialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  435</span>        {</div>
-<div class="line"><span class="lineno">  436</span>            keys.Clear();</div>
-<div class="line"><span class="lineno">  437</span>            values.Clear();</div>
-<div class="line"><span class="lineno">  438</span>            <span class="keywordflow">foreach</span> (var kvp <span class="keywordflow">in</span> <span class="keyword">this</span>)</div>
-<div class="line"><span class="lineno">  439</span>            {</div>
-<div class="line"><span class="lineno">  440</span>                keys.Add(kvp.Key);</div>
-<div class="line"><span class="lineno">  441</span>                values.Add(kvp.Value);</div>
-<div class="line"><span class="lineno">  442</span>            }</div>
-<div class="line"><span class="lineno">  443</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="acb8891669c8ddb4a8a3bbb2a311285aa" name="acb8891669c8ddb4a8a3bbb2a311285aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb8891669c8ddb4a8a3bbb2a311285aa">&#9670;&#160;</a></span>ToDictionary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt; TKey, TValue &gt; DeulPie.ExtraInk.Plugins.SerializableDictionary&lt; TKey, TValue &gt;.ToDictionary </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  455</span>        {</div>
-<div class="line"><span class="lineno">  456</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> Dictionary&lt;TKey, TValue&gt;(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">  457</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>D:/Projects/Team_Hajen/ICPDEV_Ink/Assets/DeulPie/ExtraInk/Core/Plugins/<b>BaseExtraInkPlugin.cs</b></li>
 </ul>
 </div><!-- contents -->

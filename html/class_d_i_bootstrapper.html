@@ -152,41 +152,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>컨테이너를 정리합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  198</span>    {</div>
-<div class="line"><span class="lineno">  199</span>        <span class="keywordflow">if</span> (!isInitialized) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  200</span>        </div>
-<div class="line"><span class="lineno">  201</span>        Debug.Log(<span class="stringliteral">&quot;[DIBootstrapper] Cleaning up DI container...&quot;</span>);</div>
-<div class="line"><span class="lineno">  202</span>        </div>
-<div class="line"><span class="lineno">  203</span>        <span class="comment">// 모든 서비스 정리</span></div>
-<div class="line"><span class="lineno">  204</span>        var registeredTypes = _container.GetRegisteredTypes();</div>
-<div class="line"><span class="lineno">  205</span>        </div>
-<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">foreach</span> (var serviceType <span class="keywordflow">in</span> registeredTypes)</div>
-<div class="line"><span class="lineno">  207</span>        {</div>
-<div class="line"><span class="lineno">  208</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  209</span>            {</div>
-<div class="line"><span class="lineno">  210</span>                var service = _container.Resolve(serviceType);</div>
-<div class="line"><span class="lineno">  211</span>                </div>
-<div class="line"><span class="lineno">  212</span>                <span class="keywordflow">if</span> (service is IService baseService)</div>
-<div class="line"><span class="lineno">  213</span>                {</div>
-<div class="line"><span class="lineno">  214</span>                    baseService.Cleanup();</div>
-<div class="line"><span class="lineno">  215</span>                    Debug.Log($<span class="stringliteral">&quot;[DIBootstrapper] Cleaned up service: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  216</span>                }</div>
-<div class="line"><span class="lineno">  217</span>            }</div>
-<div class="line"><span class="lineno">  218</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  219</span>            {</div>
-<div class="line"><span class="lineno">  220</span>                Debug.LogError($<span class="stringliteral">&quot;[DIBootstrapper] Failed to cleanup service {serviceType.Name}: {ex.Message}&quot;</span>);</div>
-<div class="line"><span class="lineno">  221</span>            }</div>
-<div class="line"><span class="lineno">  222</span>        }</div>
-<div class="line"><span class="lineno">  223</span>        </div>
-<div class="line"><span class="lineno">  224</span>        <span class="comment">// 컨테이너 정리</span></div>
-<div class="line"><span class="lineno">  225</span>        DIContainerProvider.ClearContainer();</div>
-<div class="line"><span class="lineno">  226</span>        </div>
-<div class="line"><span class="lineno">  227</span>        registeredServices.Clear();</div>
-<div class="line"><span class="lineno">  228</span>        isInitialized = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  229</span>        </div>
-<div class="line"><span class="lineno">  230</span>        Debug.Log(<span class="stringliteral">&quot;[DIBootstrapper] DI container cleanup complete&quot;</span>);</div>
-<div class="line"><span class="lineno">  231</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a47a5544903f97013da4c461a2a23387d" name="a47a5544903f97013da4c461a2a23387d"></a>
@@ -205,10 +171,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>등록된 서비스 목록을 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  252</span>    {</div>
-<div class="line"><span class="lineno">  253</span>        <span class="keywordflow">return</span> registeredServices.ToArray();</div>
-<div class="line"><span class="lineno">  254</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a366e818bef8e42c8bdbb1aff9d690945" name="a366e818bef8e42c8bdbb1aff9d690945"></a>
@@ -227,37 +190,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DI 컨테이너를 초기화하고 모든 서비스를 등록합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (isInitialized)</div>
-<div class="line"><span class="lineno">   46</span>        {</div>
-<div class="line"><span class="lineno">   47</span>            Debug.LogWarning(<span class="stringliteral">&quot;[DIBootstrapper] Already initialized&quot;</span>);</div>
-<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>        </div>
-<div class="line"><span class="lineno">   51</span>        Debug.Log(<span class="stringliteral">&quot;[DIBootstrapper] Starting DI container initialization...&quot;</span>);</div>
-<div class="line"><span class="lineno">   52</span>        </div>
-<div class="line"><span class="lineno">   53</span>        <span class="comment">// 컨테이너 초기화</span></div>
-<div class="line"><span class="lineno">   54</span>        _container = <span class="keyword">new</span> DIContainer();</div>
-<div class="line"><span class="lineno">   55</span>        DIContainerProvider.SetContainer(_container);</div>
-<div class="line"><span class="lineno">   56</span>        </div>
-<div class="line"><span class="lineno">   57</span>        registeredServices.Clear();</div>
-<div class="line"><span class="lineno">   58</span>        </div>
-<div class="line"><span class="lineno">   59</span>        <span class="comment">// 서비스 자동 발견 및 등록</span></div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (autoDiscoverServices)</div>
-<div class="line"><span class="lineno">   61</span>        {</div>
-<div class="line"><span class="lineno">   62</span>            AutoDiscoverAndRegisterServices();</div>
-<div class="line"><span class="lineno">   63</span>        }</div>
-<div class="line"><span class="lineno">   64</span>        </div>
-<div class="line"><span class="lineno">   65</span>        <span class="comment">// 수동으로 할당된 서비스 등록</span></div>
-<div class="line"><span class="lineno">   66</span>        RegisterManualServices();</div>
-<div class="line"><span class="lineno">   67</span>        </div>
-<div class="line"><span class="lineno">   68</span>        <span class="comment">// 서비스 초기화</span></div>
-<div class="line"><span class="lineno">   69</span>        InitializeServices();</div>
-<div class="line"><span class="lineno">   70</span>        </div>
-<div class="line"><span class="lineno">   71</span>        isInitialized = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   72</span>        Debug.Log($<span class="stringliteral">&quot;[DIBootstrapper] Initialization complete. Registered services: {string.Join(&quot;</span>, <span class="stringliteral">&quot;, registeredServices)}&quot;</span>);</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>

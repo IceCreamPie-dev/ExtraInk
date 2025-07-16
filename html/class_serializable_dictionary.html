@@ -106,8 +106,10 @@ Collaboration diagram for SerializableDictionary:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c30ddaad524fcd89051b67229f1b191" id="r_a4c30ddaad524fcd89051b67229f1b191"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c30ddaad524fcd89051b67229f1b191">딕셔너리로_변환</a> ()</td></tr>
-<tr class="memitem:a4925e8faeda35ccc1417cc5223b48f90" id="r_a4925e8faeda35ccc1417cc5223b48f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4925e8faeda35ccc1417cc5223b48f90">딕셔너리에서_변환</a> (Dictionary&lt; string, object &gt; 딕셔너리)</td></tr>
+<tr class="memitem:a4c30ddaad524fcd89051b67229f1b191" id="r_a4c30ddaad524fcd89051b67229f1b191"><td class="memItemLeft" align="right" valign="top"><a id="a4c30ddaad524fcd89051b67229f1b191" name="a4c30ddaad524fcd89051b67229f1b191"></a>
+Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>딕셔너리로_변환</b> ()</td></tr>
+<tr class="memitem:a4925e8faeda35ccc1417cc5223b48f90" id="r_a4925e8faeda35ccc1417cc5223b48f90"><td class="memItemLeft" align="right" valign="top"><a id="a4925e8faeda35ccc1417cc5223b48f90" name="a4925e8faeda35ccc1417cc5223b48f90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>딕셔너리에서_변환</b> (Dictionary&lt; string, object &gt; 딕셔너리)</td></tr>
 <tr class="memitem:a450b8cbcb4ddb28b4066f47265d0e603" id="r_a450b8cbcb4ddb28b4066f47265d0e603"><td class="memItemLeft" align="right" valign="top"><a id="a450b8cbcb4ddb28b4066f47265d0e603" name="a450b8cbcb4ddb28b4066f47265d0e603"></a>
 Dictionary&lt; string, object &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToDictionary</b> ()</td></tr>
 <tr class="memitem:a68f530bbf19503e659c89a090ed54c80" id="r_a68f530bbf19503e659c89a090ed54c80"><td class="memItemLeft" align="right" valign="top"><a id="a68f530bbf19503e659c89a090ed54c80" name="a68f530bbf19503e659c89a090ed54c80"></a>
@@ -120,62 +122,6 @@ List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>키�
 <tr class="memitem:ac5a0fc996c90b5e86b70e44b235e45cc" id="r_ac5a0fc996c90b5e86b70e44b235e45cc"><td class="memItemLeft" align="right" valign="top"><a id="ac5a0fc996c90b5e86b70e44b235e45cc" name="ac5a0fc996c90b5e86b70e44b235e45cc"></a>
 List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>값들</b> = new List&lt;string&gt;()</td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a4c30ddaad524fcd89051b67229f1b191" name="a4c30ddaad524fcd89051b67229f1b191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c30ddaad524fcd89051b67229f1b191">&#9670;&#160;</a></span>딕셔너리로_변환()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt; string, object &gt; SerializableDictionary.딕셔너리로_변환 </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    {</div>
-<div class="line"><span class="lineno">   17</span>        var 딕셔너리 = <span class="keyword">new</span> Dictionary&lt;string, object&gt;();</div>
-<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 키들.Count &amp;&amp; i &lt; 값들.Count; i++)</div>
-<div class="line"><span class="lineno">   19</span>        {</div>
-<div class="line"><span class="lineno">   20</span>            딕셔너리[키들[i]] = 값들[i];</div>
-<div class="line"><span class="lineno">   21</span>        }</div>
-<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">return</span> 딕셔너리;</div>
-<div class="line"><span class="lineno">   23</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4925e8faeda35ccc1417cc5223b48f90" name="a4925e8faeda35ccc1417cc5223b48f90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4925e8faeda35ccc1417cc5223b48f90">&#9670;&#160;</a></span>딕셔너리에서_변환()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SerializableDictionary.딕셔너리에서_변환 </td>
-          <td>(</td>
-          <td class="paramtype">Dictionary&lt; string, object &gt;</td>          <td class="paramname"><span class="paramname"><em>딕셔너리</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>        키들.Clear();</div>
-<div class="line"><span class="lineno">   28</span>        값들.Clear();</div>
-<div class="line"><span class="lineno">   29</span>        </div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (딕셔너리 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   31</span>        {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">foreach</span> (var 키값쌍 <span class="keywordflow">in</span> 딕셔너리)</div>
-<div class="line"><span class="lineno">   33</span>            {</div>
-<div class="line"><span class="lineno">   34</span>                키들.Add(키값쌍.Key);</div>
-<div class="line"><span class="lineno">   35</span>                값들.Add(키값쌍.Value?.ToString() ?? <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   36</span>            }</div>
-<div class="line"><span class="lineno">   37</span>        }</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>D:/Projects/Team_Hajen/ICPDEV_Ink/Assets/DeulPie/ExtraInk/Core/Managers/<b>SaveLoadManager.cs</b></li>
 </ul>

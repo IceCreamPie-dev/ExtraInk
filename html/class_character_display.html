@@ -198,22 +198,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>    {</div>
-<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">if</span> (<a class="code hl_property" href="#aa796da01e0777fea6bc49ae54d3b9d72">characterData</a> == <span class="keyword">null</span> || emotion == currentEmotion) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  152</span>        </div>
-<div class="line"><span class="lineno">  153</span>        currentEmotion = emotion;</div>
-<div class="line"><span class="lineno">  154</span>        </div>
-<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">if</span> (<a class="code hl_property" href="#aa796da01e0777fea6bc49ae54d3b9d72">characterData</a>.displayMode == CharacterData.CharacterDisplayMode.Sprite)</div>
-<div class="line"><span class="lineno">  156</span>        {</div>
-<div class="line"><span class="lineno">  157</span>            감정_스프라이트_변경(emotion);</div>
-<div class="line"><span class="lineno">  158</span>        }</div>
-<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_property" href="#aa796da01e0777fea6bc49ae54d3b9d72">characterData</a>.displayMode == CharacterData.CharacterDisplayMode.Animation &amp;&amp; 애니메이터 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  160</span>        {</div>
-<div class="line"><span class="lineno">  161</span>            감정_애니메이션_변경(emotion);</div>
-<div class="line"><span class="lineno">  162</span>        }</div>
-<div class="line"><span class="lineno">  163</span>    }</div>
-<div class="ttc" id="aclass_character_display_html_aa796da01e0777fea6bc49ae54d3b9d72"><div class="ttname"><a href="#aa796da01e0777fea6bc49ae54d3b9d72">CharacterDisplay.characterData</a></div><div class="ttdeci">CharacterData characterData</div><div class="ttdoc">캐릭터 데이터</div><div class="ttdef"><b>Definition</b> CharacterDisplay.cs:26</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6247677906eb34577778a0a701239214" name="a6247677906eb34577778a0a701239214"></a>
@@ -270,12 +255,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>미러링 설정 </p>
-<div class="fragment"><div class="line"><span class="lineno">  325</span>    {</div>
-<div class="line"><span class="lineno">  326</span>        Vector3 scale = transform.localScale;</div>
-<div class="line"><span class="lineno">  327</span>        scale.x = Mathf.Abs(scale.x) * (mirror ? -1 : 1);</div>
-<div class="line"><span class="lineno">  328</span>        transform.localScale = scale;</div>
-<div class="line"><span class="lineno">  329</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a15c962df6082c333dfc25ee6602bca0d" name="a15c962df6082c333dfc25ee6602bca0d"></a>
@@ -300,27 +280,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  260</span>    {</div>
-<div class="line"><span class="lineno">  261</span>        isVisible = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  262</span>        </div>
-<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">switch</span> (effect.ToLower())</div>
-<div class="line"><span class="lineno">  264</span>        {</div>
-<div class="line"><span class="lineno">  265</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">  266</span>                효과_페이드아웃(() =&gt; gameObject.SetActive(<span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  267</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  268</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide&quot;</span>:</div>
-<div class="line"><span class="lineno">  269</span>                효과_슬라이드아웃(() =&gt; gameObject.SetActive(<span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  270</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  271</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">  272</span>                효과_스케일아웃(() =&gt; gameObject.SetActive(<span class="keyword">false</span>));</div>
-<div class="line"><span class="lineno">  273</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  274</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;instant&quot;</span>:</div>
-<div class="line"><span class="lineno">  275</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  276</span>                gameObject.SetActive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  277</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  278</span>        }</div>
-<div class="line"><span class="lineno">  279</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af4bced7b75e83b98dcfaabfa06791203" name="af4bced7b75e83b98dcfaabfa06791203"></a>
@@ -339,10 +299,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>스케일 설정 </p>
-<div class="fragment"><div class="line"><span class="lineno">  317</span>    {</div>
-<div class="line"><span class="lineno">  318</span>        transform.localScale = <span class="keyword">new</span> Vector3(scale.x, scale.y, 1f);</div>
-<div class="line"><span class="lineno">  319</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7e0a87bdc9c87cc5e146b66d37712fd7" name="a7e0a87bdc9c87cc5e146b66d37712fd7"></a>
@@ -372,22 +329,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  292</span>    {</div>
-<div class="line"><span class="lineno">  293</span>        currentPosition = newPosition;</div>
-<div class="line"><span class="lineno">  294</span>        </div>
-<div class="line"><span class="lineno">  295</span>        Vector3 targetPosition = 위치_문자열을_벡터로(newPosition);</div>
-<div class="line"><span class="lineno">  296</span>        </div>
-<div class="line"><span class="lineno">  297</span>        <span class="keywordflow">if</span> (duration &lt;= 0)</div>
-<div class="line"><span class="lineno">  298</span>        {</div>
-<div class="line"><span class="lineno">  299</span>            transform.position = targetPosition;</div>
-<div class="line"><span class="lineno">  300</span>        }</div>
-<div class="line"><span class="lineno">  301</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  302</span>        {</div>
-<div class="line"><span class="lineno">  303</span>            <span class="comment">// ICPTween을 사용한 이동 애니메이션</span></div>
-<div class="line"><span class="lineno">  304</span>            transform.ICPMove(targetPosition, duration);</div>
-<div class="line"><span class="lineno">  305</span>        }</div>
-<div class="line"><span class="lineno">  306</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afa7c3cb6d5003dc641ac2a4383bf4995" name="afa7c3cb6d5003dc641ac2a4383bf4995"></a>
@@ -429,20 +371,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>좌우반전 설정 </p>
-<div class="fragment"><div class="line"><span class="lineno">  335</span>    {</div>
-<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">if</span> (스프라이트렌더러 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  337</span>        {</div>
-<div class="line"><span class="lineno">  338</span>            스프라이트렌더러.flipX = flip;</div>
-<div class="line"><span class="lineno">  339</span>        }</div>
-<div class="line"><span class="lineno">  340</span>        </div>
-<div class="line"><span class="lineno">  341</span>        <span class="keywordflow">if</span> (애니메이터 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  342</span>        {</div>
-<div class="line"><span class="lineno">  343</span>            Vector3 scale = 애니메이터.transform.localScale;</div>
-<div class="line"><span class="lineno">  344</span>            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);</div>
-<div class="line"><span class="lineno">  345</span>            애니메이터.transform.localScale = scale;</div>
-<div class="line"><span class="lineno">  346</span>        }</div>
-<div class="line"><span class="lineno">  347</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7e1fec7f43915f3ed9119db0836529ac" name="a7e1fec7f43915f3ed9119db0836529ac"></a>
@@ -467,44 +396,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>    {</div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_property" href="#aa796da01e0777fea6bc49ae54d3b9d72">characterData</a> = data;</div>
-<div class="line"><span class="lineno">   60</span>        characterId = data.characterId;</div>
-<div class="line"><span class="lineno">   61</span>        </div>
-<div class="line"><span class="lineno">   62</span>        <span class="comment">// 컴포넌트 설정</span></div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">if</span> (스프라이트렌더러 == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   64</span>        {</div>
-<div class="line"><span class="lineno">   65</span>            스프라이트렌더러 = GetComponent&lt;SpriteRenderer&gt;();</div>
-<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">if</span> (스프라이트렌더러 == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   67</span>            {</div>
-<div class="line"><span class="lineno">   68</span>                스프라이트렌더러 = gameObject.AddComponent&lt;SpriteRenderer&gt;();</div>
-<div class="line"><span class="lineno">   69</span>            }</div>
-<div class="line"><span class="lineno">   70</span>        }</div>
-<div class="line"><span class="lineno">   71</span>        </div>
-<div class="line"><span class="lineno">   72</span>        <span class="comment">// 애니메이션 모드인 경우 Animator 설정</span></div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (data.displayMode == CharacterData.CharacterDisplayMode.Animation)</div>
-<div class="line"><span class="lineno">   74</span>        {</div>
-<div class="line"><span class="lineno">   75</span>            <span class="keywordflow">if</span> (data.animationPrefab != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   76</span>            {</div>
-<div class="line"><span class="lineno">   77</span>                GameObject animObject = Instantiate(data.animationPrefab, transform);</div>
-<div class="line"><span class="lineno">   78</span>                애니메이터 = animObject.GetComponent&lt;Animator&gt;();</div>
-<div class="line"><span class="lineno">   79</span>            }</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (애니메이터 == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   81</span>            {</div>
-<div class="line"><span class="lineno">   82</span>                애니메이터 = GetComponent&lt;Animator&gt;();</div>
-<div class="line"><span class="lineno">   83</span>                <span class="keywordflow">if</span> (애니메이터 == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   84</span>                {</div>
-<div class="line"><span class="lineno">   85</span>                    애니메이터 = gameObject.AddComponent&lt;Animator&gt;();</div>
-<div class="line"><span class="lineno">   86</span>                }</div>
-<div class="line"><span class="lineno">   87</span>            }</div>
-<div class="line"><span class="lineno">   88</span>        }</div>
-<div class="line"><span class="lineno">   89</span>        </div>
-<div class="line"><span class="lineno">   90</span>        <span class="comment">// 기본 설정 적용</span></div>
-<div class="line"><span class="lineno">   91</span>        적용_기본설정();</div>
-<div class="line"><span class="lineno">   92</span>        </div>
-<div class="line"><span class="lineno">   93</span>        isInitialized = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aea46d74ca3a13308f04ca72961326371" name="aea46d74ca3a13308f04ca72961326371"></a>
@@ -548,28 +440,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  228</span>    {</div>
-<div class="line"><span class="lineno">  229</span>        gameObject.SetActive(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  230</span>        isVisible = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  231</span>        </div>
-<div class="line"><span class="lineno">  232</span>        <span class="keywordflow">switch</span> (effect.ToLower())</div>
-<div class="line"><span class="lineno">  233</span>        {</div>
-<div class="line"><span class="lineno">  234</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">  235</span>                효과_페이드인();</div>
-<div class="line"><span class="lineno">  236</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  237</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide&quot;</span>:</div>
-<div class="line"><span class="lineno">  238</span>                효과_슬라이드인();</div>
-<div class="line"><span class="lineno">  239</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  240</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">  241</span>                효과_스케일인();</div>
-<div class="line"><span class="lineno">  242</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  243</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;instant&quot;</span>:</div>
-<div class="line"><span class="lineno">  244</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  245</span>                <span class="comment">// 즉시 표시</span></div>
-<div class="line"><span class="lineno">  246</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  247</span>        }</div>
-<div class="line"><span class="lineno">  248</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a39ba4a3c1ed6d9eb340a417955dd234c" name="a39ba4a3c1ed6d9eb340a417955dd234c"></a>
@@ -588,20 +459,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>플립 </p>
-<div class="fragment"><div class="line"><span class="lineno">  353</span>    {</div>
-<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">if</span> (스프라이트렌더러 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  355</span>        {</div>
-<div class="line"><span class="lineno">  356</span>            스프라이트렌더러.flipX = !스프라이트렌더러.flipX;</div>
-<div class="line"><span class="lineno">  357</span>        }</div>
-<div class="line"><span class="lineno">  358</span>        </div>
-<div class="line"><span class="lineno">  359</span>        <span class="keywordflow">if</span> (애니메이터 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  360</span>        {</div>
-<div class="line"><span class="lineno">  361</span>            Vector3 scale = 애니메이터.transform.localScale;</div>
-<div class="line"><span class="lineno">  362</span>            scale.x *= -1;</div>
-<div class="line"><span class="lineno">  363</span>            애니메이터.transform.localScale = scale;</div>
-<div class="line"><span class="lineno">  364</span>        }</div>
-<div class="line"><span class="lineno">  365</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
@@ -626,8 +484,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>캐릭터 데이터 </p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a86e3838882589e799645a7ba93bb1bfd" name="a86e3838882589e799645a7ba93bb1bfd"></a>

@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Core.Interfaces.IAutoPlayController" name="DeulPie.ExtraInk.Core.Interfaces.IAutoPlayController">
-<area shape="rect" id="Node000001" title="자동 진행 제어 인터페이스" alt="" coords="5,5,213,176"/>
-<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_dialogue_manager.html" title="통합 대화 매니저 인터페이스 (SOLID: Dependency Inversion)" alt="" coords="5,224,213,309"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,191,112,224,106,224,106,191"/>
-</map>

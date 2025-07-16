@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Core.Interfaces.IResourceManager&lt; TResource &gt;" name="DeulPie.ExtraInk.Core.Interfaces.IResourceManager&lt; TResource &gt;">
-<area shape="rect" id="Node000001" title="리소스를 관리하는 매니저 인터페이스" alt="" coords="5,160,213,309"/>
-<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_manager.html" title="모든 매니저의 기본 인터페이스 (SOLID: Interface Segregation Principle) 최소한의 공통 기능만 정의" alt="" coords="5,5,213,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,127,112,161,106,161,106,127"/>
-</map>

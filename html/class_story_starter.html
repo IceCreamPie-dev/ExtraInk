@@ -170,39 +170,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>일반_스토리ID<
 </div><div class="memdoc">
 
 <p>스토리를 시작합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">if</span> (InkStoryManager.Instance == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   58</span>        {</div>
-<div class="line"><span class="lineno">   59</span>            Debug.LogError(<span class="stringliteral">&quot;InkStoryManager를 찾을 수 없습니다!&quot;</span>);</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   61</span>        }</div>
-<div class="line"><span class="lineno">   62</span>        </div>
-<div class="line"><span class="lineno">   63</span>        <span class="keywordtype">string</span> 시작할스토리 = 스토리ID;</div>
-<div class="line"><span class="lineno">   64</span>        </div>
-<div class="line"><span class="lineno">   65</span>        <span class="comment">// 조건부 시작 확인</span></div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (첫플레이_확인)</div>
-<div class="line"><span class="lineno">   67</span>        {</div>
-<div class="line"><span class="lineno">   68</span>            <span class="keywordtype">bool</span> 첫플레이 = <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.GetInt(<span class="stringliteral">&quot;FirstPlayCompleted&quot;</span>, 0) == 0;</div>
-<div class="line"><span class="lineno">   69</span>            시작할스토리 = 첫플레이 ? 첫플레이_스토리ID : 일반_스토리ID;</div>
-<div class="line"><span class="lineno">   70</span>            </div>
-<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">if</span> (첫플레이)</div>
-<div class="line"><span class="lineno">   72</span>            {</div>
-<div class="line"><span class="lineno">   73</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.SetInt(<span class="stringliteral">&quot;FirstPlayCompleted&quot;</span>, 1);</div>
-<div class="line"><span class="lineno">   74</span>                <a class="code hl_enumvalue" href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">PlayerPrefs</a>.Save();</div>
-<div class="line"><span class="lineno">   75</span>            }</div>
-<div class="line"><span class="lineno">   76</span>        }</div>
-<div class="line"><span class="lineno">   77</span>        </div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(시작할스토리))</div>
-<div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            Debug.LogWarning(<span class="stringliteral">&quot;시작할 스토리 ID가 설정되지 않았습니다!&quot;</span>);</div>
-<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   82</span>        }</div>
-<div class="line"><span class="lineno">   83</span>        </div>
-<div class="line"><span class="lineno">   84</span>        Debug.Log($<span class="stringliteral">&quot;스토리 시작: {시작할스토리}&quot;</span>);</div>
-<div class="line"><span class="lineno">   85</span>        InkStoryManager.Instance.스토리시작(시작할스토리);</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
-<div class="ttc" id="anamespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_html_aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e"><div class="ttname"><a href="namespace_deul_pie_1_1_extra_ink_1_1_core_1_1_settings.html#aad544e2b8d229dcd84e7ff8bf06d6221afc185ac592300f2d2a3e50f65dccfa0e">DeulPie.ExtraInk.Core.Settings.SettingsStorageType.PlayerPrefs</a></div><div class="ttdeci">@ PlayerPrefs</div><div class="ttdoc">Unity PlayerPrefs (기본, WebGL 필수)</div><div class="ttdef"><b>Definition</b> SettingsStorageFactory.cs:116</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_story_starter_a076085f3b3cfa1e805e93959cfbd8eb5_cgraph.png" border="0" usemap="#aclass_story_starter_a076085f3b3cfa1e805e93959cfbd8eb5_cgraph" loading="lazy" alt=""/></div>
@@ -231,13 +199,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>특정 스토리를 직접 시작합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">if</span> (InkStoryManager.Instance != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   94</span>        {</div>
-<div class="line"><span class="lineno">   95</span>            InkStoryManager.Instance.스토리시작(스토리이름);</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-<div class="line"><span class="lineno">   97</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_story_starter_a7853b8b7d6321de7387d19e0da2a638b_cgraph.png" border="0" usemap="#aclass_story_starter_a7853b8b7d6321de7387d19e0da2a638b_cgraph" loading="lazy" alt=""/></div>
@@ -266,13 +228,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>현재 스토리를 다시 시작합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  103</span>    {</div>
-<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">if</span> (InkStoryManager.Instance != <span class="keyword">null</span> &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(InkStoryManager.Instance.CurrentStoryID))</div>
-<div class="line"><span class="lineno">  105</span>        {</div>
-<div class="line"><span class="lineno">  106</span>            InkStoryManager.Instance.스토리시작(InkStoryManager.Instance.CurrentStoryID);</div>
-<div class="line"><span class="lineno">  107</span>        }</div>
-<div class="line"><span class="lineno">  108</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_story_starter_a9e437a81bbc741d2dfadee9fa64473ef_cgraph.png" border="0" usemap="#aclass_story_starter_a9e437a81bbc741d2dfadee9fa64473ef_cgraph" loading="lazy" alt=""/></div>

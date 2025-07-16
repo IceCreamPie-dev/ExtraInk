@@ -151,7 +151,8 @@ List&lt; <a class="el" href="class_dialogue_style_asset.html">DialogueStyleAsset
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ad4d7c3da1640a86a1106b59123159418" id="r_ad4d7c3da1640a86a1106b59123159418"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_style_manager.html">StyleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4d7c3da1640a86a1106b59123159418">Instance</a><code> [get]</code></td></tr>
+<tr class="memitem:ad4d7c3da1640a86a1106b59123159418" id="r_ad4d7c3da1640a86a1106b59123159418"><td class="memItemLeft" align="right" valign="top"><a id="ad4d7c3da1640a86a1106b59123159418" name="ad4d7c3da1640a86a1106b59123159418"></a>
+static <a class="el" href="class_style_manager.html">StyleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ac31bf4575c11b791f244a1b7e5019d4e" name="ac31bf4575c11b791f244a1b7e5019d4e"></a>
@@ -170,14 +171,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>스타일 추가 </p>
-<div class="fragment"><div class="line"><span class="lineno">  129</span>    {</div>
-<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">if</span> (style != <span class="keyword">null</span> &amp;&amp; !availableStyles.Contains(style))</div>
-<div class="line"><span class="lineno">  131</span>        {</div>
-<div class="line"><span class="lineno">  132</span>            availableStyles.Add(style);</div>
-<div class="line"><span class="lineno">  133</span>            Debug.Log($<span class="stringliteral">&quot;스타일 &#39;{style.styleName}&#39;이 추가되었습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">  134</span>        }</div>
-<div class="line"><span class="lineno">  135</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac520b73019c3eb172cdb23f8ed6acf23" name="ac520b73019c3eb172cdb23f8ed6acf23"></a>
@@ -196,25 +190,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>스타일을 매니저들에 적용 </p>
-<div class="fragment"><div class="line"><span class="lineno">   90</span>    {</div>
-<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">if</span> (currentStyle == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   92</span>        </div>
-<div class="line"><span class="lineno">   93</span>        <span class="comment">// DialogueManager에 스타일 적용</span></div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">if</span> (DialogueManager.Instance != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   95</span>        {</div>
-<div class="line"><span class="lineno">   96</span>            DialogueManager.Instance.ApplyStyle(currentStyle);</div>
-<div class="line"><span class="lineno">   97</span>        }</div>
-<div class="line"><span class="lineno">   98</span>        </div>
-<div class="line"><span class="lineno">   99</span>        <span class="comment">// CharacterManager에 스타일 적용</span></div>
-<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (CharacterManager.Instance != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  101</span>        {</div>
-<div class="line"><span class="lineno">  102</span>            CharacterManager.Instance.ApplyStyle(currentStyle);</div>
-<div class="line"><span class="lineno">  103</span>        }</div>
-<div class="line"><span class="lineno">  104</span>        </div>
-<div class="line"><span class="lineno">  105</span>        <span class="comment">// 다른 매니저들에도 스타일 적용 가능</span></div>
-<div class="line"><span class="lineno">  106</span>        <span class="comment">// AudioManager, UIManager 등...</span></div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_ac520b73019c3eb172cdb23f8ed6acf23_cgraph.png" border="0" usemap="#aclass_style_manager_ac520b73019c3eb172cdb23f8ed6acf23_cgraph" loading="lazy" alt=""/></div>
@@ -263,20 +239,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스타일 변경 </p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>    {</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (newStyle != <span class="keyword">null</span> &amp;&amp; availableStyles.Contains(newStyle))</div>
-<div class="line"><span class="lineno">   48</span>        {</div>
-<div class="line"><span class="lineno">   49</span>            currentStyle = newStyle;</div>
-<div class="line"><span class="lineno">   50</span>            <a class="code hl_function" href="#ac520b73019c3eb172cdb23f8ed6acf23">ApplyStyleToManagers</a>();</div>
-<div class="line"><span class="lineno">   51</span>            Debug.Log($<span class="stringliteral">&quot;스타일이 &#39;{newStyle.styleName}&#39;으로 변경되었습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">   52</span>        }</div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   54</span>        {</div>
-<div class="line"><span class="lineno">   55</span>            Debug.LogWarning($<span class="stringliteral">&quot;스타일 &#39;{newStyle?.styleName}&#39;을 찾을 수 없습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">   56</span>        }</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-<div class="ttc" id="aclass_style_manager_html_ac520b73019c3eb172cdb23f8ed6acf23"><div class="ttname"><a href="#ac520b73019c3eb172cdb23f8ed6acf23">StyleManager.ApplyStyleToManagers</a></div><div class="ttdeci">void ApplyStyleToManagers()</div><div class="ttdoc">스타일을 매니저들에 적용</div><div class="ttdef"><b>Definition</b> StyleManager.cs:89</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_a2bb70787b1d49e2221acc3cf51134c82_cgraph.png" border="0" usemap="#aclass_style_manager_a2bb70787b1d49e2221acc3cf51134c82_cgraph" loading="lazy" alt=""/></div>
@@ -323,19 +286,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스타일 이름으로 변경 </p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
-<div class="line"><span class="lineno">   64</span>        DialogueStyleAsset style = availableStyles.FirstOrDefault(s =&gt; s.styleName == styleName);</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (style != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   66</span>        {</div>
-<div class="line"><span class="lineno">   67</span>            <a class="code hl_function" href="#a2bb70787b1d49e2221acc3cf51134c82">ChangeStyle</a>(style);</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   70</span>        {</div>
-<div class="line"><span class="lineno">   71</span>            Debug.LogWarning($<span class="stringliteral">&quot;&#39;{styleName}&#39; 스타일을 찾을 수 없습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">   72</span>        }</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-<div class="ttc" id="aclass_style_manager_html_a2bb70787b1d49e2221acc3cf51134c82"><div class="ttname"><a href="#a2bb70787b1d49e2221acc3cf51134c82">StyleManager.ChangeStyle</a></div><div class="ttdeci">void ChangeStyle(DialogueStyleAsset newStyle)</div><div class="ttdoc">스타일 변경</div><div class="ttdef"><b>Definition</b> StyleManager.cs:45</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_ad31f5a6d0795390ce9ca815d8e8a0875_cgraph.png" border="0" usemap="#aclass_style_manager_ad31f5a6d0795390ce9ca815d8e8a0875_cgraph" loading="lazy" alt=""/></div>
@@ -378,10 +329,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>사용 가능한 스타일 목록 반환 </p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>    {</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">return</span> availableStyles.Select(s =&gt; s.styleName).ToList();</div>
-<div class="line"><span class="lineno">  115</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afbf0db960c1b6496f91bc393f3d12e05" name="afbf0db960c1b6496f91bc393f3d12e05"></a>
@@ -400,10 +348,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>현재 스타일 반환 </p>
-<div class="fragment"><div class="line"><span class="lineno">  121</span>    {</div>
-<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">return</span> currentStyle;</div>
-<div class="line"><span class="lineno">  123</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a83d18db6d42fbba422b8eec9b6ace71b" name="a83d18db6d42fbba422b8eec9b6ace71b"></a>
@@ -422,11 +367,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>에디터에서 스타일 새로고침 </p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>    {</div>
-<div class="line"><span class="lineno">  161</span>        <a class="code hl_function" href="#ac520b73019c3eb172cdb23f8ed6acf23">ApplyStyleToManagers</a>();</div>
-<div class="line"><span class="lineno">  162</span>        Debug.Log(<span class="stringliteral">&quot;스타일이 새로고침되었습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">  163</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_a83d18db6d42fbba422b8eec9b6ace71b_cgraph.png" border="0" usemap="#aclass_style_manager_a83d18db6d42fbba422b8eec9b6ace71b_cgraph" loading="lazy" alt=""/></div>
@@ -457,21 +398,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스타일 제거 </p>
-<div class="fragment"><div class="line"><span class="lineno">  141</span>    {</div>
-<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">if</span> (style != <span class="keyword">null</span> &amp;&amp; availableStyles.Contains(style))</div>
-<div class="line"><span class="lineno">  143</span>        {</div>
-<div class="line"><span class="lineno">  144</span>            availableStyles.Remove(style);</div>
-<div class="line"><span class="lineno">  145</span>            Debug.Log($<span class="stringliteral">&quot;스타일 &#39;{style.styleName}&#39;이 제거되었습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">  146</span>            </div>
-<div class="line"><span class="lineno">  147</span>            <span class="comment">// 현재 스타일이 제거된 스타일인 경우 기본 스타일로 변경</span></div>
-<div class="line"><span class="lineno">  148</span>            <span class="keywordflow">if</span> (currentStyle == style)</div>
-<div class="line"><span class="lineno">  149</span>            {</div>
-<div class="line"><span class="lineno">  150</span>                <a class="code hl_function" href="#a40b25d5a5b7e3ee8c679b86cbeef416d">ResetToDefaultStyle</a>();</div>
-<div class="line"><span class="lineno">  151</span>            }</div>
-<div class="line"><span class="lineno">  152</span>        }</div>
-<div class="line"><span class="lineno">  153</span>    }</div>
-<div class="ttc" id="aclass_style_manager_html_a40b25d5a5b7e3ee8c679b86cbeef416d"><div class="ttname"><a href="#a40b25d5a5b7e3ee8c679b86cbeef416d">StyleManager.ResetToDefaultStyle</a></div><div class="ttdeci">void ResetToDefaultStyle()</div><div class="ttdoc">기본 스타일로 복원</div><div class="ttdef"><b>Definition</b> StyleManager.cs:78</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_a70d3ac902bedc2533845bc8b5fa24d53_cgraph.png" border="0" usemap="#aclass_style_manager_a70d3ac902bedc2533845bc8b5fa24d53_cgraph" loading="lazy" alt=""/></div>
@@ -506,13 +433,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>기본 스타일로 복원 </p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>    {</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (defaultStyle != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   81</span>        {</div>
-<div class="line"><span class="lineno">   82</span>            <a class="code hl_function" href="#a2bb70787b1d49e2221acc3cf51134c82">ChangeStyle</a>(defaultStyle);</div>
-<div class="line"><span class="lineno">   83</span>        }</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_style_manager_a40b25d5a5b7e3ee8c679b86cbeef416d_cgraph.png" border="0" usemap="#aclass_style_manager_a40b25d5a5b7e3ee8c679b86cbeef416d_cgraph" loading="lazy" alt=""/></div>
@@ -537,43 +458,6 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
-<a id="ad4d7c3da1640a86a1106b59123159418" name="ad4d7c3da1640a86a1106b59123159418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4d7c3da1640a86a1106b59123159418">&#9670;&#160;</a></span>Instance</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_style_manager.html">StyleManager</a> StyleManager.Instance</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   19</span>    {</div>
-<div class="line"><span class="lineno">   20</span>        <span class="keyword">get</span></div>
-<div class="line"><span class="lineno">   21</span>        {</div>
-<div class="line"><span class="lineno">   22</span>            <span class="keywordflow">if</span> (_instance == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   23</span>            {</div>
-<div class="line"><span class="lineno">   24</span>                _instance = Resources.FindObjectsOfTypeAll&lt;StyleManager&gt;().FirstOrDefault();</div>
-<div class="line"><span class="lineno">   25</span>                <span class="keywordflow">if</span> (_instance == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   26</span>                {</div>
-<div class="line"><span class="lineno">   27</span>                    Debug.LogWarning(<span class="stringliteral">&quot;StyleManager를 찾을 수 없습니다. Resources 폴더에 StyleManager 에셋을 생성해주세요.&quot;</span>);</div>
-<div class="line"><span class="lineno">   28</span>                }</div>
-<div class="line"><span class="lineno">   29</span>            }</div>
-<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">return</span> _instance;</div>
-<div class="line"><span class="lineno">   31</span>        }</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

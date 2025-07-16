@@ -121,7 +121,8 @@ Collaboration diagram for DeulPie.ExtraInk.Core.Settings.JsonFileSettingsStorage
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3be093fe5e05f0f55bac8eeb6208aa5f" id="r_a3be093fe5e05f0f55bac8eeb6208aa5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be093fe5e05f0f55bac8eeb6208aa5f">JsonFileSettingsStorage</a> (string fileName=&quot;ExtraInkSettings.json&quot;)</td></tr>
+<tr class="memitem:a3be093fe5e05f0f55bac8eeb6208aa5f" id="r_a3be093fe5e05f0f55bac8eeb6208aa5f"><td class="memItemLeft" align="right" valign="top"><a id="a3be093fe5e05f0f55bac8eeb6208aa5f" name="a3be093fe5e05f0f55bac8eeb6208aa5f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>JsonFileSettingsStorage</b> (string fileName=&quot;ExtraInkSettings.json&quot;)</td></tr>
 <tr class="memitem:a7caacf4e092bc8a29f8d1db7334730a4" id="r_a7caacf4e092bc8a29f8d1db7334730a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7caacf4e092bc8a29f8d1db7334730a4">SaveSetting&lt; T &gt;</a> (string key, T value)</td></tr>
 <tr class="memitem:adffe18e1b48885d3ae8f35ddc536b939" id="r_adffe18e1b48885d3ae8f35ddc536b939"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adffe18e1b48885d3ae8f35ddc536b939">LoadSetting&lt; T &gt;</a> (string key, T defaultValue=default)</td></tr>
 <tr class="memitem:a80bbd81f5e11ccdb3a6b564fb6ba92ea" id="r_a80bbd81f5e11ccdb3a6b564fb6ba92ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80bbd81f5e11ccdb3a6b564fb6ba92ea">HasSetting</a> (string key)</td></tr>
@@ -131,30 +132,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>JSON 파일 기반 설정 저장소 macOS, Linux에서 주로 사용 </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3be093fe5e05f0f55bac8eeb6208aa5f" name="a3be093fe5e05f0f55bac8eeb6208aa5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be093fe5e05f0f55bac8eeb6208aa5f">&#9670;&#160;</a></span>JsonFileSettingsStorage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DeulPie.ExtraInk.Core.Settings.JsonFileSettingsStorage.JsonFileSettingsStorage </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;ExtraInkSettings.json&quot;</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   39</span>        {</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordtype">string</span> directory = Application.persistentDataPath;</div>
-<div class="line"><span class="lineno">   41</span>            _filePath = Path.Combine(directory, fileName);</div>
-<div class="line"><span class="lineno">   42</span>            LoadFromFile();</div>
-<div class="line"><span class="lineno">   43</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a27a399f44b63107578fd2238f8a26182" name="a27a399f44b63107578fd2238f8a26182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27a399f44b63107578fd2238f8a26182">&#9670;&#160;</a></span>ClearAllSettings()</h2>
 
@@ -171,11 +149,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>        {</div>
-<div class="line"><span class="lineno">  114</span>            _settings?.Clear();</div>
-<div class="line"><span class="lineno">  115</span>            SaveToFile();</div>
-<div class="line"><span class="lineno">  116</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6ffacabad7ebce6bb4d77fa2b476fcb5" name="a6ffacabad7ebce6bb4d77fa2b476fcb5"></a>
@@ -194,14 +168,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  104</span>        {</div>
-<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">if</span> (_settings != <span class="keyword">null</span> &amp;&amp; _settings.ContainsKey(key))</div>
-<div class="line"><span class="lineno">  106</span>            {</div>
-<div class="line"><span class="lineno">  107</span>                _settings.Remove(key);</div>
-<div class="line"><span class="lineno">  108</span>                SaveToFile();</div>
-<div class="line"><span class="lineno">  109</span>            }</div>
-<div class="line"><span class="lineno">  110</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8529854456873c36df8f08a7c1ff638b" name="a8529854456873c36df8f08a7c1ff638b"></a>
@@ -220,10 +187,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>        {</div>
-<div class="line"><span class="lineno">  120</span>            SaveToFile();</div>
-<div class="line"><span class="lineno">  121</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a80bbd81f5e11ccdb3a6b564fb6ba92ea" name="a80bbd81f5e11ccdb3a6b564fb6ba92ea"></a>
@@ -242,10 +206,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>        {</div>
-<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">return</span> _settings != <span class="keyword">null</span> &amp;&amp; _settings.ContainsKey(key);</div>
-<div class="line"><span class="lineno">  101</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="adffe18e1b48885d3ae8f35ddc536b939" name="adffe18e1b48885d3ae8f35ddc536b939"></a>
@@ -268,49 +229,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   55</span>        {</div>
-<div class="line"><span class="lineno">   56</span>            <span class="keywordflow">if</span> (_settings == <span class="keyword">null</span> || !_settings.ContainsKey(key))</div>
-<div class="line"><span class="lineno">   57</span>                <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   60</span>            {</div>
-<div class="line"><span class="lineno">   61</span>                var value = _settings[key];</div>
-<div class="line"><span class="lineno">   62</span>                </div>
-<div class="line"><span class="lineno">   63</span>                <span class="comment">// 타입 변환 처리</span></div>
-<div class="line"><span class="lineno">   64</span>                <span class="keywordflow">if</span> (value == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   65</span>                {</div>
-<div class="line"><span class="lineno">   66</span>                    <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><span class="lineno">   67</span>                }</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>                <span class="comment">// 직접 타입 변환 시도</span></div>
-<div class="line"><span class="lineno">   70</span>                <span class="keywordflow">if</span> (value is T directValue)</div>
-<div class="line"><span class="lineno">   71</span>                {</div>
-<div class="line"><span class="lineno">   72</span>                    <span class="keywordflow">return</span> directValue;</div>
-<div class="line"><span class="lineno">   73</span>                }</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>                <span class="comment">// JSON 문자열인 경우 JsonUtility로 역직렬화</span></div>
-<div class="line"><span class="lineno">   76</span>                <span class="keywordflow">if</span> (value is <span class="keywordtype">string</span> jsonString &amp;&amp; !typeof(T).IsPrimitive &amp;&amp; typeof(T) != typeof(<span class="keywordtype">string</span>))</div>
-<div class="line"><span class="lineno">   77</span>                {</div>
-<div class="line"><span class="lineno">   78</span>                    <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">   79</span>                    {</div>
-<div class="line"><span class="lineno">   80</span>                        <span class="keywordflow">return</span> JsonUtility.FromJson&lt;T&gt;(jsonString);</div>
-<div class="line"><span class="lineno">   81</span>                    }</div>
-<div class="line"><span class="lineno">   82</span>                    <span class="keywordflow">catch</span></div>
-<div class="line"><span class="lineno">   83</span>                    {</div>
-<div class="line"><span class="lineno">   84</span>                        <span class="comment">// JsonUtility 실패 시 기본 타입 변환 시도</span></div>
-<div class="line"><span class="lineno">   85</span>                    }</div>
-<div class="line"><span class="lineno">   86</span>                }</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>                <span class="comment">// 기본 타입 변환</span></div>
-<div class="line"><span class="lineno">   89</span>                <span class="keywordflow">return</span> (T)Convert.ChangeType(value, typeof(T));</div>
-<div class="line"><span class="lineno">   90</span>            }</div>
-<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">   92</span>            {</div>
-<div class="line"><span class="lineno">   93</span>                Debug.LogWarning($<span class="stringliteral">&quot;Failed to load setting &#39;{key}&#39;: {ex.Message}&quot;</span>);</div>
-<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">return</span> defaultValue;</div>
-<div class="line"><span class="lineno">   95</span>            }</div>
-<div class="line"><span class="lineno">   96</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7caacf4e092bc8a29f8d1db7334730a4" name="a7caacf4e092bc8a29f8d1db7334730a4"></a>
@@ -333,14 +252,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html">DeulPie.ExtraInk.Core.Settings.ISettingsStorage</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>        {</div>
-<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">if</span> (_settings == <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   48</span>                _settings = <span class="keyword">new</span> Dictionary&lt;string, object&gt;();</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>            _settings[key] = value;</div>
-<div class="line"><span class="lineno">   51</span>            SaveToFile();</div>
-<div class="line"><span class="lineno">   52</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

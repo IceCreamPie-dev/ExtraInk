@@ -199,10 +199,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b><code> [ge
 </div><div class="memdoc">
 
 <p>기본 스토리를 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>    {</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> 기본스토리 != <span class="keyword">null</span> ? 기본스토리 : 스토리목록.FirstOrDefault();</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4cf1b63a1fb253392ca0663967eec42e" name="a4cf1b63a1fb253392ca0663967eec42e"></a>
@@ -221,11 +218,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b><code> [ge
 </div><div class="memdoc">
 
 <p>데이터베이스를 초기화합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>    {</div>
-<div class="line"><span class="lineno">  135</span>        스토리목록.Clear();</div>
-<div class="line"><span class="lineno">  136</span>        기본스토리 = <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">  137</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af6fc0bb3b99bda8c98b5655cad6a79b0" name="af6fc0bb3b99bda8c98b5655cad6a79b0"></a>
@@ -244,10 +237,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b><code> [ge
 </div><div class="memdoc">
 
 <p>모든 스토리 목록을 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>    {</div>
-<div class="line"><span class="lineno">   52</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;StoryData&gt;(스토리목록);</div>
-<div class="line"><span class="lineno">   53</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a57cdc8bf3f535d5d4fde0f4fed9fb07d" name="a57cdc8bf3f535d5d4fde0f4fed9fb07d"></a>
@@ -266,10 +256,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmpty</b><code> [ge
 </div><div class="memdoc">
 
 <p>스토리 ID로 스토리 데이터를 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>    {</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">return</span> 스토리목록.FirstOrDefault(story =&gt; story.이야기_ID == 스토리ID);</div>
-<div class="line"><span class="lineno">   20</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_story_database_a57cdc8bf3f535d5d4fde0f4fed9fb07d_icgraph.png" border="0" usemap="#aclass_story_database_a57cdc8bf3f535d5d4fde0f4fed9fb07d_icgraph" loading="lazy" alt=""/></div>
@@ -302,19 +289,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>특정 스토리 ID의 언어별 버전을 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>    {</div>
-<div class="line"><span class="lineno">   35</span>        <span class="comment">// 정확한 매치 우선 검색</span></div>
-<div class="line"><span class="lineno">   36</span>        var 정확한매치 = 스토리목록.FirstOrDefault(story =&gt; </div>
-<div class="line"><span class="lineno">   37</span>            story.이야기_ID == 스토리ID &amp;&amp; story.언어 == 언어코드);</div>
-<div class="line"><span class="lineno">   38</span>        </div>
-<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">if</span> (정확한매치 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> 정확한매치;</div>
-<div class="line"><span class="lineno">   41</span>        </div>
-<div class="line"><span class="lineno">   42</span>        <span class="comment">// 부분 매치 검색 (스토리ID가 포함된 경우)</span></div>
-<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> 스토리목록.FirstOrDefault(story =&gt; </div>
-<div class="line"><span class="lineno">   44</span>            story.이야기_ID.Contains(스토리ID) &amp;&amp; story.언어 == 언어코드);</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0fcd9a9491336f6c909bd6ce66d2a316" name="a0fcd9a9491336f6c909bd6ce66d2a316"></a>
@@ -333,13 +308,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스토리를 데이터베이스에서 제거합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   86</span>    {</div>
-<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (스토리목록.Contains(스토리데이터))</div>
-<div class="line"><span class="lineno">   88</span>        {</div>
-<div class="line"><span class="lineno">   89</span>            스토리목록.Remove(스토리데이터);</div>
-<div class="line"><span class="lineno">   90</span>        }</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad8e7421cba90ddba3b9f23101b45342b" name="ad8e7421cba90ddba3b9f23101b45342b"></a>
@@ -358,15 +327,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스토리 ID로 스토리를 제거합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>    {</div>
-<div class="line"><span class="lineno">   98</span>        var 제거할스토리 = <a class="code hl_function" href="#a57cdc8bf3f535d5d4fde0f4fed9fb07d">스토리_가져오기</a>(스토리ID);</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">if</span> (제거할스토리 != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  100</span>        {</div>
-<div class="line"><span class="lineno">  101</span>            스토리목록.Remove(제거할스토리);</div>
-<div class="line"><span class="lineno">  102</span>        }</div>
-<div class="line"><span class="lineno">  103</span>    }</div>
-<div class="ttc" id="aclass_story_database_html_a57cdc8bf3f535d5d4fde0f4fed9fb07d"><div class="ttname"><a href="#a57cdc8bf3f535d5d4fde0f4fed9fb07d">StoryDatabase.스토리_가져오기</a></div><div class="ttdeci">StoryData 스토리_가져오기(string 스토리ID)</div><div class="ttdoc">스토리 ID로 스토리 데이터를 가져옵니다</div><div class="ttdef"><b>Definition</b> StoryDatabase.cs:17</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_story_database_ad8e7421cba90ddba3b9f23101b45342b_cgraph.png" border="0" usemap="#aclass_story_database_ad8e7421cba90ddba3b9f23101b45342b_cgraph" loading="lazy" alt=""/></div>
@@ -395,10 +356,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스토리 존재 여부를 확인합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>    {</div>
-<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">return</span> 스토리목록.Any(story =&gt; story.이야기_ID == 스토리ID);</div>
-<div class="line"><span class="lineno">  119</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5e8064aed6225305f2d94c488ddf6d21" name="a5e8064aed6225305f2d94c488ddf6d21"></a>
@@ -417,13 +375,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>스토리를 데이터베이스에 추가합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   75</span>    {</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (스토리데이터 != <span class="keyword">null</span> &amp;&amp; !스토리목록.Contains(스토리데이터))</div>
-<div class="line"><span class="lineno">   77</span>        {</div>
-<div class="line"><span class="lineno">   78</span>            스토리목록.Add(스토리데이터);</div>
-<div class="line"><span class="lineno">   79</span>        }</div>
-<div class="line"><span class="lineno">   80</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac44896dcce5a36f8d01d5113fd34adaa" name="ac44896dcce5a36f8d01d5113fd34adaa"></a>
@@ -442,10 +394,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>특정 언어의 모든 스토리를 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>    {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">return</span> 스토리목록.Where(story =&gt; story.언어 == 언어코드).ToList();</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a86d32850cd2e313d5ae5718eebb3f205" name="a86d32850cd2e313d5ae5718eebb3f205"></a>
@@ -464,10 +413,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>언어별 스토리를 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
-<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">return</span> 스토리목록.FirstOrDefault(story =&gt; story.언어 == 언어코드);</div>
-<div class="line"><span class="lineno">   28</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab2a4d01a92bdeb976eb0820661fc2dfd" name="ab2a4d01a92bdeb976eb0820661fc2dfd"></a>
@@ -490,11 +436,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>특정 언어의 스토리 존재 여부를 확인합니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>    {</div>
-<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">return</span> 스토리목록.Any(story =&gt; </div>
-<div class="line"><span class="lineno">  127</span>            story.이야기_ID.StartsWith(스토리ID) &amp;&amp; story.언어 == 언어코드);</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3cc759d5f6d25eb4e138c19811cf404a" name="a3cc759d5f6d25eb4e138c19811cf404a"></a>
@@ -513,10 +455,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>지원되는 언어 목록을 가져옵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
-<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> 스토리목록.Select(story =&gt; story.언어).Distinct().ToList();</div>
-<div class="line"><span class="lineno">  111</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>

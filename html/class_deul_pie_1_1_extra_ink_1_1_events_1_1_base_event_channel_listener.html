@@ -140,9 +140,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa5ad4736261172625f36e078daf6b04a" id="r_aa5ad4736261172625f36e078daf6b04a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5ad4736261172625f36e078daf6b04a">OnEnable</a> ()</td></tr>
-<tr class="memitem:a1687364e1b17fc4c6ac667a2aa26e2f3" id="r_a1687364e1b17fc4c6ac667a2aa26e2f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1687364e1b17fc4c6ac667a2aa26e2f3">OnDisable</a> ()</td></tr>
-<tr class="memitem:aa5e4972f432122352d385d987b33f38e" id="r_aa5e4972f432122352d385d987b33f38e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e4972f432122352d385d987b33f38e">Start</a> ()</td></tr>
+<tr class="memitem:aa5ad4736261172625f36e078daf6b04a" id="r_aa5ad4736261172625f36e078daf6b04a"><td class="memItemLeft" align="right" valign="top"><a id="aa5ad4736261172625f36e078daf6b04a" name="aa5ad4736261172625f36e078daf6b04a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEnable</b> ()</td></tr>
+<tr class="memitem:a1687364e1b17fc4c6ac667a2aa26e2f3" id="r_a1687364e1b17fc4c6ac667a2aa26e2f3"><td class="memItemLeft" align="right" valign="top"><a id="a1687364e1b17fc4c6ac667a2aa26e2f3" name="a1687364e1b17fc4c6ac667a2aa26e2f3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDisable</b> ()</td></tr>
+<tr class="memitem:aa5e4972f432122352d385d987b33f38e" id="r_aa5e4972f432122352d385d987b33f38e"><td class="memItemLeft" align="right" valign="top"><a id="aa5e4972f432122352d385d987b33f38e" name="aa5e4972f432122352d385d987b33f38e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
 <tr class="memitem:abdefdeaa8e5bb623b1e88ffed8c456a4" id="r_abdefdeaa8e5bb623b1e88ffed8c456a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdefdeaa8e5bb623b1e88ffed8c456a4">FindChannelById</a> ()</td></tr>
 <tr class="memdesc:abdefdeaa8e5bb623b1e88ffed8c456a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">채널 ID로 이벤트 채널 검색  <br /></td></tr>
 <tr class="memitem:af771354db5924b842aa952143a0a91fa" id="r_af771354db5924b842aa952143a0a91fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af771354db5924b842aa952143a0a91fa">DebugLog</a> (string message)</td></tr>
@@ -195,17 +198,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>디버그 로그 출력 </p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>        {</div>
-<div class="line"><span class="lineno">  114</span><span class="preprocessor">#if UNITY_EDITOR</span></div>
-<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">if</span> (enableDebugLog &amp;&amp; showDebugInfo)</div>
-<div class="line"><span class="lineno">  116</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">if</span> (enableDebugLog)</div>
-<div class="line"><span class="lineno">  118</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  119</span>            {</div>
-<div class="line"><span class="lineno">  120</span>                Debug.Log($<span class="stringliteral">&quot;[{GetType().Name}:{gameObject.name}] {message}&quot;</span>);</div>
-<div class="line"><span class="lineno">  121</span>            }</div>
-<div class="line"><span class="lineno">  122</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_af771354db5924b842aa952143a0a91fa_icgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_af771354db5924b842aa952143a0a91fa_icgraph" loading="lazy" alt=""/></div>
@@ -250,22 +243,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>채널 ID로 이벤트 채널 검색 </p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>        {</div>
-<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">if</span> (EventChannelManager.Instance != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   61</span>            {</div>
-<div class="line"><span class="lineno">   62</span>                eventChannel = EventChannelManager.Instance.GetChannel&lt;BaseEventChannel&gt;(channelId);</div>
-<div class="line"><span class="lineno">   63</span>                </div>
-<div class="line"><span class="lineno">   64</span>                <span class="keywordflow">if</span> (eventChannel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   65</span>                {</div>
-<div class="line"><span class="lineno">   66</span>                    DebugLog($<span class="stringliteral">&quot;채널 ID &#39;{channelId}&#39;로 이벤트 채널을 찾았습니다: {eventChannel.name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   67</span>                }</div>
-<div class="line"><span class="lineno">   68</span>                <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   69</span>                {</div>
-<div class="line"><span class="lineno">   70</span>                    DebugLog($<span class="stringliteral">&quot;채널 ID &#39;{channelId}&#39;에 해당하는 이벤트 채널을 찾을 수 없습니다.&quot;</span>);</div>
-<div class="line"><span class="lineno">   71</span>                }</div>
-<div class="line"><span class="lineno">   72</span>            }</div>
-<div class="line"><span class="lineno">   73</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_abdefdeaa8e5bb623b1e88ffed8c456a4_cgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_abdefdeaa8e5bb623b1e88ffed8c456a4_cgraph" loading="lazy" alt=""/></div>
@@ -276,68 +254,6 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a id="a1687364e1b17fc4c6ac667a2aa26e2f3" name="a1687364e1b17fc4c6ac667a2aa26e2f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1687364e1b17fc4c6ac667a2aa26e2f3">&#9670;&#160;</a></span>OnDisable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Events.BaseEventChannelListener.OnDisable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   39</span>        {</div>
-<div class="line"><span class="lineno">   40</span>            <span class="keywordflow">if</span> (unsubscribeOnDisable)</div>
-<div class="line"><span class="lineno">   41</span>            {</div>
-<div class="line"><span class="lineno">   42</span>                Unsubscribe();</div>
-<div class="line"><span class="lineno">   43</span>            }</div>
-<div class="line"><span class="lineno">   44</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aa5ad4736261172625f36e078daf6b04a" name="aa5ad4736261172625f36e078daf6b04a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5ad4736261172625f36e078daf6b04a">&#9670;&#160;</a></span>OnEnable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Events.BaseEventChannelListener.OnEnable </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   31</span>        {</div>
-<div class="line"><span class="lineno">   32</span>            <span class="keywordflow">if</span> (subscribeOnEnable)</div>
-<div class="line"><span class="lineno">   33</span>            {</div>
-<div class="line"><span class="lineno">   34</span>                Subscribe();</div>
-<div class="line"><span class="lineno">   35</span>            }</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="adbc3fcd8dfc6812891a5a4d2d5e929a2" name="adbc3fcd8dfc6812891a5a4d2d5e929a2"></a>
@@ -356,21 +272,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>이벤트 채널 설정 </p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>        {</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">if</span> (isSubscribed)</div>
-<div class="line"><span class="lineno">   96</span>            {</div>
-<div class="line"><span class="lineno">   97</span>                Unsubscribe();</div>
-<div class="line"><span class="lineno">   98</span>            }</div>
-<div class="line"><span class="lineno">   99</span> </div>
-<div class="line"><span class="lineno">  100</span>            eventChannel = channel;</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">if</span> (channel != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  103</span>            {</div>
-<div class="line"><span class="lineno">  104</span>                channelId = channel.ChannelId;</div>
-<div class="line"><span class="lineno">  105</span>                DebugLog($<span class="stringliteral">&quot;이벤트 채널이 설정되었습니다: {channel.name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  106</span>            }</div>
-<div class="line"><span class="lineno">  107</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_adbc3fcd8dfc6812891a5a4d2d5e929a2_cgraph.png" border="0" usemap="#aclass_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener_adbc3fcd8dfc6812891a5a4d2d5e929a2_cgraph" loading="lazy" alt=""/></div>
@@ -383,38 +285,6 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a id="aa5e4972f432122352d385d987b33f38e" name="aa5e4972f432122352d385d987b33f38e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5e4972f432122352d385d987b33f38e">&#9670;&#160;</a></span>Start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void DeulPie.ExtraInk.Events.BaseEventChannelListener.Start </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   47</span>        {</div>
-<div class="line"><span class="lineno">   48</span>            <span class="comment">// 채널이 설정되지 않았고 ID가 있다면 자동 검색</span></div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (eventChannel == <span class="keyword">null</span> &amp;&amp; !<span class="keywordtype">string</span>.IsNullOrEmpty(channelId))</div>
-<div class="line"><span class="lineno">   50</span>            {</div>
-<div class="line"><span class="lineno">   51</span>                FindChannelById();</div>
-<div class="line"><span class="lineno">   52</span>            }</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="aa658ba82cd96f74044f00358c21ef3cf" name="aa658ba82cd96f74044f00358c21ef3cf"></a>

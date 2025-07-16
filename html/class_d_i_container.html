@@ -167,13 +167,7 @@ Public Member Functions</h2></td></tr>
 <p>모든 서비스를 정리합니다 </p>
 
 <p>Implements <a class="el" href="interface_i_d_i_container.html#a585f5f8c78aed1d1d103ee421e0a767d">IDIContainer</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  183</span>    {</div>
-<div class="line"><span class="lineno">  184</span>        _services.Clear();</div>
-<div class="line"><span class="lineno">  185</span>        _singletonInstances.Clear();</div>
-<div class="line"><span class="lineno">  186</span>        _resolvingTypes.Clear();</div>
-<div class="line"><span class="lineno">  187</span>        Debug.Log(<span class="stringliteral">&quot;[DIContainer] All services cleared&quot;</span>);</div>
-<div class="line"><span class="lineno">  188</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6745f18d6a6ee4a15edeb9f9fe22124b" name="a6745f18d6a6ee4a15edeb9f9fe22124b"></a>
@@ -194,12 +188,7 @@ Public Member Functions</h2></td></tr>
 <p>등록된 서비스 목록을 가져옵니다 </p>
 
 <p>Implements <a class="el" href="interface_i_d_i_container.html#a2eaf6ded7d342357e13997aa1d1c0e84">IDIContainer</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  194</span>    {</div>
-<div class="line"><span class="lineno">  195</span>        var types = <span class="keyword">new</span> Type[_services.Count];</div>
-<div class="line"><span class="lineno">  196</span>        _services.Keys.CopyTo(types, 0);</div>
-<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">return</span> types;</div>
-<div class="line"><span class="lineno">  198</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad21ae607a8a0a6f78fa9de85a654cd7d" name="ad21ae607a8a0a6f78fa9de85a654cd7d"></a>
@@ -220,10 +209,7 @@ Public Member Functions</h2></td></tr>
 <p>서비스가 등록되어 있는지 확인합니다 </p>
 
 <p>Implements <a class="el" href="interface_i_d_i_container.html#a26a807d297072e96f9142ca7f17fca69">IDIContainer</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  161</span>    {</div>
-<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">return</span> _services.ContainsKey(serviceType);</div>
-<div class="line"><span class="lineno">  163</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_i_container_ad21ae607a8a0a6f78fa9de85a654cd7d_icgraph.png" border="0" usemap="#aclass_d_i_container_ad21ae607a8a0a6f78fa9de85a654cd7d_icgraph" loading="lazy" alt=""/></div>
@@ -262,12 +248,7 @@ Here is the caller graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>                                          : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  153</span>    {</div>
-<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ad21ae607a8a0a6f78fa9de85a654cd7d">IsRegistered</a>(typeof(T));</div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="ttc" id="aclass_d_i_container_html_ad21ae607a8a0a6f78fa9de85a654cd7d"><div class="ttname"><a href="#ad21ae607a8a0a6f78fa9de85a654cd7d">DIContainer.IsRegistered</a></div><div class="ttdeci">bool IsRegistered(Type serviceType)</div><div class="ttdoc">서비스가 등록되어 있는지 확인합니다</div><div class="ttdef"><b>Definition</b> DIContainer.cs:160</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_i_container_a2460f0e1d188678b3ca251adcaa633ff_cgraph.png" border="0" usemap="#aclass_d_i_container_a2460f0e1d188678b3ca251adcaa633ff_cgraph" loading="lazy" alt=""/></div>
@@ -306,21 +287,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                                                                       : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   61</span>    {</div>
-<div class="line"><span class="lineno">   62</span>        var serviceType = typeof(TInterface);</div>
-<div class="line"><span class="lineno">   63</span>        </div>
-<div class="line"><span class="lineno">   64</span>        _services[serviceType] = <span class="keyword">new</span> ServiceDescriptor</div>
-<div class="line"><span class="lineno">   65</span>        {</div>
-<div class="line"><span class="lineno">   66</span>            ServiceType = serviceType,</div>
-<div class="line"><span class="lineno">   67</span>            ImplementationType = <span class="keyword">null</span>,</div>
-<div class="line"><span class="lineno">   68</span>            Lifetime = ServiceLifetime.Singleton,</div>
-<div class="line"><span class="lineno">   69</span>            Factory = container =&gt; factory(container)</div>
-<div class="line"><span class="lineno">   70</span>        };</div>
-<div class="line"><span class="lineno">   71</span>        </div>
-<div class="line"><span class="lineno">   72</span>        Debug.Log($<span class="stringliteral">&quot;[DIContainer] Singleton factory registered: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   73</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6d6a3f5d2cb6e44033d7e41b90dd25cd" name="a6d6a3f5d2cb6e44033d7e41b90dd25cd"></a>
@@ -349,23 +316,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                                    : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   41</span>    {</div>
-<div class="line"><span class="lineno">   42</span>        var serviceType = typeof(TInterface);</div>
-<div class="line"><span class="lineno">   43</span>        </div>
-<div class="line"><span class="lineno">   44</span>        _services[serviceType] = <span class="keyword">new</span> ServiceDescriptor</div>
-<div class="line"><span class="lineno">   45</span>        {</div>
-<div class="line"><span class="lineno">   46</span>            ServiceType = serviceType,</div>
-<div class="line"><span class="lineno">   47</span>            ImplementationType = instance.GetType(),</div>
-<div class="line"><span class="lineno">   48</span>            Lifetime = ServiceLifetime.Singleton,</div>
-<div class="line"><span class="lineno">   49</span>            Factory = <span class="keyword">null</span></div>
-<div class="line"><span class="lineno">   50</span>        };</div>
-<div class="line"><span class="lineno">   51</span>        </div>
-<div class="line"><span class="lineno">   52</span>        _singletonInstances[serviceType] = instance;</div>
-<div class="line"><span class="lineno">   53</span>        </div>
-<div class="line"><span class="lineno">   54</span>        Debug.Log($<span class="stringliteral">&quot;[DIContainer] Singleton instance registered: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aad339c91b5337156d1867efc62f17bbe" name="aad339c91b5337156d1867efc62f17bbe"></a>
@@ -396,23 +347,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                         : <span class="keyword">class </span></div>
-<div class="line"><span class="lineno">   21</span>        where TImplementation : class, TInterface</div>
-<div class="line"><span class="lineno">   22</span>    {</div>
-<div class="line"><span class="lineno">   23</span>        var serviceType = typeof(TInterface);</div>
-<div class="line"><span class="lineno">   24</span>        var implementationType = typeof(TImplementation);</div>
-<div class="line"><span class="lineno">   25</span>        </div>
-<div class="line"><span class="lineno">   26</span>        _services[serviceType] = <span class="keyword">new</span> ServiceDescriptor</div>
-<div class="line"><span class="lineno">   27</span>        {</div>
-<div class="line"><span class="lineno">   28</span>            ServiceType = serviceType,</div>
-<div class="line"><span class="lineno">   29</span>            ImplementationType = implementationType,</div>
-<div class="line"><span class="lineno">   30</span>            Lifetime = ServiceLifetime.Singleton,</div>
-<div class="line"><span class="lineno">   31</span>            Factory = <span class="keyword">null</span></div>
-<div class="line"><span class="lineno">   32</span>        };</div>
-<div class="line"><span class="lineno">   33</span>        </div>
-<div class="line"><span class="lineno">   34</span>        Debug.Log($<span class="stringliteral">&quot;[DIContainer] Singleton service registered: {serviceType.Name} -&gt; {implementationType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af5fde849f767ece55ae6a8cee0916814" name="af5fde849f767ece55ae6a8cee0916814"></a>
@@ -441,21 +376,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>                                                                                                       : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  100</span>    {</div>
-<div class="line"><span class="lineno">  101</span>        var serviceType = typeof(TInterface);</div>
-<div class="line"><span class="lineno">  102</span>        </div>
-<div class="line"><span class="lineno">  103</span>        _services[serviceType] = <span class="keyword">new</span> ServiceDescriptor</div>
-<div class="line"><span class="lineno">  104</span>        {</div>
-<div class="line"><span class="lineno">  105</span>            ServiceType = serviceType,</div>
-<div class="line"><span class="lineno">  106</span>            ImplementationType = <span class="keyword">null</span>,</div>
-<div class="line"><span class="lineno">  107</span>            Lifetime = ServiceLifetime.Transient,</div>
-<div class="line"><span class="lineno">  108</span>            Factory = container =&gt; factory(container)</div>
-<div class="line"><span class="lineno">  109</span>        };</div>
-<div class="line"><span class="lineno">  110</span>        </div>
-<div class="line"><span class="lineno">  111</span>        Debug.Log($<span class="stringliteral">&quot;[DIContainer] Transient factory registered: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  112</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a28bdbe91c65266a10c591df9e41ca3ca" name="a28bdbe91c65266a10c591df9e41ca3ca"></a>
@@ -486,23 +407,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                         : <span class="keyword">class </span></div>
-<div class="line"><span class="lineno">   80</span>        where TImplementation : class, TInterface</div>
-<div class="line"><span class="lineno">   81</span>    {</div>
-<div class="line"><span class="lineno">   82</span>        var serviceType = typeof(TInterface);</div>
-<div class="line"><span class="lineno">   83</span>        var implementationType = typeof(TImplementation);</div>
-<div class="line"><span class="lineno">   84</span>        </div>
-<div class="line"><span class="lineno">   85</span>        _services[serviceType] = <span class="keyword">new</span> ServiceDescriptor</div>
-<div class="line"><span class="lineno">   86</span>        {</div>
-<div class="line"><span class="lineno">   87</span>            ServiceType = serviceType,</div>
-<div class="line"><span class="lineno">   88</span>            ImplementationType = implementationType,</div>
-<div class="line"><span class="lineno">   89</span>            Lifetime = ServiceLifetime.Transient,</div>
-<div class="line"><span class="lineno">   90</span>            Factory = <span class="keyword">null</span></div>
-<div class="line"><span class="lineno">   91</span>        };</div>
-<div class="line"><span class="lineno">   92</span>        </div>
-<div class="line"><span class="lineno">   93</span>        Debug.Log($<span class="stringliteral">&quot;[DIContainer] Transient service registered: {serviceType.Name} -&gt; {implementationType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   94</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a69bebe02fc776b8437bc119cac4af9c8" name="a69bebe02fc776b8437bc119cac4af9c8"></a>
@@ -523,29 +428,7 @@ Here is the call graph for this function:</div>
 <p>서비스를 해결(resolve)합니다 </p>
 
 <p>Implements <a class="el" href="interface_i_d_i_container.html#a036e4007a237d5bf98cc0fa16f94c59f">IDIContainer</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">if</span> (_resolvingTypes.Contains(serviceType))</div>
-<div class="line"><span class="lineno">  128</span>        {</div>
-<div class="line"><span class="lineno">  129</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException($<span class="stringliteral">&quot;Circular dependency detected for type: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  130</span>        }</div>
-<div class="line"><span class="lineno">  131</span>        </div>
-<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">if</span> (!_services.TryGetValue(serviceType, out var serviceDescriptor))</div>
-<div class="line"><span class="lineno">  133</span>        {</div>
-<div class="line"><span class="lineno">  134</span>            <span class="keywordflow">throw</span> <span class="keyword">new</span> InvalidOperationException($<span class="stringliteral">&quot;Service not registered: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  135</span>        }</div>
-<div class="line"><span class="lineno">  136</span>        </div>
-<div class="line"><span class="lineno">  137</span>        _resolvingTypes.Add(serviceType);</div>
-<div class="line"><span class="lineno">  138</span>        </div>
-<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  140</span>        {</div>
-<div class="line"><span class="lineno">  141</span>            <span class="keywordflow">return</span> ResolveService(serviceDescriptor);</div>
-<div class="line"><span class="lineno">  142</span>        }</div>
-<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">finally</span></div>
-<div class="line"><span class="lineno">  144</span>        {</div>
-<div class="line"><span class="lineno">  145</span>            _resolvingTypes.Remove(serviceType);</div>
-<div class="line"><span class="lineno">  146</span>        }</div>
-<div class="line"><span class="lineno">  147</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_i_container_a69bebe02fc776b8437bc119cac4af9c8_icgraph.png" border="0" usemap="#aclass_d_i_container_a69bebe02fc776b8437bc119cac4af9c8_icgraph" loading="lazy" alt=""/></div>
@@ -584,12 +467,7 @@ Here is the caller graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>                                  : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  118</span>    {</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">return</span> (T)<a class="code hl_function" href="#a69bebe02fc776b8437bc119cac4af9c8">Resolve</a>(typeof(T));</div>
-<div class="line"><span class="lineno">  120</span>    }</div>
-<div class="ttc" id="aclass_d_i_container_html_a69bebe02fc776b8437bc119cac4af9c8"><div class="ttname"><a href="#a69bebe02fc776b8437bc119cac4af9c8">DIContainer.Resolve</a></div><div class="ttdeci">object Resolve(Type serviceType)</div><div class="ttdoc">서비스를 해결(resolve)합니다</div><div class="ttdef"><b>Definition</b> DIContainer.cs:125</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_d_i_container_a234cfb366203a4a830fdd47fdcbfe7c9_cgraph.png" border="0" usemap="#aclass_d_i_container_a234cfb366203a4a830fdd47fdcbfe7c9_cgraph" loading="lazy" alt=""/></div>
@@ -628,17 +506,7 @@ Here is the call graph for this function:</div>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  168</span>                                        : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">  169</span>    {</div>
-<div class="line"><span class="lineno">  170</span>        var serviceType = typeof(T);</div>
-<div class="line"><span class="lineno">  171</span>        </div>
-<div class="line"><span class="lineno">  172</span>        <span class="keywordflow">if</span> (_services.Remove(serviceType))</div>
-<div class="line"><span class="lineno">  173</span>        {</div>
-<div class="line"><span class="lineno">  174</span>            _singletonInstances.Remove(serviceType);</div>
-<div class="line"><span class="lineno">  175</span>            Debug.Log($<span class="stringliteral">&quot;[DIContainer] Service unregistered: {serviceType.Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">  176</span>        }</div>
-<div class="line"><span class="lineno">  177</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

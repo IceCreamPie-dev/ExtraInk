@@ -157,7 +157,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:adacbabc97f1fded8a51da1b529b67ae3" id="r_adacbabc97f1fded8a51da1b529b67ae3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adacbabc97f1fded8a51da1b529b67ae3">Awake</a> ()</td></tr>
+<tr class="memitem:adacbabc97f1fded8a51da1b529b67ae3" id="r_adacbabc97f1fded8a51da1b529b67ae3"><td class="memItemLeft" align="right" valign="top"><a id="adacbabc97f1fded8a51da1b529b67ae3" name="adacbabc97f1fded8a51da1b529b67ae3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()</td></tr>
 <tr class="memitem:a0bf5c36229cbc3f7da8cec3f558af3b1" id="r_a0bf5c36229cbc3f7da8cec3f558af3b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf5c36229cbc3f7da8cec3f558af3b1">ApplyDefaultSettings</a> ()</td></tr>
 <tr class="memdesc:a0bf5c36229cbc3f7da8cec3f558af3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">기본 설정 적용 (스케일, 오프셋, 미러링)  <br /></td></tr>
 <tr class="memitem:a5b2eadd67a9fdcee04d2e58a32214eb0" id="r_a5b2eadd67a9fdcee04d2e58a32214eb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b2eadd67a9fdcee04d2e58a32214eb0">NotifyStateChanged</a> (string stateName, object value)</td></tr>
@@ -212,18 +213,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>기본 설정 적용 (스케일, 오프셋, 미러링) </p>
-<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
-<div class="line"><span class="lineno">   62</span>        transform.localScale = <span class="keyword">new</span> Vector3(defaultScale.x, defaultScale.y, 1f);</div>
-<div class="line"><span class="lineno">   63</span>        transform.localPosition = <span class="keyword">new</span> Vector3(defaultOffset.x, defaultOffset.y, 0f);</div>
-<div class="line"><span class="lineno">   64</span>        </div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">if</span> (defaultMirror)</div>
-<div class="line"><span class="lineno">   66</span>        {</div>
-<div class="line"><span class="lineno">   67</span>            Vector3 scale = transform.localScale;</div>
-<div class="line"><span class="lineno">   68</span>            scale.x *= -1;</div>
-<div class="line"><span class="lineno">   69</span>            transform.localScale = scale;</div>
-<div class="line"><span class="lineno">   70</span>        }</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_base_character_component_a0bf5c36229cbc3f7da8cec3f558af3b1_icgraph.png" border="0" usemap="#aclass_base_character_component_a0bf5c36229cbc3f7da8cec3f558af3b1_icgraph" loading="lazy" alt=""/></div>
@@ -234,34 +224,6 @@ Here is the caller graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a id="adacbabc97f1fded8a51da1b529b67ae3" name="adacbabc97f1fded8a51da1b529b67ae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adacbabc97f1fded8a51da1b529b67ae3">&#9670;&#160;</a></span>Awake()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void BaseCharacterComponent.Awake </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   34</span>    {</div>
-<div class="line"><span class="lineno">   35</span>        <span class="comment">// 기본 Awake 구현</span></div>
-<div class="line"><span class="lineno">   36</span>    }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a6c6f4f0acd4aafb26f614a5b3b868676" name="a6c6f4f0acd4aafb26f614a5b3b868676"></a>
@@ -334,11 +296,7 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_animator_character_component.html#abba4ac07dcd4dd5fc8f828e6d12e7b0c">AnimatorCharacterComponent</a>, <a class="el" href="class_simple_animator_character_component.html#a7a76a8de3bf346b97779e7a3c8ccdb4f">SimpleAnimatorCharacterComponent</a>, and <a class="el" href="class_simple_sprite_character_component.html#a5342ca1e5a938ee61631518d267cd1ab">SimpleSpriteCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
-<div class="line"><span class="lineno">  159</span>        <span class="comment">// 기본적으로는 아무것도 하지 않음</span></div>
-<div class="line"><span class="lineno">  160</span>        <span class="comment">// 개발자가 자유롭게 확장 가능</span></div>
-<div class="line"><span class="lineno">  161</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a23dd8db642ea0188e8678b8827d2cb0d" name="a23dd8db642ea0188e8678b8827d2cb0d"></a>
@@ -365,12 +323,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>좌우 반전 (현재 상태를 토글) </p>
-<div class="fragment"><div class="line"><span class="lineno">  127</span>    {</div>
-<div class="line"><span class="lineno">  128</span>        Vector3 scale = transform.localScale;</div>
-<div class="line"><span class="lineno">  129</span>        scale.x *= -1;</div>
-<div class="line"><span class="lineno">  130</span>        transform.localScale = scale;</div>
-<div class="line"><span class="lineno">  131</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a138aa98fb84d8459d8490561adf15bef" name="a138aa98fb84d8459d8490561adf15bef"></a>
@@ -438,21 +391,7 @@ Here is the caller graph for this function:</div>
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_animator_character_component.html#ab1fc3746c40106cf67b8fabf95a142d0">AnimatorCharacterComponent</a>, <a class="el" href="class_simple_animator_character_component.html#a353db5c6068b0f4271e88a0cd5498c87">SimpleAnimatorCharacterComponent</a>, and <a class="el" href="class_simple_sprite_character_component.html#a7709a3a74c2c56be249c3ccd753f948f">SimpleSpriteCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>    {</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (data != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">   45</span>        {</div>
-<div class="line"><span class="lineno">   46</span>            characterId = data.characterId;</div>
-<div class="line"><span class="lineno">   47</span>            characterName = data.characterName;</div>
-<div class="line"><span class="lineno">   48</span>            defaultScale = data.defaultScale;</div>
-<div class="line"><span class="lineno">   49</span>            defaultOffset = data.portraitOffset;</div>
-<div class="line"><span class="lineno">   50</span>            defaultMirror = data.portraitMirror;</div>
-<div class="line"><span class="lineno">   51</span>            </div>
-<div class="line"><span class="lineno">   52</span>            <span class="comment">// 기본 설정 적용</span></div>
-<div class="line"><span class="lineno">   53</span>            <a class="code hl_function" href="#a0bf5c36229cbc3f7da8cec3f558af3b1">ApplyDefaultSettings</a>();</div>
-<div class="line"><span class="lineno">   54</span>        }</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="ttc" id="aclass_base_character_component_html_a0bf5c36229cbc3f7da8cec3f558af3b1"><div class="ttname"><a href="#a0bf5c36229cbc3f7da8cec3f558af3b1">BaseCharacterComponent.ApplyDefaultSettings</a></div><div class="ttdeci">virtual void ApplyDefaultSettings()</div><div class="ttdoc">기본 설정 적용 (스케일, 오프셋, 미러링)</div><div class="ttdef"><b>Definition</b> BaseCharacterComponent.cs:60</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_base_character_component_a925488f45c65f9ecd3a633a1d9a23b3e_cgraph.png" border="0" usemap="#aclass_base_character_component_a925488f45c65f9ecd3a633a1d9a23b3e_cgraph" loading="lazy" alt=""/></div>
@@ -533,11 +472,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  178</span>    {</div>
-<div class="line"><span class="lineno">  179</span>        <a class="code hl_variable" href="#ad62493fc27f9cc9df8c183cf396812b3">OnCharacterStateChanged</a>?.Invoke(stateName, value);</div>
-<div class="line"><span class="lineno">  180</span>    }</div>
-<div class="ttc" id="aclass_base_character_component_html_ad62493fc27f9cc9df8c183cf396812b3"><div class="ttname"><a href="#ad62493fc27f9cc9df8c183cf396812b3">BaseCharacterComponent.OnCharacterStateChanged</a></div><div class="ttdeci">System.Action&lt; string, object &gt; OnCharacterStateChanged</div><div class="ttdoc">캐릭터 상태 변경 이벤트</div><div class="ttdef"><b>Definition</b> BaseCharacterComponent.cs:170</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a9d91fbe36f05cc95c3b4b094ab8b4139" name="a9d91fbe36f05cc95c3b4b094ab8b4139"></a>
@@ -572,11 +507,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_animator_character_component.html#afc7c31c309050f853b7db3cecc6bdabc">AnimatorCharacterComponent</a>, <a class="el" href="class_simple_animator_character_component.html#a5164e305885b4f43277716cfd0273079">SimpleAnimatorCharacterComponent</a>, and <a class="el" href="class_simple_sprite_character_component.html#a48cd97e4e0967104e7b8dfbe145d74b5">SimpleSpriteCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  138</span>    {</div>
-<div class="line"><span class="lineno">  139</span>        <span class="comment">// 기본적으로는 아무것도 하지 않음</span></div>
-<div class="line"><span class="lineno">  140</span>        <span class="comment">// 개발자가 필요시 오버라이드하여 말하기 애니메이션 등을 구현</span></div>
-<div class="line"><span class="lineno">  141</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aaa545000b8bb4746992f3f1edb8c6d9e" name="aaa545000b8bb4746992f3f1edb8c6d9e"></a>
@@ -605,11 +536,7 @@ Here is the call graph for this function:</div>
 <p>대사 끝났을 때 호출 (선택적 구현) </p>
 
 <p>Reimplemented in <a class="el" href="class_animator_character_component.html#ab77a1996ca3e171a75eaf7db1dfc7e76">AnimatorCharacterComponent</a>, <a class="el" href="class_simple_animator_character_component.html#a9821a3e30d4c29767df2e9d41edc5624">SimpleAnimatorCharacterComponent</a>, and <a class="el" href="class_simple_sprite_character_component.html#ad48f9ed5f7df2aaf02a5aee0b8d591c9">SimpleSpriteCharacterComponent</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  147</span>    {</div>
-<div class="line"><span class="lineno">  148</span>        <span class="comment">// 기본적으로는 아무것도 하지 않음</span></div>
-<div class="line"><span class="lineno">  149</span>        <span class="comment">// 개발자가 필요시 오버라이드하여 대기 애니메이션 등을 구현</span></div>
-<div class="line"><span class="lineno">  150</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afeaf206bbbab19db1aed2640a1c932a4" name="afeaf206bbbab19db1aed2640a1c932a4"></a>
@@ -642,12 +569,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  117</span>    {</div>
-<div class="line"><span class="lineno">  118</span>        Vector3 scale = transform.localScale;</div>
-<div class="line"><span class="lineno">  119</span>        scale.x = Mathf.Abs(scale.x) * (mirror ? -1 : 1);</div>
-<div class="line"><span class="lineno">  120</span>        transform.localScale = scale;</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad0ce5893bf64c282f8856721f51ca55f" name="ad0ce5893bf64c282f8856721f51ca55f"></a>
@@ -680,10 +602,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
-<div class="line"><span class="lineno">  109</span>        transform.localScale = <span class="keyword">new</span> Vector3(scale.x, scale.y, 1f);</div>
-<div class="line"><span class="lineno">  110</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afb8a925d4622e048a400fb58f4f70574" name="afb8a925d4622e048a400fb58f4f70574"></a>

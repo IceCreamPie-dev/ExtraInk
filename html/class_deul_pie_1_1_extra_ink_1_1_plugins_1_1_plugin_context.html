@@ -121,7 +121,8 @@ Collaboration diagram for DeulPie.ExtraInk.Plugins.PluginContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d18cbd894479df08aa38bf27fbe31df" id="r_a6d18cbd894479df08aa38bf27fbe31df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d18cbd894479df08aa38bf27fbe31df">PluginContext</a> (<a class="el" href="namespace_deul_pie_1_1_extra_ink_1_1_plugins.html#a5e11f5a49f3a01d96419081a55b3563d">GameGenre</a> initialGenre)</td></tr>
+<tr class="memitem:a6d18cbd894479df08aa38bf27fbe31df" id="r_a6d18cbd894479df08aa38bf27fbe31df"><td class="memItemLeft" align="right" valign="top"><a id="a6d18cbd894479df08aa38bf27fbe31df" name="a6d18cbd894479df08aa38bf27fbe31df"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PluginContext</b> (<a class="el" href="namespace_deul_pie_1_1_extra_ink_1_1_plugins.html#a5e11f5a49f3a01d96419081a55b3563d">GameGenre</a> initialGenre)</td></tr>
 <tr class="memitem:a4fe48d41083cdeb4f12f781ee2efa81a" id="r_a4fe48d41083cdeb4f12f781ee2efa81a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fe48d41083cdeb4f12f781ee2efa81a">RegisterService&lt; T &gt;</a> (T service)</td></tr>
 <tr class="memdesc:a4fe48d41083cdeb4f12f781ee2efa81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">서비스 등록 (DI 컨테이너에 서비스 등록)  <br /></td></tr>
 <tr class="memitem:ac6af1832d686f408fcb19b29dd25321a" id="r_ac6af1832d686f408fcb19b29dd25321a"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6af1832d686f408fcb19b29dd25321a">GetService&lt; T &gt;</a> ()</td></tr>
@@ -136,8 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae881c4ebf5735e555cb9e26e8f481596"><td class="mdescLeft">&#160;</td><td class="mdescRight">플러그인 간 메시지 발송  <br /></td></tr>
 <tr class="memitem:aaae79a7a12f07da0f33608c5f1f64b65" id="r_aaae79a7a12f07da0f33608c5f1f64b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaae79a7a12f07da0f33608c5f1f64b65">BroadcastMessage</a> (<a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_message.html">IPluginMessage</a> message)</td></tr>
 <tr class="memdesc:aaae79a7a12f07da0f33608c5f1f64b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">전체 플러그인에게 브로드캐스트  <br /></td></tr>
-<tr class="memitem:a1b5382f24afbc01649504d06a8a1e64c" id="r_a1b5382f24afbc01649504d06a8a1e64c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b5382f24afbc01649504d06a8a1e64c">RegisterMessageHandler</a> (string pluginId, <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_message_handler.html">IPluginMessageHandler</a> handler)</td></tr>
-<tr class="memitem:ab660ed18b8d16a7e2d6791cf125a5f53" id="r_ab660ed18b8d16a7e2d6791cf125a5f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab660ed18b8d16a7e2d6791cf125a5f53">UnregisterMessageHandler</a> (string pluginId)</td></tr>
+<tr class="memitem:a1b5382f24afbc01649504d06a8a1e64c" id="r_a1b5382f24afbc01649504d06a8a1e64c"><td class="memItemLeft" align="right" valign="top"><a id="a1b5382f24afbc01649504d06a8a1e64c" name="a1b5382f24afbc01649504d06a8a1e64c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterMessageHandler</b> (string pluginId, <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_message_handler.html">IPluginMessageHandler</a> handler)</td></tr>
+<tr class="memitem:ab660ed18b8d16a7e2d6791cf125a5f53" id="r_ab660ed18b8d16a7e2d6791cf125a5f53"><td class="memItemLeft" align="right" valign="top"><a id="ab660ed18b8d16a7e2d6791cf125a5f53" name="ab660ed18b8d16a7e2d6791cf125a5f53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterMessageHandler</b> (string pluginId)</td></tr>
 <tr class="memitem:ab1de367b962568b293ef895c3e74793a" id="r_ab1de367b962568b293ef895c3e74793a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1de367b962568b293ef895c3e74793a">SendMessage&lt; T &gt;</a> (string targetPluginId, T message)</td></tr>
 <tr class="memitem:ae11363b2f254b99ded4e36d9efd80237" id="r_ae11363b2f254b99ded4e36d9efd80237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae11363b2f254b99ded4e36d9efd80237">BroadcastMessage&lt; T &gt;</a> (T message)</td></tr>
 </table><table class="memberdecls">
@@ -162,29 +165,7 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>플러그인 컨텍스트의 구체적인 구현체 플러그인들이 <a class="el" href="namespace_deul_pie_1_1_extra_ink.html">ExtraInk</a> 시스템에 접근할 수 있는 통합 인터페이스 제공 </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a6d18cbd894479df08aa38bf27fbe31df" name="a6d18cbd894479df08aa38bf27fbe31df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d18cbd894479df08aa38bf27fbe31df">&#9670;&#160;</a></span>PluginContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DeulPie.ExtraInk.Plugins.PluginContext.PluginContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespace_deul_pie_1_1_extra_ink_1_1_plugins.html#a5e11f5a49f3a01d96419081a55b3563d">GameGenre</a></td>          <td class="paramname"><span class="paramname"><em>initialGenre</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   49</span>        {</div>
-<div class="line"><span class="lineno">   50</span>            currentGenre = initialGenre;</div>
-<div class="line"><span class="lineno">   51</span>            InitializeProviders();</div>
-<div class="line"><span class="lineno">   52</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aaae79a7a12f07da0f33608c5f1f64b65" name="aaae79a7a12f07da0f33608c5f1f64b65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaae79a7a12f07da0f33608c5f1f64b65">&#9670;&#160;</a></span>BroadcastMessage()</h2>
 
@@ -209,20 +190,7 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html#a1f109d34fe6cb48bf8991c9b5f6346af">DeulPie.ExtraInk.Plugins.IPluginContext</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  122</span>        {</div>
-<div class="line"><span class="lineno">  123</span>            <span class="keywordflow">foreach</span> (var handler <span class="keywordflow">in</span> messageHandlers.Values)</div>
-<div class="line"><span class="lineno">  124</span>            {</div>
-<div class="line"><span class="lineno">  125</span>                <span class="keywordflow">try</span></div>
-<div class="line"><span class="lineno">  126</span>                {</div>
-<div class="line"><span class="lineno">  127</span>                    handler.HandleMessage(message);</div>
-<div class="line"><span class="lineno">  128</span>                }</div>
-<div class="line"><span class="lineno">  129</span>                <span class="keywordflow">catch</span> (Exception ex)</div>
-<div class="line"><span class="lineno">  130</span>                {</div>
-<div class="line"><span class="lineno">  131</span>                    Logger?.LogException(ex);</div>
-<div class="line"><span class="lineno">  132</span>                }</div>
-<div class="line"><span class="lineno">  133</span>            }</div>
-<div class="line"><span class="lineno">  134</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae11363b2f254b99ded4e36d9efd80237" name="ae11363b2f254b99ded4e36d9efd80237"></a>
@@ -247,11 +215,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>                                                           : IPluginMessage</div>
-<div class="line"><span class="lineno">  156</span>        {</div>
-<div class="line"><span class="lineno">  157</span>            BroadcastMessage((IPluginMessage)message);</div>
-<div class="line"><span class="lineno">  158</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae8bd3e8fee0cb8ad6ca91dfe5a97bb2a" name="ae8bd3e8fee0cb8ad6ca91dfe5a97bb2a"></a>
@@ -285,17 +249,7 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>데이터</dd></dl>
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html#a17461174815deaa8083f113fe5167eb4">DeulPie.ExtraInk.Plugins.IPluginContext</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   94</span>        {</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">if</span> (customData.TryGetValue(key, out var value))</div>
-<div class="line"><span class="lineno">   96</span>            {</div>
-<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">if</span> (value is T typedValue)</div>
-<div class="line"><span class="lineno">   98</span>                {</div>
-<div class="line"><span class="lineno">   99</span>                    <span class="keywordflow">return</span> typedValue;</div>
-<div class="line"><span class="lineno">  100</span>                }</div>
-<div class="line"><span class="lineno">  101</span>            }</div>
-<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">return</span> <span class="keywordflow">default</span>(T);</div>
-<div class="line"><span class="lineno">  103</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac6af1832d686f408fcb19b29dd25321a" name="ac6af1832d686f408fcb19b29dd25321a"></a>
@@ -331,15 +285,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                         : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   63</span>        {</div>
-<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">if</span> (services.TryGetValue(typeof(T), out var service))</div>
-<div class="line"><span class="lineno">   65</span>            {</div>
-<div class="line"><span class="lineno">   66</span>                <span class="keywordflow">return</span> service as T;</div>
-<div class="line"><span class="lineno">   67</span>            }</div>
-<div class="line"><span class="lineno">   68</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">   69</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="aff853c32afbe64f913bd203784170ecb" name="aff853c32afbe64f913bd203784170ecb"></a>
@@ -364,35 +310,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   71</span>                                            : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   72</span>        {</div>
-<div class="line"><span class="lineno">   73</span>            <span class="keywordflow">return</span> services.ContainsKey(typeof(T));</div>
-<div class="line"><span class="lineno">   74</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a1b5382f24afbc01649504d06a8a1e64c" name="a1b5382f24afbc01649504d06a8a1e64c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5382f24afbc01649504d06a8a1e64c">&#9670;&#160;</a></span>RegisterMessageHandler()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeulPie.ExtraInk.Plugins.PluginContext.RegisterMessageHandler </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>pluginId</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_message_handler.html">IPluginMessageHandler</a></td>          <td class="paramname"><span class="paramname"><em>handler</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  141</span>        {</div>
-<div class="line"><span class="lineno">  142</span>            messageHandlers[pluginId] = handler;</div>
-<div class="line"><span class="lineno">  143</span>        }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a4fe48d41083cdeb4f12f781ee2efa81a" name="a4fe48d41083cdeb4f12f781ee2efa81a"></a>
@@ -433,12 +351,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                          : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   57</span>        {</div>
-<div class="line"><span class="lineno">   58</span>            services[typeof(T)] = service;</div>
-<div class="line"><span class="lineno">   59</span>            Logger?.Log($<span class="stringliteral">&quot;서비스 등록됨: {typeof(T).Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   60</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae881c4ebf5735e555cb9e26e8f481596" name="ae881c4ebf5735e555cb9e26e8f481596"></a>
@@ -470,17 +383,7 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html#aa714100032a91149de6f41da0e2d5bf3">DeulPie.ExtraInk.Plugins.IPluginContext</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>        {</div>
-<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">if</span> (messageHandlers.TryGetValue(targetPluginId, out var handler))</div>
-<div class="line"><span class="lineno">  112</span>            {</div>
-<div class="line"><span class="lineno">  113</span>                handler.HandleMessage(message);</div>
-<div class="line"><span class="lineno">  114</span>            }</div>
-<div class="line"><span class="lineno">  115</span>            <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  116</span>            {</div>
-<div class="line"><span class="lineno">  117</span>                Logger?.LogWarning($<span class="stringliteral">&quot;메시지 핸들러를 찾을 수 없음: {targetPluginId}&quot;</span>);</div>
-<div class="line"><span class="lineno">  118</span>            }</div>
-<div class="line"><span class="lineno">  119</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ab1de367b962568b293ef895c3e74793a" name="ab1de367b962568b293ef895c3e74793a"></a>
@@ -509,11 +412,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>                                                                             : IPluginMessage</div>
-<div class="line"><span class="lineno">  151</span>        {</div>
-<div class="line"><span class="lineno">  152</span>            SendMessage(targetPluginId, (IPluginMessage)message);</div>
-<div class="line"><span class="lineno">  153</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afb81bd0263c3a5a7cd60ee99a81f15d5" name="afb81bd0263c3a5a7cd60ee99a81f15d5"></a>
@@ -545,30 +444,7 @@ Properties</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html#ae24f9201695c4af139409511cc71a740">DeulPie.ExtraInk.Plugins.IPluginContext</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>        {</div>
-<div class="line"><span class="lineno">   90</span>            customData[key] = value;</div>
-<div class="line"><span class="lineno">   91</span>        }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ab660ed18b8d16a7e2d6791cf125a5f53" name="ab660ed18b8d16a7e2d6791cf125a5f53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab660ed18b8d16a7e2d6791cf125a5f53">&#9670;&#160;</a></span>UnregisterMessageHandler()</h2>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DeulPie.ExtraInk.Plugins.PluginContext.UnregisterMessageHandler </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>pluginId</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">  146</span>        {</div>
-<div class="line"><span class="lineno">  147</span>            messageHandlers.Remove(pluginId);</div>
-<div class="line"><span class="lineno">  148</span>        }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a476bee9b404ef5ea891333e513947913" name="a476bee9b404ef5ea891333e513947913"></a>
@@ -593,14 +469,7 @@ Properties</h2></td></tr>
 </dd>
 </dl>
 </div>
-<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                   : <span class="keyword">class</span></div>
-<div class="line"><span class="lineno">   77</span>        {</div>
-<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">if</span> (services.Remove(typeof(T)))</div>
-<div class="line"><span class="lineno">   79</span>            {</div>
-<div class="line"><span class="lineno">   80</span>                Logger?.Log($<span class="stringliteral">&quot;서비스 해제됨: {typeof(T).Name}&quot;</span>);</div>
-<div class="line"><span class="lineno">   81</span>            }</div>
-<div class="line"><span class="lineno">   82</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
@@ -653,11 +522,7 @@ Properties</h2></td></tr>
 <p>현재 게임 장르 </p>
 
 <p>Implements <a class="el" href="interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html#abe4279e999aa7ef34215947f16a04323">DeulPie.ExtraInk.Plugins.IPluginContext</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>        {</div>
-<div class="line"><span class="lineno">   36</span>            <span class="keyword">get</span> =&gt; currentGenre;</div>
-<div class="line"><span class="lineno">   37</span>            <span class="keyword">set</span> =&gt; currentGenre = value;</div>
-<div class="line"><span class="lineno">   38</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad4a434633b007a4d2b7c4d41035c6458" name="ad4a434633b007a4d2b7c4d41035c6458"></a>

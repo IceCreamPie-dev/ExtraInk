@@ -130,7 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad139ab59d754f53486ada633ea1d8808" id="r_ad139ab59d754f53486ada633ea1d8808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad139ab59d754f53486ada633ea1d8808">RaiseEventWithTag</a> (GameObject gameObject, string requiredTag)</td></tr>
 <tr class="memdesc:ad139ab59d754f53486ada633ea1d8808"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 태그를 가진 GameObject만 이벤트를 발생시킵니다  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g.html">DeulPie.ExtraInk.Core.Events.BaseEventChannel&lt; T &gt;</a></td></tr>
-<tr class="memitem:aa39415902f7792d533a01240e61e84f9 inherit pub_methods_class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g" id="r_aa39415902f7792d533a01240e61e84f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g.html#aa39415902f7792d533a01240e61e84f9">RaiseEvent</a> (T value)</td></tr>
+<tr class="memitem:aa39415902f7792d533a01240e61e84f9 inherit pub_methods_class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel-1-g" id="r_aa39415902f7792d533a01240e61e84f9"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RaiseEvent</b> (T value)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -157,13 +158,7 @@ Action&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEventR
 </div><div class="memdoc">
 
 <p>활성화된 GameObject만 이벤트를 발생시킵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   37</span>        {</div>
-<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">if</span> (gameObject != <span class="keyword">null</span> &amp;&amp; gameObject.activeInHierarchy)</div>
-<div class="line"><span class="lineno">   39</span>            {</div>
-<div class="line"><span class="lineno">   40</span>                RaiseEvent(gameObject);</div>
-<div class="line"><span class="lineno">   41</span>            }</div>
-<div class="line"><span class="lineno">   42</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad139ab59d754f53486ada633ea1d8808" name="ad139ab59d754f53486ada633ea1d8808"></a>
@@ -186,13 +181,7 @@ Action&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnEventR
 </div><div class="memdoc">
 
 <p>특정 태그를 가진 GameObject만 이벤트를 발생시킵니다 </p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>        {</div>
-<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (gameObject != <span class="keyword">null</span> &amp;&amp; gameObject.CompareTag(requiredTag))</div>
-<div class="line"><span class="lineno">   50</span>            {</div>
-<div class="line"><span class="lineno">   51</span>                RaiseEvent(gameObject);</div>
-<div class="line"><span class="lineno">   52</span>            }</div>
-<div class="line"><span class="lineno">   53</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

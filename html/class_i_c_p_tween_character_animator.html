@@ -182,12 +182,7 @@ Action&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OnA
 <p>정리 </p>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a8b586b94196d1cfb32c08a4515efb7f0">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  235</span>    {</div>
-<div class="line"><span class="lineno">  236</span>        <a class="code hl_function" href="#acc3cc8c8a56b0244531d02df62e30770">StopAllAnimations</a>();</div>
-<div class="line"><span class="lineno">  237</span>        OnAnimationComplete = <span class="keyword">null</span>;</div>
-<div class="line"><span class="lineno">  238</span>    }</div>
-<div class="ttc" id="aclass_i_c_p_tween_character_animator_html_acc3cc8c8a56b0244531d02df62e30770"><div class="ttname"><a href="#acc3cc8c8a56b0244531d02df62e30770">ICPTweenCharacterAnimator.StopAllAnimations</a></div><div class="ttdeci">void StopAllAnimations()</div><div class="ttdoc">모든 애니메이션 정지</div><div class="ttdef"><b>Definition</b> ICPTweenCharacterAnimator.cs:221</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_c_p_tween_character_animator_a4821c9da60ece505fb7877c9cc508d5b_cgraph.png" border="0" usemap="#aclass_i_c_p_tween_character_animator_a4821c9da60ece505fb7877c9cc508d5b_cgraph" loading="lazy" alt=""/></div>
@@ -229,30 +224,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a1a97ebe792e0b4ea789807d2d3c42e79">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  197</span>    {</div>
-<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">switch</span> (animationName.ToLower())</div>
-<div class="line"><span class="lineno">  199</span>        {</div>
-<div class="line"><span class="lineno">  200</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;bounce&quot;</span>:</div>
-<div class="line"><span class="lineno">  201</span>                PlayBounceAnimation(parameters);</div>
-<div class="line"><span class="lineno">  202</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  203</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;shake&quot;</span>:</div>
-<div class="line"><span class="lineno">  204</span>                PlayShakeAnimation(parameters);</div>
-<div class="line"><span class="lineno">  205</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  206</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;blink&quot;</span>:</div>
-<div class="line"><span class="lineno">  207</span>                PlayBlinkAnimation(parameters);</div>
-<div class="line"><span class="lineno">  208</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  209</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;pulse&quot;</span>:</div>
-<div class="line"><span class="lineno">  210</span>                PlayPulseAnimation(parameters);</div>
-<div class="line"><span class="lineno">  211</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  212</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;wave&quot;</span>:</div>
-<div class="line"><span class="lineno">  213</span>                PlayWaveAnimation(parameters);</div>
-<div class="line"><span class="lineno">  214</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  215</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  216</span>                Debug.LogWarning($<span class="stringliteral">&quot;알 수 없는 애니메이션: {animationName}&quot;</span>);</div>
-<div class="line"><span class="lineno">  217</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  218</span>        }</div>
-<div class="line"><span class="lineno">  219</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="add10403dda7a95ad39a337fa58fd2b59" name="add10403dda7a95ad39a337fa58fd2b59"></a>
@@ -290,40 +262,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a2cce9cd4177bd25ed2bfc89e7a5d63fc">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  124</span>    {</div>
-<div class="line"><span class="lineno">  125</span>        <span class="comment">// 감정 변경 시 간단한 펄스 효과</span></div>
-<div class="line"><span class="lineno">  126</span>        StopCurrentAnimation();</div>
-<div class="line"><span class="lineno">  127</span>        isAnimating = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  128</span>        </div>
-<div class="line"><span class="lineno">  129</span>        Vector3 startScale = transform.localScale;</div>
-<div class="line"><span class="lineno">  130</span>        Vector3 pulseScale = startScale * 1.1f;</div>
-<div class="line"><span class="lineno">  131</span>        </div>
-<div class="line"><span class="lineno">  132</span>        currentTween = <span class="keyword">new</span> ICPTween(<span class="keyword">this</span>, duration * 0.5f);</div>
-<div class="line"><span class="lineno">  133</span>        currentTween.업데이트시(() =&gt;</div>
-<div class="line"><span class="lineno">  134</span>        {</div>
-<div class="line"><span class="lineno">  135</span>            <span class="keywordtype">float</span> progress = currentTween.진행률_가져오기();</div>
-<div class="line"><span class="lineno">  136</span>            transform.localScale = Vector3.Lerp(startScale, pulseScale, progress);</div>
-<div class="line"><span class="lineno">  137</span>        });</div>
-<div class="line"><span class="lineno">  138</span>        currentTween.완료시(() =&gt;</div>
-<div class="line"><span class="lineno">  139</span>        {</div>
-<div class="line"><span class="lineno">  140</span>            <span class="comment">// 다시 원래 크기로</span></div>
-<div class="line"><span class="lineno">  141</span>            var returnTween = <span class="keyword">new</span> ICPTween(<span class="keyword">this</span>, duration * 0.5f);</div>
-<div class="line"><span class="lineno">  142</span>            returnTween.업데이트시(() =&gt;</div>
-<div class="line"><span class="lineno">  143</span>            {</div>
-<div class="line"><span class="lineno">  144</span>                <span class="keywordtype">float</span> progress = returnTween.진행률_가져오기();</div>
-<div class="line"><span class="lineno">  145</span>                transform.localScale = Vector3.Lerp(pulseScale, startScale, progress);</div>
-<div class="line"><span class="lineno">  146</span>            });</div>
-<div class="line"><span class="lineno">  147</span>            returnTween.완료시(() =&gt;</div>
-<div class="line"><span class="lineno">  148</span>            {</div>
-<div class="line"><span class="lineno">  149</span>                isAnimating = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  150</span>                onComplete?.Invoke();</div>
-<div class="line"><span class="lineno">  151</span>                OnAnimationComplete?.Invoke($<span class="stringliteral">&quot;emotion_{emotion}&quot;</span>);</div>
-<div class="line"><span class="lineno">  152</span>            });</div>
-<div class="line"><span class="lineno">  153</span>            returnTween.재생();</div>
-<div class="line"><span class="lineno">  154</span>        });</div>
-<div class="line"><span class="lineno">  155</span>        currentTween.재생();</div>
-<div class="line"><span class="lineno">  156</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="abf3ff8558b99e1ae8bfc2be2f358fa54" name="abf3ff8558b99e1ae8bfc2be2f358fa54"></a>
@@ -361,30 +300,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a67a6e1beb62a4e43e25e9ba2b75c8d0e">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   74</span>    {</div>
-<div class="line"><span class="lineno">   75</span>        StopCurrentAnimation();</div>
-<div class="line"><span class="lineno">   76</span>        isAnimating = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   77</span>        </div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">switch</span> (effect.ToLower())</div>
-<div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">   81</span>                PlayFadeEnterAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">   84</span>                PlayScaleEnterAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">   85</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   86</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide&quot;</span>:</div>
-<div class="line"><span class="lineno">   87</span>                PlaySlideEnterAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">   88</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   89</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;bounce&quot;</span>:</div>
-<div class="line"><span class="lineno">   90</span>                PlayBounceEnterAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">   91</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   92</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   93</span>                PlayFadeEnterAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   95</span>        }</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0fe0985ec079196fb4042780884c6ab8" name="a0fe0985ec079196fb4042780884c6ab8"></a>
@@ -422,30 +338,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a7e5e78bd6939ed1f76bd28163cda287e">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
-<div class="line"><span class="lineno">  100</span>        StopCurrentAnimation();</div>
-<div class="line"><span class="lineno">  101</span>        isAnimating = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  102</span>        </div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">switch</span> (effect.ToLower())</div>
-<div class="line"><span class="lineno">  104</span>        {</div>
-<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;fade&quot;</span>:</div>
-<div class="line"><span class="lineno">  106</span>                PlayFadeExitAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">  107</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;scale&quot;</span>:</div>
-<div class="line"><span class="lineno">  109</span>                PlayScaleExitAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">  110</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;slide&quot;</span>:</div>
-<div class="line"><span class="lineno">  112</span>                PlaySlideExitAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">  113</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">case</span> <span class="stringliteral">&quot;shrink&quot;</span>:</div>
-<div class="line"><span class="lineno">  115</span>                PlayShrinkExitAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">  116</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">  118</span>                PlayFadeExitAnimation(duration, onComplete);</div>
-<div class="line"><span class="lineno">  119</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  120</span>        }</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af08213ec0df129217e242abf3d1b5a62" name="af08213ec0df129217e242abf3d1b5a62"></a>
@@ -483,24 +376,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a8c9af247f652264fa812cd185909fc3b">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>    {</div>
-<div class="line"><span class="lineno">  160</span>        originalPosition = targetPosition; <span class="comment">// 새로운 기준 위치 업데이트</span></div>
-<div class="line"><span class="lineno">  161</span>        </div>
-<div class="line"><span class="lineno">  162</span>        transform.ICPMove(targetPosition, duration);</div>
-<div class="line"><span class="lineno">  163</span>        </div>
-<div class="line"><span class="lineno">  164</span>        <span class="comment">// 완료 콜백을 위한 별도 타이머</span></div>
-<div class="line"><span class="lineno">  165</span>        <span class="keywordflow">if</span> (onComplete != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  166</span>        {</div>
-<div class="line"><span class="lineno">  167</span>            var callbackTween = <span class="keyword">new</span> ICPTween(<span class="keyword">this</span>, duration);</div>
-<div class="line"><span class="lineno">  168</span>            callbackTween.완료시(() =&gt;</div>
-<div class="line"><span class="lineno">  169</span>            {</div>
-<div class="line"><span class="lineno">  170</span>                onComplete?.Invoke();</div>
-<div class="line"><span class="lineno">  171</span>                OnAnimationComplete?.Invoke(<span class="stringliteral">&quot;move&quot;</span>);</div>
-<div class="line"><span class="lineno">  172</span>            });</div>
-<div class="line"><span class="lineno">  173</span>            callbackTween.재생();</div>
-<div class="line"><span class="lineno">  174</span>        }</div>
-<div class="line"><span class="lineno">  175</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a632adeb5a5557fe76799367e85f85879" name="a632adeb5a5557fe76799367e85f85879"></a>
@@ -538,24 +414,7 @@ Here is the call graph for this function:</div>
 </dl>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a24bd9c01b0a7142443823ef6a06dff28">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  178</span>    {</div>
-<div class="line"><span class="lineno">  179</span>        originalScale = targetScale; <span class="comment">// 새로운 기준 스케일 업데이트</span></div>
-<div class="line"><span class="lineno">  180</span>        </div>
-<div class="line"><span class="lineno">  181</span>        transform.ICPScale(targetScale, duration);</div>
-<div class="line"><span class="lineno">  182</span>        </div>
-<div class="line"><span class="lineno">  183</span>        <span class="comment">// 완료 콜백을 위한 별도 타이머</span></div>
-<div class="line"><span class="lineno">  184</span>        <span class="keywordflow">if</span> (onComplete != <span class="keyword">null</span>)</div>
-<div class="line"><span class="lineno">  185</span>        {</div>
-<div class="line"><span class="lineno">  186</span>            var callbackTween = <span class="keyword">new</span> ICPTween(<span class="keyword">this</span>, duration);</div>
-<div class="line"><span class="lineno">  187</span>            callbackTween.완료시(() =&gt;</div>
-<div class="line"><span class="lineno">  188</span>            {</div>
-<div class="line"><span class="lineno">  189</span>                onComplete?.Invoke();</div>
-<div class="line"><span class="lineno">  190</span>                OnAnimationComplete?.Invoke(<span class="stringliteral">&quot;scale&quot;</span>);</div>
-<div class="line"><span class="lineno">  191</span>            });</div>
-<div class="line"><span class="lineno">  192</span>            callbackTween.재생();</div>
-<div class="line"><span class="lineno">  193</span>        }</div>
-<div class="line"><span class="lineno">  194</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac1a6a500fdb7c51ed17a10edf6e6dffd" name="ac1a6a500fdb7c51ed17a10edf6e6dffd"></a>
@@ -576,25 +435,7 @@ Here is the call graph for this function:</div>
 <p>말하기 시작 애니메이션 </p>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a8d169625fb55b7b538c2db97cd3ac084">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (!enableSpeakingAnimation || isSpeaking) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   46</span>        </div>
-<div class="line"><span class="lineno">   47</span>        isSpeaking = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   48</span>        StopSpeakingAnimation();</div>
-<div class="line"><span class="lineno">   49</span>        </div>
-<div class="line"><span class="lineno">   50</span>        <span class="comment">// 말하기 애니메이션 시작 (부드러운 위아래 움직임)</span></div>
-<div class="line"><span class="lineno">   51</span>        speakingTween = <span class="keyword">new</span> ICPTween(<span class="keyword">this</span>, speakingSpeed);</div>
-<div class="line"><span class="lineno">   52</span>        speakingTween.SetLoops(-1, <a class="code hl_enumeration" href="namespace_ice_cream_pie_1_1_tweening.html#a4454037f096e16ae3ff0e70ee7d6987d">ICPLoopType</a>.Yoyo);</div>
-<div class="line"><span class="lineno">   53</span>        speakingTween.업데이트시(() =&gt;</div>
-<div class="line"><span class="lineno">   54</span>        {</div>
-<div class="line"><span class="lineno">   55</span>            <span class="keywordtype">float</span> progress = speakingTween.진행률_가져오기();</div>
-<div class="line"><span class="lineno">   56</span>            <span class="keywordtype">float</span> bounce = Mathf.Sin(progress * Mathf.PI * 2) * speakingBounceAmount;</div>
-<div class="line"><span class="lineno">   57</span>            transform.position = originalPosition + Vector3.up * bounce;</div>
-<div class="line"><span class="lineno">   58</span>        });</div>
-<div class="line"><span class="lineno">   59</span>        speakingTween.재생();</div>
-<div class="line"><span class="lineno">   60</span>    }</div>
-<div class="ttc" id="anamespace_ice_cream_pie_1_1_tweening_html_a4454037f096e16ae3ff0e70ee7d6987d"><div class="ttname"><a href="namespace_ice_cream_pie_1_1_tweening.html#a4454037f096e16ae3ff0e70ee7d6987d">IceCreamPie.Tweening.ICPLoopType</a></div><div class="ttdeci">ICPLoopType</div><div class="ttdoc">트위닝 루프 타입</div><div class="ttdef"><b>Definition</b> ICPEnume.cs:27</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="acc3cc8c8a56b0244531d02df62e30770" name="acc3cc8c8a56b0244531d02df62e30770"></a>
@@ -615,18 +456,7 @@ Here is the call graph for this function:</div>
 <p>모든 애니메이션 정지 </p>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#a787e96ebea91b981e82e54313deef2e3">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  222</span>    {</div>
-<div class="line"><span class="lineno">  223</span>        StopCurrentAnimation();</div>
-<div class="line"><span class="lineno">  224</span>        StopSpeakingAnimation();</div>
-<div class="line"><span class="lineno">  225</span>        </div>
-<div class="line"><span class="lineno">  226</span>        <span class="comment">// 원래 상태로 복원</span></div>
-<div class="line"><span class="lineno">  227</span>        transform.position = originalPosition;</div>
-<div class="line"><span class="lineno">  228</span>        transform.localScale = originalScale;</div>
-<div class="line"><span class="lineno">  229</span>        </div>
-<div class="line"><span class="lineno">  230</span>        isAnimating = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  231</span>        isSpeaking = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  232</span>    }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_c_p_tween_character_animator_acc3cc8c8a56b0244531d02df62e30770_icgraph.png" border="0" usemap="#aclass_i_c_p_tween_character_animator_acc3cc8c8a56b0244531d02df62e30770_icgraph" loading="lazy" alt=""/></div>
@@ -657,16 +487,7 @@ Here is the caller graph for this function:</div>
 <p>말하기 종료 애니메이션 </p>
 
 <p>Implements <a class="el" href="interface_i_character_animator.html#ab8a0b7e91be6cab73f848acb4f8714a2">ICharacterAnimator</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   63</span>    {</div>
-<div class="line"><span class="lineno">   64</span>        <span class="keywordflow">if</span> (!isSpeaking) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   65</span>        </div>
-<div class="line"><span class="lineno">   66</span>        isSpeaking = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   67</span>        StopSpeakingAnimation();</div>
-<div class="line"><span class="lineno">   68</span>        </div>
-<div class="line"><span class="lineno">   69</span>        <span class="comment">// 원래 위치로 복원</span></div>
-<div class="line"><span class="lineno">   70</span>        transform.ICPMove(originalPosition, 0.2f);</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>

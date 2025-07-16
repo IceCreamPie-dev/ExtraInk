@@ -156,7 +156,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShakeTextEn</b> (Text
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a60a153612f3eef109189832efd58fc2e" id="r_a60a153612f3eef109189832efd58fc2e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_text_animation_system.html">TextAnimationSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60a153612f3eef109189832efd58fc2e">Instance</a><code> [get]</code></td></tr>
+<tr class="memitem:a60a153612f3eef109189832efd58fc2e" id="r_a60a153612f3eef109189832efd58fc2e"><td class="memItemLeft" align="right" valign="top"><a id="a60a153612f3eef109189832efd58fc2e" name="a60a153612f3eef109189832efd58fc2e"></a>
+static <a class="el" href="class_text_animation_system.html">TextAnimationSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>텍스트 애니메이션 효과 시스템 </p>
@@ -177,17 +178,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>타이핑 효과 완료 처리 </p>
-<div class="fragment"><div class="line"><span class="lineno">  193</span>        {</div>
-<div class="line"><span class="lineno">  194</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span> || !activeAnimations.ContainsKey(textComponent)) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  195</span>            </div>
-<div class="line"><span class="lineno">  196</span>            var animData = activeAnimations[textComponent];</div>
-<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">if</span> (animData.animationType == TextAnimationType.Typing)</div>
-<div class="line"><span class="lineno">  198</span>            {</div>
-<div class="line"><span class="lineno">  199</span>                textComponent.text = animData.targetText;</div>
-<div class="line"><span class="lineno">  200</span>                CompleteAnimation(textComponent);</div>
-<div class="line"><span class="lineno">  201</span>            }</div>
-<div class="line"><span class="lineno">  202</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="afce67aa1e9dd8f93b89889a7c8074ca0" name="afce67aa1e9dd8f93b89889a7c8074ca0"></a>
@@ -220,30 +211,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>페이드 인 효과로 텍스트 표시 </p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>        {</div>
-<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   82</span>            </div>
-<div class="line"><span class="lineno">   83</span>            <span class="keywordtype">float</span> actualDuration = duration &gt; 0 ? duration : defaultFadeSpeed;</div>
-<div class="line"><span class="lineno">   84</span>            <a class="code hl_function" href="#a31c24f539bac2585c099c547baeb1280">StopAnimation</a>(textComponent);</div>
-<div class="line"><span class="lineno">   85</span>            </div>
-<div class="line"><span class="lineno">   86</span>            textComponent.text = text;</div>
-<div class="line"><span class="lineno">   87</span>            </div>
-<div class="line"><span class="lineno">   88</span>            var animData = <span class="keyword">new</span> TextAnimationData</div>
-<div class="line"><span class="lineno">   89</span>            {</div>
-<div class="line"><span class="lineno">   90</span>                textComponent = textComponent,</div>
-<div class="line"><span class="lineno">   91</span>                targetText = text,</div>
-<div class="line"><span class="lineno">   92</span>                animationType = TextAnimationType.FadeIn,</div>
-<div class="line"><span class="lineno">   93</span>                speed = actualDuration,</div>
-<div class="line"><span class="lineno">   94</span>                onComplete = onComplete</div>
-<div class="line"><span class="lineno">   95</span>            };</div>
-<div class="line"><span class="lineno">   96</span>            </div>
-<div class="line"><span class="lineno">   97</span>            activeAnimations[textComponent] = animData;</div>
-<div class="line"><span class="lineno">   98</span>            StartCoroutine(FadeInTextCoroutine(animData));</div>
-<div class="line"><span class="lineno">   99</span>            </div>
-<div class="line"><span class="lineno">  100</span>            PlaySound(fadeSound);</div>
-<div class="line"><span class="lineno">  101</span>        }</div>
-<div class="ttc" id="aclass_text_animation_system_html_a31c24f539bac2585c099c547baeb1280"><div class="ttname"><a href="#a31c24f539bac2585c099c547baeb1280">TextAnimationSystem.StopAnimation</a></div><div class="ttdeci">void StopAnimation(TextMeshProUGUI textComponent)</div><div class="ttdoc">애니메이션 중지</div><div class="ttdef"><b>Definition</b> TextAnimationSystem.cs:171</div></div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_text_animation_system_afce67aa1e9dd8f93b89889a7c8074ca0_cgraph.png" border="0" usemap="#aclass_text_animation_system_afce67aa1e9dd8f93b89889a7c8074ca0_cgraph" loading="lazy" alt=""/></div>
@@ -281,26 +249,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>페이드 아웃 효과로 텍스트 숨기기 </p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>        {</div>
-<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  109</span>            </div>
-<div class="line"><span class="lineno">  110</span>            <span class="keywordtype">float</span> actualDuration = duration &gt; 0 ? duration : defaultFadeSpeed;</div>
-<div class="line"><span class="lineno">  111</span>            <a class="code hl_function" href="#a31c24f539bac2585c099c547baeb1280">StopAnimation</a>(textComponent);</div>
-<div class="line"><span class="lineno">  112</span>            </div>
-<div class="line"><span class="lineno">  113</span>            var animData = <span class="keyword">new</span> TextAnimationData</div>
-<div class="line"><span class="lineno">  114</span>            {</div>
-<div class="line"><span class="lineno">  115</span>                textComponent = textComponent,</div>
-<div class="line"><span class="lineno">  116</span>                animationType = TextAnimationType.FadeOut,</div>
-<div class="line"><span class="lineno">  117</span>                speed = actualDuration,</div>
-<div class="line"><span class="lineno">  118</span>                onComplete = onComplete</div>
-<div class="line"><span class="lineno">  119</span>            };</div>
-<div class="line"><span class="lineno">  120</span>            </div>
-<div class="line"><span class="lineno">  121</span>            activeAnimations[textComponent] = animData;</div>
-<div class="line"><span class="lineno">  122</span>            StartCoroutine(FadeOutTextCoroutine(animData));</div>
-<div class="line"><span class="lineno">  123</span>            </div>
-<div class="line"><span class="lineno">  124</span>            PlaySound(fadeSound);</div>
-<div class="line"><span class="lineno">  125</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_text_animation_system_ae7ef2a331fb6f9401269ad293d013366_cgraph.png" border="0" usemap="#aclass_text_animation_system_ae7ef2a331fb6f9401269ad293d013366_cgraph" loading="lazy" alt=""/></div>
@@ -329,10 +278,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>애니메이션이 진행 중인지 확인 </p>
-<div class="fragment"><div class="line"><span class="lineno">  185</span>        {</div>
-<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">return</span> textComponent != <span class="keyword">null</span> &amp;&amp; activeAnimations.ContainsKey(textComponent);</div>
-<div class="line"><span class="lineno">  187</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae8840ffd8a9ae0a38c2f1d6cf7a8dc9f" name="ae8840ffd8a9ae0a38c2f1d6cf7a8dc9f"></a>
@@ -365,30 +311,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>흔들림 효과 </p>
-<div class="fragment"><div class="line"><span class="lineno">  131</span>        {</div>
-<div class="line"><span class="lineno">  132</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  133</span>            </div>
-<div class="line"><span class="lineno">  134</span>            <span class="keywordtype">float</span> actualIntensity = intensity &gt; 0 ? intensity : defaultShakeIntensity;</div>
-<div class="line"><span class="lineno">  135</span>            <span class="keywordtype">float</span> actualDuration = duration &gt; 0 ? duration : defaultShakeDuration;</div>
-<div class="line"><span class="lineno">  136</span>            </div>
-<div class="line"><span class="lineno">  137</span>            Vector3 originalPosition = textComponent.transform.localPosition;</div>
-<div class="line"><span class="lineno">  138</span>            </div>
-<div class="line"><span class="lineno">  139</span>            var animData = <span class="keyword">new</span> TextAnimationData</div>
-<div class="line"><span class="lineno">  140</span>            {</div>
-<div class="line"><span class="lineno">  141</span>                textComponent = textComponent,</div>
-<div class="line"><span class="lineno">  142</span>                animationType = TextAnimationType.Shake,</div>
-<div class="line"><span class="lineno">  143</span>                originalPosition = originalPosition,</div>
-<div class="line"><span class="lineno">  144</span>                intensity = actualIntensity,</div>
-<div class="line"><span class="lineno">  145</span>                speed = actualDuration,</div>
-<div class="line"><span class="lineno">  146</span>                onComplete = onComplete</div>
-<div class="line"><span class="lineno">  147</span>            };</div>
-<div class="line"><span class="lineno">  148</span>            </div>
-<div class="line"><span class="lineno">  149</span>            activeAnimations[textComponent] = animData;</div>
-<div class="line"><span class="lineno">  150</span>            StartCoroutine(ShakeTextCoroutine(animData));</div>
-<div class="line"><span class="lineno">  151</span>            </div>
-<div class="line"><span class="lineno">  152</span>            PlaySound(shakeSound);</div>
-<div class="line"><span class="lineno">  153</span>        }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0a0171e0933eb8978c8c4870d5545c1d" name="a0a0171e0933eb8978c8c4870d5545c1d"></a>
@@ -416,15 +339,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>즉시 텍스트 표시 (애니메이션 없음) </p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>        {</div>
-<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  161</span>            </div>
-<div class="line"><span class="lineno">  162</span>            <a class="code hl_function" href="#a31c24f539bac2585c099c547baeb1280">StopAnimation</a>(textComponent);</div>
-<div class="line"><span class="lineno">  163</span>            textComponent.text = text;</div>
-<div class="line"><span class="lineno">  164</span>            textComponent.color = <span class="keyword">new</span> Color(textComponent.color.r, textComponent.color.g, textComponent.color.b, 1f);</div>
-<div class="line"><span class="lineno">  165</span>            onComplete?.Invoke();</div>
-<div class="line"><span class="lineno">  166</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_text_animation_system_a0a0171e0933eb8978c8c4870d5545c1d_cgraph.png" border="0" usemap="#aclass_text_animation_system_a0a0171e0933eb8978c8c4870d5545c1d_cgraph" loading="lazy" alt=""/></div>
@@ -453,15 +368,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>애니메이션 중지 </p>
-<div class="fragment"><div class="line"><span class="lineno">  172</span>        {</div>
-<div class="line"><span class="lineno">  173</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  174</span>            </div>
-<div class="line"><span class="lineno">  175</span>            <span class="keywordflow">if</span> (activeAnimations.ContainsKey(textComponent))</div>
-<div class="line"><span class="lineno">  176</span>            {</div>
-<div class="line"><span class="lineno">  177</span>                activeAnimations.Remove(textComponent);</div>
-<div class="line"><span class="lineno">  178</span>            }</div>
-<div class="line"><span class="lineno">  179</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_text_animation_system_a31c24f539bac2585c099c547baeb1280_icgraph.png" border="0" usemap="#aclass_text_animation_system_a31c24f539bac2585c099c547baeb1280_icgraph" loading="lazy" alt=""/></div>
@@ -510,26 +417,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>타이핑 효과로 텍스트 표시 </p>
-<div class="fragment"><div class="line"><span class="lineno">   56</span>        {</div>
-<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">if</span> (textComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   58</span>            </div>
-<div class="line"><span class="lineno">   59</span>            <span class="keywordtype">float</span> actualSpeed = speed &gt; 0 ? speed : defaultTypingSpeed;</div>
-<div class="line"><span class="lineno">   60</span>            <a class="code hl_function" href="#a31c24f539bac2585c099c547baeb1280">StopAnimation</a>(textComponent);</div>
-<div class="line"><span class="lineno">   61</span>            </div>
-<div class="line"><span class="lineno">   62</span>            var animData = <span class="keyword">new</span> TextAnimationData</div>
-<div class="line"><span class="lineno">   63</span>            {</div>
-<div class="line"><span class="lineno">   64</span>                textComponent = textComponent,</div>
-<div class="line"><span class="lineno">   65</span>                targetText = text,</div>
-<div class="line"><span class="lineno">   66</span>                currentIndex = 0,</div>
-<div class="line"><span class="lineno">   67</span>                animationType = TextAnimationType.Typing,</div>
-<div class="line"><span class="lineno">   68</span>                speed = actualSpeed,</div>
-<div class="line"><span class="lineno">   69</span>                onComplete = onComplete</div>
-<div class="line"><span class="lineno">   70</span>            };</div>
-<div class="line"><span class="lineno">   71</span>            </div>
-<div class="line"><span class="lineno">   72</span>            activeAnimations[textComponent] = animData;</div>
-<div class="line"><span class="lineno">   73</span>            StartCoroutine(TypeTextCoroutine(animData));</div>
-<div class="line"><span class="lineno">   74</span>        }</div>
-</div><!-- fragment --><div class="dynheader">
+<div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_text_animation_system_a429fb542d15a241887ed5b839ef96dfa_cgraph.png" border="0" usemap="#aclass_text_animation_system_a429fb542d15a241887ed5b839ef96dfa_cgraph" loading="lazy" alt=""/></div>
@@ -540,30 +428,6 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 
-</div>
-</div>
-<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
-<a id="a60a153612f3eef109189832efd58fc2e" name="a60a153612f3eef109189832efd58fc2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a153612f3eef109189832efd58fc2e">&#9670;&#160;</a></span>Instance</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_text_animation_system.html">TextAnimationSystem</a> TextAnimationSystem.Instance</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel get">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   12</span>{ <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
