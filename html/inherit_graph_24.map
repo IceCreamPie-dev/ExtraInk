@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_i_settings_storage.html" title="설정 저장소 인터페이스 &#45; 다양한 저장 방식을 추상화" alt="" coords="5,72,214,115"/>
+<area shape="rect" id="Node000001" href="$class_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_encrypted_file_settings_storage.html" title="암호화된 파일 기반 설정 저장소 민감한 설정을 안전하게 저장 (모바일 등)" alt="" coords="262,5,470,48"/>
+<area shape="poly" id="edge131_Node000000_Node000001" title=" " alt="" coords="208,65,280,46,282,51,210,70"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_json_file_settings_storage.html" title="JSON 파일 기반 설정 저장소 macOS, Linux에서 주로 사용" alt="" coords="262,72,470,115"/>
+<area shape="poly" id="edge132_Node000000_Node000002" title=" " alt="" coords="229,91,261,91,261,96,229,96"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_core_1_1_settings_1_1_player_prefs_settings_storage.html" title="PlayerPrefs 기반 설정 저장소 Unity 기본 제공, WebGL 등에서 사용" alt="" coords="262,139,470,181"/>
+<area shape="poly" id="edge133_Node000000_Node000003" title=" " alt="" coords="210,117,282,135,280,141,208,122"/>
+</map>

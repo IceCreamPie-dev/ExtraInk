@@ -1,0 +1,25 @@
+<map id="InputActions.UIActions.SetCallbacks" name="InputActions.UIActions.SetCallbacks">
+<area shape="rect" id="Node000001" title="Replaces all existing callback instances and previously registered input action callbacks associated ..." alt="" coords="5,305,186,348"/>
+<area shape="rect" id="Node000002" href="$struct_input_actions_1_1_u_i_actions.html#a000fbf5dde3c106632157276bfc44984" title="Adds InputAction.started, InputAction.performed and InputAction.canceled callbacks provided via &#160;on a..." alt="" coords="234,305,417,348"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,324,218,324,218,329,186,329"/>
+<area shape="rect" id="Node000003" href="$interface_input_actions_1_1_i_u_i_actions.html#a1b285ce6b228e75c5569b50d0daa8d59" title="Method invoked when associated input action &quot;Cancel&quot; is either UnityEngine.InputSystem...." alt="" coords="478,5,642,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,304,345,254,372,188,411,119,435,87,463,58,467,55,470,59,467,62,439,90,415,122,376,191,350,256,335,306"/>
+<area shape="rect" id="Node000004" href="$interface_input_actions_1_1_i_u_i_actions.html#a2b86b4ec17e4c720ed050feaff9d7a9d" title="Method invoked when associated input action &quot;Click&quot; is either UnityEngine.InputSystem...." alt="" coords="478,72,642,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="334,303,353,265,381,217,418,168,463,125,469,121,472,125,467,129,422,171,386,220,358,268,339,306"/>
+<area shape="rect" id="Node000005" href="$interface_input_actions_1_1_i_u_i_actions.html#a82ba8786b0e05e1b16ccffba707780dd" title="Method invoked when associated input action &quot;MiddleClick&quot; is either UnityEngine.InputSystem...." alt="" coords="478,139,642,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="342,303,393,248,427,218,464,191,472,186,475,191,466,196,430,222,397,252,346,307"/>
+<area shape="rect" id="Node000006" href="$interface_input_actions_1_1_i_u_i_actions.html#a7306d961a137a6a32457207300e15423" title="Method invoked when associated input action &quot;Navigate&quot; is either UnityEngine.InputSystem...." alt="" coords="478,205,642,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="368,302,464,258,479,252,481,256,466,262,370,307"/>
+<area shape="rect" id="Node000007" href="$interface_input_actions_1_1_i_u_i_actions.html#aeca456b53ca28a0a897f30ed8fe65bbc" title="Method invoked when associated input action &quot;Point&quot; is either UnityEngine.InputSystem...." alt="" coords="478,272,642,315"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="417,311,462,305,462,310,418,316"/>
+<area shape="rect" id="Node000008" href="$interface_input_actions_1_1_i_u_i_actions.html#aca579af0b05aeb5802703534f1667799" title="Method invoked when associated input action &quot;RightClick&quot; is either UnityEngine.InputSystem...." alt="" coords="478,339,642,381"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="418,337,462,343,462,349,417,342"/>
+<area shape="rect" id="Node000009" href="$interface_input_actions_1_1_i_u_i_actions.html#aa5b69021f5f57ccd2a3bafa09de6da51" title="Method invoked when associated input action &quot;ScrollWheel&quot; is either UnityEngine.InputSystem...." alt="" coords="478,405,642,448"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="370,346,466,391,481,397,479,402,464,396,368,351"/>
+<area shape="rect" id="Node000010" href="$interface_input_actions_1_1_i_u_i_actions.html#ae19ab08f0371f04f3172e6ed9b2b1812" title="Method invoked when associated input action &quot;Submit&quot; is either UnityEngine.InputSystem...." alt="" coords="478,472,642,515"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="346,347,397,402,430,432,466,458,475,462,472,467,464,462,427,436,393,405,342,350"/>
+<area shape="rect" id="Node000011" href="$interface_input_actions_1_1_i_u_i_actions.html#a02e89d99a633045dbb8e39104548e41c" title="Method invoked when associated input action &quot;TrackedDeviceOrientation&quot; is either UnityEngine...." alt="" coords="465,539,654,581"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="339,347,358,385,386,433,422,482,467,525,472,528,469,533,463,529,418,486,381,436,353,388,334,350"/>
+<area shape="rect" id="Node000012" href="$interface_input_actions_1_1_i_u_i_actions.html#aeed0058ec033ed64f6b62e6d2c7d93c3" title="Method invoked when associated input action &quot;TrackedDevicePosition&quot; is either UnityEngine...." alt="" coords="473,605,646,648"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="335,348,350,397,376,463,415,532,439,563,467,591,470,594,467,599,463,595,435,567,411,534,372,465,345,399,329,349"/>
+</map>
