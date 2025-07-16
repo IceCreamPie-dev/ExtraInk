@@ -1,9 +1,0 @@
-<map id="DeulPie.ExtraInk.Core.Interfaces.IStatefulManager" name="DeulPie.ExtraInk.Core.Interfaces.IStatefulManager">
-<area shape="rect" id="Node000001" title="상태를 가지는 매니저 인터페이스" alt="" coords="121,160,329,309"/>
-<area shape="rect" id="Node000003" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_audio_manager.html" title="오디오 매니저 통합 인터페이스 (SOLID: Interface Segregation) 모든 오디오 관련 기능을 하나로 통합" alt="" coords="5,357,213,571"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,324,165,359,161,356,179,321"/>
-<area shape="rect" id="Node000004" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_dialogue_manager.html" title="통합 대화 매니저 인터페이스 (SOLID: Dependency Inversion)" alt="" coords="237,421,445,507"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,321,323,420,318,423,267,324"/>
-<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_core_1_1_interfaces_1_1_i_manager.html" title="모든 매니저의 기본 인터페이스 (SOLID: Interface Segregation Principle) 최소한의 공통 기능만 정의" alt="" coords="121,5,329,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,127,228,161,222,161,222,127"/>
-</map>

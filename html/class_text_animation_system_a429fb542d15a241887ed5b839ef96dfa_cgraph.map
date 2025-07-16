@@ -1,5 +1,0 @@
-<map id="TextAnimationSystem.TypeText" name="TextAnimationSystem.TypeText">
-<area shape="rect" id="Node000001" title="타이핑 효과로 텍스트 표시" alt="" coords="5,13,212,40"/>
-<area shape="rect" id="Node000002" href="$class_text_animation_system.html#a31c24f539bac2585c099c547baeb1280" title="애니메이션 중지" alt="" coords="260,5,440,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,24,244,24,244,29,212,29"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="SpriteCharacterRenderer.Initialize" name="SpriteCharacterRenderer.Initialize">
-<area shape="rect" id="Node000001" title="캐릭터 초기화" alt="" coords="5,5,175,48"/>
-<area shape="rect" id="Node000002" href="$class_sprite_character_renderer.html#a64be0afd434ea3e46f731d2b29fe8846" title="감정/표정 변경" alt="" coords="223,5,392,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,24,207,24,207,29,175,29"/>
-</map>

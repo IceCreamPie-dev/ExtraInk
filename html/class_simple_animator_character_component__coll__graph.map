@@ -1,7 +1,0 @@
-<map id="SimpleAnimatorCharacterComponent" name="SimpleAnimatorCharacterComponent">
-<area shape="rect" id="Node000001" title="간단한 Animator 기반 캐릭터 구현체 ICPTween을 사용하여 효과 구현" alt="" coords="5,688,232,971"/>
-<area shape="rect" id="Node000002" href="$class_base_character_component.html" title="모든 캐릭터 컴포넌트가 상속받아야 하는 기본 클래스 개발자는 이 클래스를 상속받아 자유롭게 캐릭터 표현 방식을 구현할 수 있습니다." alt="" coords="28,123,209,640"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,655,121,688,116,688,116,655"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="68,5,169,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,90,121,123,116,123,116,90"/>
-</map>

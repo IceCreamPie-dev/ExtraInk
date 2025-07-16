@@ -1,7 +1,0 @@
-<map id="DeulPie.ExtraInk.Events.Vector3EventChannel" name="DeulPie.ExtraInk.Events.Vector3EventChannel">
-<area shape="rect" id="Node000001" title="Vector3 파라미터를 가진 이벤트 채널 위치, 회전, 스케일 등의 3D 벡터 값 전달에 사용" alt="" coords="12,491,170,725"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel.html" title="모든 이벤트 채널의 기본 클래스 ScriptableObject 기반으로 Unity Inspector와 완벽히 통합됨" alt="" coords="5,123,176,443"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,458,94,491,88,491,88,458"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="38,5,144,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,89,94,123,88,123,88,89"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="DeulPie.ExtraInk.Events.FloatEventChannel.RaiseNormalizedEvent" name="DeulPie.ExtraInk.Events.FloatEventChannel.RaiseNormalizedEvent">
-<area shape="rect" id="Node000001" title="정규화된 값으로 이벤트 발생 (0&#45;1 범위)" alt="" coords="5,5,276,48"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_float_event_channel.html#a8efc59f172fc1a78f74e5c0b35b3b461" title="이벤트 발생 (값 유효성 검사 및 정밀도 조정 포함)" alt="" coords="324,5,528,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,24,308,24,308,29,276,29"/>
-<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel.html#a50ec848c6fd2c4355b50ed4a22e5e0f2" title="디버그 로그 출력" alt="" coords="576,5,772,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="529,24,561,24,561,29,529,29"/>
-</map>

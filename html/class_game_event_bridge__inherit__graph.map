@@ -1,5 +1,0 @@
-<map id="GameEventBridge" name="GameEventBridge">
-<area shape="rect" id="Node000001" title="GameEvents와 DI 시스템의 매니저들을 연결하는 브리지 클래스 Constructor Injection 기반 DI 시스템과 이벤트 시스템 간의 호환성을 제공합니다" alt="" coords="5,123,122,192"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="13,5,114,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,90,66,123,61,123,61,90"/>
-</map>

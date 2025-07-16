@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Events.GameObjectEventChannel.RaiseEvent" name="DeulPie.ExtraInk.Events.GameObjectEventChannel.RaiseEvent">
-<area shape="rect" id="Node000001" title="이벤트 발생 (필터링 포함)" alt="" coords="268,13,516,56"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_game_object_event_channel.html#a6ee15decc973aa96f2024634bc53cc8c" title="컴포넌트를 가진 오브젝트만 허용하는 이벤트 발생" alt="" coords="5,5,220,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,37,220,37,220,32,252,32"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnShutdown" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin.OnShutdown">
-<area shape="rect" id="Node000001" title="플러그인 종료 시 정리 작업" alt="" coords="252,5,467,48"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_plugins_1_1_base_extra_ink_plugin.html#a3a74c1f145114614a46071c892121358" title="플러그인 종료 및 정리" alt="" coords="5,5,204,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,29,204,29,204,24,236,24"/>
-</map>

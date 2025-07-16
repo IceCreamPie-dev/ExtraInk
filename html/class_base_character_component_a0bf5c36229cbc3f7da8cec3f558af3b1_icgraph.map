@@ -1,5 +1,0 @@
-<map id="BaseCharacterComponent.ApplyDefaultSettings" name="BaseCharacterComponent.ApplyDefaultSettings">
-<area shape="rect" id="Node000001" title="기본 설정 적용 (스케일, 오프셋, 미러링)" alt="" coords="281,5,493,48"/>
-<area shape="rect" id="Node000002" href="$class_base_character_component.html#a925488f45c65f9ecd3a633a1d9a23b3e" title="캐릭터 초기화 &#45; CharacterData로부터 설정을 가져옵니다" alt="" coords="5,13,233,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,29,233,29,233,24,265,24"/>
-</map>

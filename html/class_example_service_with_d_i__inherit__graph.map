@@ -1,9 +1,0 @@
-<map id="ExampleServiceWithDI" name="ExampleServiceWithDI">
-<area shape="rect" id="Node000001" title="Constructor Injection을 사용하는 서비스 클래스 예제 실제 매니저들이 이런 방식으로 구현될 수 있습니다" alt="" coords="33,283,201,459"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,106,224"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,237,90,282,85,284,69,239"/>
-<area shape="rect" id="Node000003" href="$interface_i_unity_service.html" title="Unity MonoBehaviour 기반 서비스 인터페이스" alt="" coords="130,144,227,235"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,250,149,284,144,282,156,248"/>
-<area shape="rect" id="Node000004" href="$interface_i_service.html" title="모든 서비스가 구현해야 하는 기본 인터페이스" alt="" coords="133,5,223,96"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="181,111,181,144,176,144,176,111"/>
-</map>

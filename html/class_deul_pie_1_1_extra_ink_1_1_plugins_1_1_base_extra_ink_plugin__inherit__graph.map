@@ -1,7 +1,0 @@
-<map id="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin" name="DeulPie.ExtraInk.Plugins.BaseExtraInkPlugin">
-<area shape="rect" id="Node000001" title="모든 플러그인의 기본 구현체 공통 기능을 제공하고 하위 클래스에서 특화 기능을 구현 TODO: GPT가 만든거라서 이상한거 전수 검토 필요" alt="" coords="44,416,222,1291"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,152,106,221"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,235,85,416,80,416,59,236"/>
-<area shape="rect" id="Node000003" href="$interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_extra_ink_plugin.html" title="모든 플러그인이 구현해야 하는 기본 인터페이스 플러그인의 생명주기와 메타데이터를 정의합니다" alt="" coords="130,5,291,368"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,383,186,417,181,416,185,382"/>
-</map>

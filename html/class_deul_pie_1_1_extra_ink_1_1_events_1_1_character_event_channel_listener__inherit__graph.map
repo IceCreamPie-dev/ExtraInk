@@ -1,7 +1,0 @@
-<map id="DeulPie.ExtraInk.Events.CharacterEventChannelListener" name="DeulPie.ExtraInk.Events.CharacterEventChannelListener">
-<area shape="rect" id="Node000001" title="CharacterEventChannel용 리스너 컴포넌트 캐릭터 관련 이벤트를 처리하는 특화된 리스너" alt="" coords="5,533,215,811"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener.html" title="ScriptableObject 이벤트 채널을 Unity Inspector에서 쉽게 구독할 수 있는 기본 리스너" alt="" coords="26,123,195,485"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,501,113,534,108,534,108,501"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="60,5,161,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,90,113,123,108,123,108,90"/>
-</map>

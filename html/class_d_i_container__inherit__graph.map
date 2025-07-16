@@ -1,5 +1,0 @@
-<map id="DIContainer" name="DIContainer">
-<area shape="rect" id="Node000001" title="Constructor Injection 기반의 DI 컨테이너 구현 의존성 주입과 자동 해결을 제공합니다" alt="" coords="5,437,215,821"/>
-<area shape="rect" id="Node000002" href="$interface_i_d_i_container.html" title="DI 컨테이너 인터페이스 Constructor Injection 기반의 의존성 주입 시스템을 제공합니다" alt="" coords="5,5,215,389"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,404,113,437,108,437,108,404"/>
-</map>

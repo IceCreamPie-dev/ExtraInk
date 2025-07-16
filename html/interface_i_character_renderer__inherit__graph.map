@@ -1,5 +1,0 @@
-<map id="ICharacterRenderer" name="ICharacterRenderer">
-<area shape="rect" id="Node000001" title="캐릭터 렌더링을 담당하는 인터페이스 다양한 렌더링 방식(스프라이트, 애니메이터, 3D 모델 등)을 지원합니다" alt="" coords="20,5,145,245"/>
-<area shape="rect" id="Node000002" href="$class_sprite_character_renderer.html" title="스프라이트 기반 캐릭터 렌더러 구현체" alt="" coords="5,293,160,533"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,260,85,293,80,293,80,260"/>
-</map>

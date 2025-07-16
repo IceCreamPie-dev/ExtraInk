@@ -1,7 +1,0 @@
-<map id="DeulPie.ExtraInk.Core.Events.GameObjectEventChannelListener" name="DeulPie.ExtraInk.Core.Events.GameObjectEventChannelListener">
-<area shape="rect" id="Node000001" title="GameObjectEventChannel의 이벤트를 수신하는 리스너 컴포넌트" alt="" coords="5,336,217,443"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_core_1_1_events_1_1_base_event_channel_listener-2-g.html" title=" " alt="" coords="11,123,212,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,303,114,336,108,336,108,303"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="61,5,162,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,90,114,123,108,123,108,90"/>
-</map>

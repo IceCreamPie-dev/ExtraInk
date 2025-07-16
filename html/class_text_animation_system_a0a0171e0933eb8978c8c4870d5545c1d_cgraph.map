@@ -1,5 +1,0 @@
-<map id="TextAnimationSystem.ShowTextInstantly" name="TextAnimationSystem.ShowTextInstantly">
-<area shape="rect" id="Node000001" title="즉시 텍스트 표시 (애니메이션 없음)" alt="" coords="5,5,192,48"/>
-<area shape="rect" id="Node000002" href="$class_text_animation_system.html#a31c24f539bac2585c099c547baeb1280" title="애니메이션 중지" alt="" coords="240,5,420,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,24,224,24,224,29,192,29"/>
-</map>

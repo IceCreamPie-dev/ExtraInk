@@ -1,5 +1,0 @@
-<map id="DIBootstrapper" name="DIBootstrapper">
-<area shape="rect" id="Node000001" title="Constructor Injection 기반의 DI 컨테이너 부트스트래퍼 씬 시작 시 자동으로 모든 서비스를 등록하고 초기화합니다" alt="" coords="5,123,172,235"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,139,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,90,92,123,86,123,86,90"/>
-</map>

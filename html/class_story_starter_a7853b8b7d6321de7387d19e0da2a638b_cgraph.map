@@ -1,5 +1,0 @@
-<map id="StoryStarter.특정스토리_시작하기" name="StoryStarter.특정스토리_시작하기">
-<area shape="rect" id="Node000001" title="특정 스토리를 직접 시작합니다" alt="" coords="5,5,206,48"/>
-<area shape="rect" id="Node000002" href="$class_ink_story_manager.html#abe24bf49556cccdcc2840403544f9ade" title="특정 스토리를 이름으로 시작합니다" alt="" coords="254,13,483,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,24,238,24,238,29,206,29"/>
-</map>

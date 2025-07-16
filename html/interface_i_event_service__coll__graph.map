@@ -1,5 +1,0 @@
-<map id="IEventService" name="IEventService">
-<area shape="rect" id="Node000001" title="이벤트를 발생시킬 수 있는 서비스 인터페이스" alt="" coords="5,144,98,213"/>
-<area shape="rect" id="Node000002" href="$interface_i_service.html" title="모든 서비스가 구현해야 하는 기본 인터페이스" alt="" coords="7,5,97,96"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,111,54,144,49,144,49,111"/>
-</map>

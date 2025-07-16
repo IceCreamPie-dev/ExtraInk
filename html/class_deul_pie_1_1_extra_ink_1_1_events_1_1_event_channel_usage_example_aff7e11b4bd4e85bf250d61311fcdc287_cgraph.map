@@ -1,5 +1,0 @@
-<map id="DeulPie.ExtraInk.Events.EventChannelUsageExample.TakeDamage" name="DeulPie.ExtraInk.Events.EventChannelUsageExample.TakeDamage">
-<area shape="rect" id="Node000001" title="데미지 입기" alt="" coords="5,5,230,64"/>
-<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_event_channel_usage_example.html#aa7afe38c37421a936e8217272d6d3c04" title="체력 변경" alt="" coords="278,5,519,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,32,262,32,262,37,230,37"/>
-</map>
