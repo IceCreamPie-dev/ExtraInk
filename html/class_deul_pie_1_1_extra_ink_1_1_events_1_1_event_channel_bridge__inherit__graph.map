@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Events.EventChannelBridge" name="DeulPie.ExtraInk.Events.EventChannelBridge">
+<area shape="rect" id="Node000001" title="ScriptableObject 기반 이벤트 채널과 기존 GameEvents 시스템을 연결하는 브리지 양방향 이벤트 연결을 통해 하위 호환성 보장" alt="" coords="5,123,164,208"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="34,5,135,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,89,87,123,82,123,82,89"/>
+</map>

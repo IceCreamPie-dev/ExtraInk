@@ -1,0 +1,7 @@
+<map id="AnimatorCharacterComponent" name="AnimatorCharacterComponent">
+<area shape="rect" id="Node000001" title="Animator 기반 캐릭터 구현체 기존 CharacterData의 애니메이션 모드와 호환됩니다." alt="" coords="5,688,192,971"/>
+<area shape="rect" id="Node000002" href="$class_base_character_component.html" title="모든 캐릭터 컴포넌트가 상속받아야 하는 기본 클래스 개발자는 이 클래스를 상속받아 자유롭게 캐릭터 표현 방식을 구현할 수 있습니다." alt="" coords="8,123,189,640"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,655,101,688,96,688,96,655"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="48,5,149,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,90,101,123,96,123,96,90"/>
+</map>

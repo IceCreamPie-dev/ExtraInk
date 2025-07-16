@@ -1,0 +1,10 @@
+<map id="IAudioManager" name="IAudioManager">
+<area shape="rect" id="Node000001" title="오디오 매니저 인터페이스 오디오 재생, 볼륨 조절, 음향 효과 관리 기능을 제공합니다" alt="" coords="23,283,202,672"/>
+<area shape="rect" id="Node000002" href="$interface_i_unity_service.html" title="Unity MonoBehaviour 기반 서비스 인터페이스" alt="" coords="5,144,102,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,249,75,283,70,284,63,250"/>
+<area shape="rect" id="Node000003" href="$interface_i_service.html" title="모든 서비스가 구현해야 하는 기본 인터페이스" alt="" coords="68,5,158,96"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,111,75,145,70,143,85,109"/>
+<area shape="rect" id="Node000004" href="$interface_i_event_service.html" title="이벤트를 발생시킬 수 있는 서비스 인터페이스" alt="" coords="126,155,219,224"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="140,109,160,154,156,156,136,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,239,156,284,150,283,160,238"/>
+</map>

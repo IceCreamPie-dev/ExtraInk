@@ -1,0 +1,7 @@
+<map id="DeulPie.ExtraInk.Events.BaseEventChannelListener.SetEventChannel" name="DeulPie.ExtraInk.Events.BaseEventChannelListener.SetEventChannel">
+<area shape="rect" id="Node000001" title="이벤트 채널 설정" alt="" coords="5,31,209,89"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener.html#af771354db5924b842aa952143a0a91fa" title="디버그 로그 출력" alt="" coords="264,5,506,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,45,247,40,248,46,210,50"/>
+<area shape="rect" id="Node000003" href="$class_deul_pie_1_1_extra_ink_1_1_events_1_1_base_event_channel_listener.html#a95a4409e6810695c5ddf759c4f034a53" title="이벤트 구독 해제 (추상 메서드)" alt="" coords="257,72,513,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,70,241,73,241,79,209,75"/>
+</map>

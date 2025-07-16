@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Plugins.PluginManager" name="DeulPie.ExtraInk.Plugins.PluginManager">
+<area shape="rect" id="Node000001" title="플러그인 관리자 모든 플러그인의 로딩, 초기화, 생명주기 관리를 담당" alt="" coords="5,123,166,464"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="35,5,136,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,90,88,123,83,123,83,90"/>
+</map>

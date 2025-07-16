@@ -1,0 +1,6 @@
+<map id="IDIContainer.Resolve" name="IDIContainer.Resolve">
+<area shape="rect" id="Node000001" title="서비스를 해결(resolve)합니다" alt="" coords="232,29,379,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="341,16,329,10,305,8,283,10,271,15,269,20,274,27,270,30,263,21,268,11,282,5,305,3,330,5,344,12"/>
+<area shape="rect" id="Node000002" href="$interface_i_d_i_container.html#a92b43116163b408db90168795a641d82" title="서비스를 해결(resolve)합니다" alt="" coords="5,29,184,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="216,45,184,45,184,40,216,40"/>
+</map>

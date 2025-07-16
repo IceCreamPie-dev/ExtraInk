@@ -1,0 +1,16 @@
+<map id="SpriteCharacterController" name="SpriteCharacterController">
+<area shape="rect" id="Node000001" title="스프라이트 기반 캐릭터 컨트롤러 예제 개발자들이 이 클래스를 참고하여 커스텀 캐릭터를 만들 수 있습니다." alt="" coords="130,1420,293,1703"/>
+<area shape="rect" id="Node000002" href="$class_base_character_controller.html" title="기본 캐릭터 컨트롤러 구현체 개발자들이 이 클래스를 상속받아 커스텀 기능을 추가할 수 있습니다." alt="" coords="128,725,295,1371"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,1386,206,1420,201,1421,200,1386"/>
+<area shape="poly" id="edge7_Node000001_Node000002" title=" " alt="" coords="223,1386,222,1421,217,1420,218,1386"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,419,106,488"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,501,131,729,126,731,66,503"/>
+<area shape="rect" id="Node000004" href="$interface_i_character_controller.html" title="캐릭터 컨트롤러 인터페이스 개발자들이 이 인터페이스를 구현하여 커스텀 캐릭터 기능을 추가할 수 있습니다." alt="" coords="130,269,293,637"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="214,652,214,726,209,726,209,652"/>
+<area shape="rect" id="Node000005" href="$class_character_data.html" title=" " alt="" coords="318,253,556,653"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="364,654,304,813,299,811,359,652"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="313,59,420,128"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="378,142,400,253,395,254,373,143"/>
+<area shape="rect" id="Node000007" href="$class_dialogue_style.html" title=" " alt="" coords="444,5,569,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="492,182,481,238,476,236,487,181"/>
+</map>

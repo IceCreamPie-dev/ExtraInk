@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Core.Managers.BaseManager.OnInitializationComplete" name="DeulPie.ExtraInk.Core.Managers.BaseManager.OnInitializationComplete">
+<area shape="rect" id="Node000001" title="초기화 완료 후 호출됩니다. 필요시 하위 클래스에서 오버라이드" alt="" coords="271,5,518,48"/>
+<area shape="rect" id="Node000002" href="$class_deul_pie_1_1_extra_ink_1_1_core_1_1_managers_1_1_base_manager.html#ade6814ca61dcf7e25f0fa7c24127859c" title="매니저 초기화" alt="" coords="5,5,223,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,29,223,29,223,24,255,24"/>
+</map>

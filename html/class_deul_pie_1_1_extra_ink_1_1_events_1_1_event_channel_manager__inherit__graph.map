@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Events.EventChannelManager" name="DeulPie.ExtraInk.Events.EventChannelManager">
+<area shape="rect" id="Node000001" title="ScriptableObject 기반 이벤트 채널들을 중앙에서 관리하는 매니저 Resources 폴더와 직접 참조를 통해 이벤트 채널들을 로드하고 관리" alt="" coords="5,123,171,421"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="38,5,139,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,89,91,123,86,123,86,89"/>
+</map>

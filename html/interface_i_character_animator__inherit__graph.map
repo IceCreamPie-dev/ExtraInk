@@ -1,0 +1,5 @@
+<map id="ICharacterAnimator" name="ICharacterAnimator">
+<area shape="rect" id="Node000001" title="캐릭터 애니메이션을 담당하는 인터페이스 다양한 애니메이션 시스템(ICPTween, Unity Animator, DOTween 등)을 지원합니다" alt="" coords="14,5,178,288"/>
+<area shape="rect" id="Node000002" href="$class_i_c_p_tween_character_animator.html" title="ICPTween 기반 캐릭터 애니메이터 구현체" alt="" coords="5,336,186,619"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,303,98,336,93,336,93,303"/>
+</map>

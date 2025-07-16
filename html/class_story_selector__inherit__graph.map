@@ -1,0 +1,5 @@
+<map id="StorySelector" name="StorySelector">
+<area shape="rect" id="Node000001" title="스토리 선택 UI 컴포넌트 사용가능한 스토리 목록을 표시하고 선택할 수 있게 해줍니다" alt="" coords="5,123,233,299"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="69,5,170,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,90,122,123,117,123,117,90"/>
+</map>

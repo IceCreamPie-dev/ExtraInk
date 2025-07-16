@@ -1,0 +1,9 @@
+<map id="InkStoryManager.스토리시작" name="InkStoryManager.스토리시작">
+<area shape="rect" id="Node000001" title="특정 스토리를 이름으로 시작합니다" alt="" coords="254,80,483,107"/>
+<area shape="rect" id="Node000002" href="$class_story_starter.html#a076085f3b3cfa1e805e93959cfbd8eb5" title="스토리를 시작합니다" alt="" coords="26,5,185,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,78,184,49,186,44,298,73"/>
+<area shape="rect" id="Node000003" href="$class_story_starter.html#a7853b8b7d6321de7387d19e0da2a638b" title="특정 스토리를 직접 시작합니다" alt="" coords="5,72,206,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,96,206,96,206,91,238,91"/>
+<area shape="rect" id="Node000004" href="$class_story_starter.html#a9e437a81bbc741d2dfadee9fa64473ef" title="현재 스토리를 다시 시작합니다" alt="" coords="5,139,206,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="298,114,193,141,192,135,297,109"/>
+</map>

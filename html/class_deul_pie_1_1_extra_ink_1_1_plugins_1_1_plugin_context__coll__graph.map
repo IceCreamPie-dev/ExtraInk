@@ -1,0 +1,5 @@
+<map id="DeulPie.ExtraInk.Plugins.PluginContext" name="DeulPie.ExtraInk.Plugins.PluginContext">
+<area shape="rect" id="Node000001" title="플러그인 컨텍스트의 구체적인 구현체 플러그인들이 ExtraInk 시스템에 접근할 수 있는 통합 인터페이스 제공" alt="" coords="5,395,195,901"/>
+<area shape="rect" id="Node000002" href="$interface_deul_pie_1_1_extra_ink_1_1_plugins_1_1_i_plugin_context.html" title="플러그인 실행 컨텍스트 인터페이스 플러그인이 ExtraInk 시스템과 상호작용할 수 있는 API를 제공" alt="" coords="20,5,181,347"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,361,103,395,98,395,98,361"/>
+</map>

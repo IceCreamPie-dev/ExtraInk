@@ -1,0 +1,21 @@
+<map id="InputActions.PlayerActions.AddCallbacks" name="InputActions.PlayerActions.AddCallbacks">
+<area shape="rect" id="Node000001" title="Adds InputAction.started, InputAction.performed and InputAction.canceled callbacks provided via &#160;on a..." alt="" coords="5,272,189,315"/>
+<area shape="rect" id="Node000002" href="$interface_input_actions_1_1_i_player_actions.html#acc6e6e59e75fc6406a61015b187231ad" title="Method invoked when associated input action &quot;Attack&quot; is either UnityEngine.InputSystem...." alt="" coords="237,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,271,120,227,148,170,186,110,209,82,235,58,240,54,243,59,238,62,213,86,190,113,153,172,125,229,108,273"/>
+<area shape="rect" id="Node000003" href="$interface_input_actions_1_1_i_player_actions.html#a002895b6d253a8ee7e170569c2115e14" title="Method invoked when associated input action &quot;Crouch&quot; is either UnityEngine.InputSystem...." alt="" coords="237,72,424,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="109,270,158,199,194,159,235,125,242,120,245,125,238,129,198,163,162,203,113,273"/>
+<area shape="rect" id="Node000004" href="$interface_input_actions_1_1_i_player_actions.html#a46bf622ae068c5cd9a74f7bf50da9636" title="Method invoked when associated input action &quot;Interact&quot; is either UnityEngine.InputSystem...." alt="" coords="237,139,424,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,269,173,230,235,191,246,186,249,190,238,196,176,235,126,274"/>
+<area shape="rect" id="Node000005" href="$interface_input_actions_1_1_i_player_actions.html#a82c2fcc54a2fdf616c237e004e09e10d" title="Method invoked when associated input action &quot;Jump&quot; is either UnityEngine.InputSystem...." alt="" coords="237,205,424,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="173,269,238,250,239,255,175,274"/>
+<area shape="rect" id="Node000006" href="$interface_input_actions_1_1_i_player_actions.html#ae81ce01b457d1dd582489b2fdda7a172" title="Method invoked when associated input action &quot;Look&quot; is either UnityEngine.InputSystem...." alt="" coords="237,272,424,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="189,291,221,291,221,296,189,296"/>
+<area shape="rect" id="Node000007" href="$interface_input_actions_1_1_i_player_actions.html#a415f7e2a6beb51b00d8b8e3a817bfd3a" title="Method invoked when associated input action &quot;Move&quot; is either UnityEngine.InputSystem...." alt="" coords="237,339,424,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="175,313,239,331,238,336,173,318"/>
+<area shape="rect" id="Node000008" href="$interface_input_actions_1_1_i_player_actions.html#a434dfc415a495fe02c3df56d37bd64c2" title="Method invoked when associated input action &quot;Next&quot; is either UnityEngine.InputSystem...." alt="" coords="237,405,424,448"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="126,313,176,352,238,391,249,396,246,401,235,396,173,356,122,317"/>
+<area shape="rect" id="Node000009" href="$interface_input_actions_1_1_i_player_actions.html#ac120baedd45ad5f8d3b0a2fb61e8b247" title="Method invoked when associated input action &quot;Previous&quot; is either UnityEngine.InputSystem...." alt="" coords="237,472,424,515"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="113,313,162,384,198,423,238,458,245,462,242,467,235,462,194,427,158,387,109,316"/>
+<area shape="rect" id="Node000010" href="$interface_input_actions_1_1_i_player_actions.html#a6a088cba01f3720110f765bc80915a6c" title="Method invoked when associated input action &quot;Sprint&quot; is either UnityEngine.InputSystem...." alt="" coords="237,539,424,581"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="108,314,125,358,153,414,190,473,213,501,238,525,243,528,240,532,235,529,209,504,186,477,148,417,120,360,103,316"/>
+</map>
